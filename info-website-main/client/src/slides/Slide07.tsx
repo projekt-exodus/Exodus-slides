@@ -18,6 +18,7 @@ const team: TeamMember[] = [
     skills: ["Sport & Leistungsmedizin", "Physiotherapie", "Sales"],
     linkedin: null,
     color: "green",
+    photo: "/team/felix.png",
   },
   {
     name: "Martin Hausleitner",
@@ -32,6 +33,7 @@ const team: TeamMember[] = [
     skills: ["App-Entwicklung", "KI-Agenten", "Full Stack Development"],
     linkedin: "https://www.linkedin.com/in/martin-hausleitner",
     color: "blue",
+    photo: "/team/martin.jpg",
   },
   {
     name: "Hannah Haslhofer",
@@ -45,6 +47,7 @@ const team: TeamMember[] = [
     skills: ["Physiotherapie", "Operatives", "Teamkoordination"],
     linkedin: null,
     color: "amber",
+    photo: "/team/hannah.png",
   },
   {
     name: "Paula Mittermayr",
@@ -59,6 +62,7 @@ const team: TeamMember[] = [
     skills: ["C · C# · Python", "Medizintechnik", "Sensorik"],
     linkedin: "https://www.linkedin.com/in/paula-mittermayr-a36064328",
     color: "rose",
+    photo: "/team/paula.jpg",
   },
 ];
 
@@ -74,6 +78,7 @@ const advisor: TeamMember = {
   linkedin: null,
   color: "violet",
   advisor: true,
+  photo: "/team/david.jpg",
 };
 
 const accentColorMap: Record<string, string> = {

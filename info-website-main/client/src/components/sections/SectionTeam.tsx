@@ -1,6 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import { ExternalLink } from "lucide-react";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { SectionLabel } from "./helpers";
 
 export interface TimelineEntry {
@@ -19,6 +19,7 @@ export interface TeamMember {
   linkedin: string | null;
   color: string;
   advisor?: boolean;
+  photo?: string;
 }
 
 export default function SectionTeam() {
@@ -138,6 +139,30 @@ export default function SectionTeam() {
   );
 }
 
+function MemberAvatar({ member }: { member: TeamMember }) {
+  const [failed, setFailed] = useState(false);
+  const initials = member.name.split(" ").map(w => w[0]).join("").slice(0, 2).toUpperCase();
+  if (!member.photo || failed) {
+    return (
+      <div
+        className="w-10 h-10 rounded-full flex items-center justify-center text-xs font-mono font-semibold shrink-0"
+        style={{ backgroundColor: `var(--accent-${member.color})20`, color: `var(--accent-${member.color})`, border: `1.5px solid var(--accent-${member.color})40` }}
+      >
+        {initials}
+      </div>
+    );
+  }
+  return (
+    <img
+      src={member.photo}
+      alt={member.name}
+      className="w-10 h-10 rounded-full object-cover shrink-0"
+      style={{ border: `1.5px solid var(--accent-${member.color})40` }}
+      onError={() => setFailed(true)}
+    />
+  );
+}
+
 export function MemberCard({ member, i, inView }: { member: TeamMember; i: number; inView: boolean }) {
   return (
     <motion.div
@@ -148,8 +173,8 @@ export function MemberCard({ member, i, inView }: { member: TeamMember; i: numbe
       data-testid={`card-team-${i}`}
     >
       <div>
-        <div className="flex items-start justify-between gap-2 mb-0.5">
-          <h4 className="text-sm font-normal">{member.name}</h4>
+        <div className="flex items-start justify-between gap-2 mb-2">
+          <MemberAvatar member={member} />
           {member.linkedin && (
             <a
               href={member.linkedin}
@@ -162,6 +187,9 @@ export function MemberCard({ member, i, inView }: { member: TeamMember; i: numbe
               <ExternalLink className="w-3.5 h-3.5" />
             </a>
           )}
+        </div>
+        <div className="mb-0.5">
+          <h4 className="text-sm font-normal">{member.name}</h4>
         </div>
         <p className="text-xs font-mono uppercase tracking-wider mb-0.5" style={{ color: `var(--accent-${member.color})` }}>
           {member.role}

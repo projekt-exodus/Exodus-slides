@@ -41,8 +41,11 @@ export default function Slide03() {
               </span>
             ))}
           </div>
-          <p className="text-base text-muted-foreground leading-relaxed">
+          <p className="text-base text-muted-foreground leading-relaxed mb-3">
             Labor · Schlaf · Arztbrief · Training — strukturierte Timeline, KI erklärt in normaler Sprache.
+          </p>
+          <p className="text-sm font-mono px-3 py-1.5 border" style={{ color: "var(--accent-green)", borderColor: "var(--accent-green)40", backgroundColor: "var(--accent-green)08" }}>
+            Alles lokal gespeichert · Exodus Health Vault &amp; Claude optional
           </p>
         </div>
 

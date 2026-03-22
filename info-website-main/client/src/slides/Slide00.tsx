@@ -43,8 +43,8 @@ export default function Slide00() {
         src="/exodus-logo-transparent.png"
         alt="Exodus Logo"
         style={{
-          width: 120,
-          height: 120,
+          width: 220,
+          height: 220,
           objectFit: "contain",
           position: "relative",
           zIndex: 1,

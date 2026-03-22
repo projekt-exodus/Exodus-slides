@@ -131,8 +131,8 @@ export default function Slide10() {
             src="/exodus-logo-transparent.png"
             alt="Exodus Logo"
             style={{
-              width: 160,
-              height: 160,
+              width: 260,
+              height: 260,
               objectFit: "contain",
               animation: "pulse-beat 1.6s ease-in-out infinite",
             }}

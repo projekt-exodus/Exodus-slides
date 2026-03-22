@@ -69,7 +69,7 @@ const team: TeamMember[] = [
 
 const advisor: TeamMember = {
   name: "David Kraus",
-  role: "Cybersecurity & CEO servas.ai FlexCo",
+  role: "Cybersecurity",
   location: "Oberösterreich",
   desc: "Unterstützt Exodus in Datensicherheit, Datenschutz und Cybersecurity. Essentielle Expertise für eine DSGVO-konforme Gesundheitsplattform.",
   timeline: [

@@ -67,13 +67,9 @@ export default function Slide09() {
         09 — Traction & Förderungen · Martin
       </p>
 
-      <h2 className="text-6xl font-bold tracking-tight mb-3 leading-tight">
+      <h2 className="text-6xl font-bold tracking-tight mb-10 leading-tight">
         Wir stehen nicht am Anfang.
       </h2>
-      <p className="text-2xl text-muted-foreground mb-16">
-        aws eingereicht ✅ · FFG läuft ✅ · über 400.000 € Potenzial · 10. Mai Deadline · tech2b Linz
-      </p>
-      <p className="text-base font-mono text-muted-foreground/50 mb-7">Schritt für Schritt.</p>
 
       <div className="grid grid-cols-2 gap-10">
         <div>

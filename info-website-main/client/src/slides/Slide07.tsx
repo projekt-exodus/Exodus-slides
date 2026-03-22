@@ -154,7 +154,7 @@ export default function Slide07() {
       <div className="grid grid-cols-2 gap-4 flex-shrink-0">
         <MemberCard member={advisor} i={team.length} inView={true} />
         <div className="p-4 border border-border/50 bg-[var(--diagram-bg)] flex flex-col justify-center gap-4">
-          <p className="text-sm font-mono uppercase tracking-widest text-muted-foreground/50">Kooperationen (LOIs)</p>
+          <p className="text-sm font-mono uppercase tracking-widest text-muted-foreground/50">Kooperationen</p>
           <div className="flex flex-col gap-5">
             <img
               src="/logos/fh-gesundheitsberufe.png"

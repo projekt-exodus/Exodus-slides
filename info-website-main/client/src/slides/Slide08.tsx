@@ -19,6 +19,7 @@ export default function Slide08() {
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 mb-6">
         <div className="p-5 border-2 bg-card" style={{ borderColor: "var(--accent-blue)" }}>
+          <p className="text-[10px] font-mono uppercase tracking-widest mb-3 font-bold" style={{ color: "var(--accent-blue)" }}>Phase 1</p>
           <div className="flex items-center gap-3 mb-3">
             <div className="w-9 h-9 flex items-center justify-center" style={{ color: "var(--accent-blue)", backgroundColor: "var(--accent-blue)15" }}>
               <Database className="w-5 h-5" />
@@ -49,6 +50,7 @@ export default function Slide08() {
         </div>
 
         <div className="p-5 border-2 bg-card" style={{ borderColor: "var(--accent-violet)" }}>
+          <p className="text-[10px] font-mono uppercase tracking-widest mb-3 font-bold" style={{ color: "var(--accent-violet)" }}>Phase 2</p>
           <div className="flex items-center gap-3 mb-3">
             <div className="w-9 h-9 flex items-center justify-center" style={{ color: "var(--accent-violet)", backgroundColor: "var(--accent-violet)15" }}>
               <Stethoscope className="w-5 h-5" />
@@ -76,6 +78,7 @@ export default function Slide08() {
         </div>
 
         <div className="p-5 border-2 bg-card" style={{ borderColor: "var(--accent-green)" }}>
+          <p className="text-[10px] font-mono uppercase tracking-widest mb-3 font-bold" style={{ color: "var(--accent-green)" }}>Phase 3</p>
           <div className="flex items-center gap-3 mb-3">
             <div className="w-9 h-9 flex items-center justify-center" style={{ color: "var(--accent-green)", backgroundColor: "var(--accent-green)15" }}>
               <Pill className="w-5 h-5" />

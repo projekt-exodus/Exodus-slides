@@ -49,7 +49,7 @@ export default function Slide02() {
         Das Problem ist, dass sie nicht reden.
       </p>
 
-      <div className="grid grid-cols-2 gap-6 mb-5" style={{ flex: "1 1 0", minHeight: 0 }}>
+      <div className="grid grid-cols-2 gap-6 mb-5" style={{ flex: "0 0 auto" }}>
 
         {/* LEFT — Silos */}
         <div className="flex flex-col min-h-0" style={{ borderTop: "2px solid var(--accent-amber)" }}>
@@ -90,7 +90,7 @@ export default function Slide02() {
           </div>
 
           {/* App frame */}
-          <div className="flex flex-col rounded-xl overflow-hidden border border-border/60 shadow-sm" style={{ background: "var(--card)", flex: "1 1 0", minHeight: 0 }}>
+          <div className="flex flex-col rounded-xl overflow-hidden border border-border/60 shadow-sm" style={{ background: "var(--card)" }}>
 
             {/* App status bar */}
             <div className="flex items-center justify-between px-4 py-2 shrink-0" style={{ background: "color-mix(in srgb, var(--accent-blue) 6%, var(--card))", borderBottom: "1px solid var(--border)" }}>
@@ -110,7 +110,7 @@ export default function Slide02() {
             </div>
 
             {/* Entries */}
-            <div className="flex flex-col divide-y overflow-hidden" style={{ divideColor: "var(--border)", flex: "1 1 0" }}>
+            <div className="flex flex-col divide-y divide-border/40 overflow-hidden">
               {vault.map((item, i) => (
                 <div key={i} className="flex items-center gap-3 px-4 py-2.5 shrink-0" style={{ background: i % 2 === 0 ? "var(--card)" : "var(--diagram-bg)" }}>
                   <div className="w-0.5 self-stretch rounded-full shrink-0" style={{ backgroundColor: item.color }} />

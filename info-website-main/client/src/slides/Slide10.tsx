@@ -78,12 +78,12 @@ export default function Slide10() {
           <h2 className="text-5xl font-bold tracking-tight mb-5 leading-tight">
             Wir möchten die Gesundheit<br />revolutionieren.
           </h2>
-          <p className="text-2xl font-medium text-muted-foreground mb-10 leading-tight">
+          <p className="text-2xl font-medium text-muted-foreground mb-16 leading-tight">
             Wir möchten die Linzer und Europäer gesünder machen.
           </p>
 
           {/* Vertical timeline roadmap */}
-          <div className="mb-10">
+          <div className="mb-16">
             <p className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground/50 mb-5">
               Roadmap
             </p>

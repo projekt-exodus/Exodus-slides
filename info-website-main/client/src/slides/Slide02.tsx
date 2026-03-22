@@ -53,7 +53,7 @@ export default function Slide02() {
       <div className="grid grid-cols-2 gap-6 mb-5" style={{ flex: "0 0 auto" }}>
 
         {/* LEFT — Silos */}
-        <div className="flex flex-col min-h-0" style={{ borderTop: "2px solid var(--accent-amber)" }}>
+        <div className="flex flex-col min-h-0">
           <div className="flex items-center gap-2 pt-3 pb-3 shrink-0">
             <Unlink className="w-3.5 h-3.5" style={{ color: "var(--accent-amber)" }} />
             <p className="text-xs font-mono uppercase tracking-widest" style={{ color: "var(--accent-amber)" }}>

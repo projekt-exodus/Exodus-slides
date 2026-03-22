@@ -1,39 +1,12 @@
 import { MemberCard, TeamMember } from "@/components/sections/SectionTeam";
 
 export const notes =
-  "Wir kommen alle aus OÖ. Wir studieren alle an Institutionen aus Linz. Und wir nutzen alle das Produkt selbst — weil es unser Problem ist. Hannah: CEO & Operations. Paula: Sales & Medizintechnik. Felix: COO & Sales. Martin: CTO. Plus David Kraus für Cybersecurity. LOIs in Vorbereitung: JKU, Kepler, FH Gesundheitsberufe OÖ.";
+  "Wir kommen alle aus OÖ. Wir studieren alle an Institutionen aus Linz. Und wir nutzen alle das Produkt selbst — weil es unser Problem ist. Felix & Martin: Gründer. Hannah: CEO & Operations. Paula: Sales & Medizintechnik. Plus David Kraus für Cybersecurity. LOIs in Vorbereitung: JKU, Kepler, FH Gesundheitsberufe OÖ.";
 
 const team: TeamMember[] = [
   {
-    name: "Hannah Haslhofer",
-    role: "CEO · Sales",
-    location: "Linz, OÖ",
-    desc: "Physiotherapie-Studentin an der FH Gesundheitsberufe OÖ. Klinisches Gespür, operative Stärke, koordiniert alles im Hintergrund.",
-    timeline: [
-      { label: "BAfEP Bischofshofen", sub: "Elementarpädagogik · Matura" },
-      { label: "FH Gesundheitsberufe OÖ", sub: "Physiotherapie (BSc) · laufend", current: true },
-    ],
-    skills: ["Physiotherapie", "Operatives", "Teamkoordination"],
-    linkedin: null,
-    color: "amber",
-  },
-  {
-    name: "Paula Mittermayr",
-    role: "Sales · Medizintechnik",
-    location: "Puchenau, OÖ",
-    desc: "JKU Linz, Medical Engineering. SANTESIS GmbH. Kepler Uniklinikum-Praktika. Forschungsprojekt zu intelligenter Hautsensorik.",
-    timeline: [
-      { label: "HTBLA Leonding", sub: "Medizintechnik · Matura mit Auszeichnung" },
-      { label: "SANTESIS GmbH", sub: "Medizintechnikerin (Teilzeit)" },
-      { label: "JKU Linz", sub: "Medical Engineering (BSc) · laufend", current: true },
-    ],
-    skills: ["C · C# · Python", "Medizintechnik", "Sensorik"],
-    linkedin: "https://www.linkedin.com/in/paula-mittermayr-a36064328",
-    color: "rose",
-  },
-  {
     name: "Felix Ratzenböck",
-    role: "COO · Sales",
+    role: "Physiotherapie",
     location: "Linz, OÖ",
     desc: "LASK-Akademie. Rettungssanitäter. Physiotherapie-Studium. Jahrelanger Hochleistungssport — er kennt den Körper von innen.",
     timeline: [
@@ -47,7 +20,7 @@ const team: TeamMember[] = [
   },
   {
     name: "Martin Hausleitner",
-    role: "CTO",
+    role: "Fullstack Softwareentwickler",
     location: "Linz, OÖ",
     desc: "JKU Linz, Artificial Intelligence. CEO von servas.ai (KI-Agentur, seit April 2024). Architekt hinter der Exodus-Plattform.",
     timeline: [
@@ -59,11 +32,38 @@ const team: TeamMember[] = [
     linkedin: "https://www.linkedin.com/in/martin-hausleitner",
     color: "blue",
   },
+  {
+    name: "Hannah Haslhofer",
+    role: "Physiotherapie",
+    location: "Linz, OÖ",
+    desc: "Physiotherapie-Studentin an der FH Gesundheitsberufe OÖ. Klinisches Gespür, operative Stärke, koordiniert alles im Hintergrund.",
+    timeline: [
+      { label: "BAfEP Bischofshofen", sub: "Elementarpädagogik · Matura" },
+      { label: "FH Gesundheitsberufe OÖ", sub: "Physiotherapie (BSc) · laufend", current: true },
+    ],
+    skills: ["Physiotherapie", "Operatives", "Teamkoordination"],
+    linkedin: null,
+    color: "amber",
+  },
+  {
+    name: "Paula Mittermayr",
+    role: "Medizintechnik",
+    location: "Puchenau, OÖ",
+    desc: "JKU Linz, Medical Engineering. SANTESIS GmbH. Kepler Uniklinikum-Praktika. Forschungsprojekt zu intelligenter Hautsensorik.",
+    timeline: [
+      { label: "HTBLA Leonding", sub: "Medizintechnik · Matura mit Auszeichnung" },
+      { label: "SANTESIS GmbH", sub: "Medizintechnikerin (Teilzeit)" },
+      { label: "JKU Linz", sub: "Medical Engineering (BSc) · laufend", current: true },
+    ],
+    skills: ["C · C# · Python", "Medizintechnik", "Sensorik"],
+    linkedin: "https://www.linkedin.com/in/paula-mittermayr-a36064328",
+    color: "rose",
+  },
 ];
 
 const advisor: TeamMember = {
   name: "David Kraus",
-  role: "Beratung · Cybersecurity",
+  role: "Cybersecurity",
   location: "Oberösterreich",
   desc: "Unterstützt Exodus in Datensicherheit, Datenschutz und Cybersecurity. Essentielle Expertise für eine DSGVO-konforme Gesundheitsplattform.",
   timeline: [
@@ -92,7 +92,7 @@ export default function Slide07() {
       style={{ width: "100%", height: "100%" }}
     >
       <p className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground/40 mb-2">
-        08 — Team · Felix
+        07 — Team · Felix
       </p>
 
       <h2 className="text-3xl font-bold tracking-tight mb-1 leading-tight">

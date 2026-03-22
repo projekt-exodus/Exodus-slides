@@ -1,30 +1,67 @@
 export const notes =
-  "Stell 4 Supplement-Röhrchen auf den Tisch! Zwei vor dem Training morgen Mittag. Zwei vor dem Schlafengehen. Die hat unsere KI auf Basis meines Blutbilds empfohlen. Custom abgefüllt. Von mir persönlich getestet. Jetzt live durch die App führen — exodus-demo.vercel.app ist auf dem Bildschirm.";
+  "Live durch die App führen — exodus-demo-app.vercel.app ist auf dem Bildschirm. WHOOP-Daten, Blutbild als PDF, KI-Auswertung zeigen. Stell die Supplementröhrchen auf den Tisch.";
 
 export default function Slide05() {
+  const phoneWidth = 270;
+  const phoneHeight = 580;
+  const innerWidth = phoneWidth - 14;
+  const scale = innerWidth / 390;
+
   return (
     <div
-      style={{
-        position: "fixed",
-        inset: 0,
-        width: "100%",
-        height: "100%",
-        overflow: "hidden",
-      }}
+      className="fixed inset-0 flex items-center justify-center px-16 py-10"
+      style={{ width: "100%", height: "100%" }}
     >
-      <iframe
-        src="https://exodus-demo.vercel.app"
-        title="Exodus App Demo"
-        style={{
-          position: "absolute",
-          inset: 0,
-          width: "100%",
-          height: "100%",
-          border: "none",
-          display: "block",
-        }}
-        allow="accelerometer; gyroscope"
-      />
+      <div className="flex items-center gap-20 w-full max-w-5xl">
+        <div className="flex-1 min-w-0">
+          <p className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground/40 mb-8">
+            05 — Demo · Live
+          </p>
+          <h2 className="text-5xl font-bold tracking-tight mb-4 leading-tight">
+            Exodus.<br />
+            <span className="text-muted-foreground font-medium">Live.</span>
+          </h2>
+          <p className="text-base text-muted-foreground leading-relaxed mb-8 max-w-sm">
+            Alle Gesundheitsdaten auf einen Blick — Laborwerte, Arztbriefe,
+            Wearable-Daten. Strukturiert. Verständlich. Unter deiner Kontrolle.
+          </p>
+          <div className="flex flex-wrap gap-2">
+            {["Labor", "Fitness", "Arztbriefe", "Wearables"].map((tag) => (
+              <span
+                key={tag}
+                className="text-[10px] font-mono px-2.5 py-1 border border-border bg-card text-muted-foreground"
+              >
+                {tag}
+              </span>
+            ))}
+          </div>
+        </div>
+
+        <div className="flex-shrink-0">
+          <div
+            className="relative mx-auto border-[3px] border-foreground rounded-[40px] p-[7px] bg-foreground shadow-2xl"
+            style={{ width: `${phoneWidth}px`, height: `${phoneHeight}px` }}
+          >
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-20 h-[20px] bg-foreground rounded-b-2xl z-10" />
+            <div className="w-full h-full rounded-[33px] overflow-hidden bg-white relative">
+              <iframe
+                src="https://exodus-demo-app.vercel.app"
+                title="Exodus App Demo"
+                className="border-0"
+                style={{
+                  width: "390px",
+                  height: "844px",
+                  transform: `scale(${scale})`,
+                  transformOrigin: "top left",
+                  pointerEvents: "auto",
+                }}
+                allow="accelerometer; gyroscope"
+              />
+            </div>
+            <div className="absolute bottom-[6px] left-1/2 -translate-x-1/2 w-12 h-1 bg-white/30 rounded-full" />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

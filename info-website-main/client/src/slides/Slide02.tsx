@@ -95,6 +95,7 @@ export default function Slide02() {
                 { label: "Vitamin D Trend", sub: "↗ 28 → 45 ng/ml (6 Mo.)", color: "var(--accent-green)" },
                 { label: "Blutdruck-Verlauf", sub: "140/90 → 128/82 mmHg", color: "var(--accent-blue)" },
                 { label: "Arztbrief: Endokrinologie", sub: "TSH 2.4 mU/L — erklärt", color: "var(--accent-violet)" },
+                { label: "Endometriose", sub: "Schmerztagebuch · Zyklus-Korrelation", color: "var(--accent-rose, #f43f5e)" },
               ].map((item, i) => (
                 <div key={i} className="flex items-center gap-4 p-3.5 bg-[var(--diagram-bg)] border border-border">
                   <div className="w-1.5 h-10 rounded-full" style={{ backgroundColor: item.color }} />

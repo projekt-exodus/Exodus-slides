@@ -84,7 +84,6 @@ export default function Slide09() {
                 <tr className="bg-[var(--diagram-bg)] border-b border-border">
                   <th className="text-left p-4 font-mono text-sm uppercase tracking-wider text-muted-foreground/60">Programm</th>
                   <th className="text-right p-4 font-mono text-sm uppercase tracking-wider text-muted-foreground/60">Betrag</th>
-                  <th className="text-right p-4 font-mono text-sm uppercase tracking-wider text-muted-foreground/60">Rate</th>
                   <th className="p-4 font-mono text-sm uppercase tracking-wider text-muted-foreground/60">Status</th>
                 </tr>
               </thead>
@@ -93,7 +92,6 @@ export default function Slide09() {
                   <tr key={i} className="border-b border-border/50 last:border-0">
                     <td className="p-4 font-medium text-foreground">{row.program}</td>
                     <td className="p-4 text-right font-mono" style={{ color: "var(--accent-green)" }}>{row.amount}</td>
-                    <td className="p-4 text-right font-mono text-muted-foreground">{row.rate}</td>
                     <td className="p-4">
                       <span className="text-sm font-mono px-2.5 py-1 whitespace-nowrap" style={{ color: row.statusColor, backgroundColor: `${row.statusColor}15` }}>
                         {row.status}

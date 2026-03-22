@@ -114,7 +114,7 @@ function FHLogo() {
 export default function Slide07() {
   return (
     <div
-      className="fixed inset-0 flex flex-col justify-center px-12 py-6 overflow-hidden"
+      className="fixed inset-0 flex flex-col justify-center px-20 py-10 overflow-hidden"
       style={{ width: "100%", height: "100%" }}
     >
       <p className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground/40 mb-2">

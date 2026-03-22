@@ -20,8 +20,9 @@ function Router() {
       }
     >
       <Switch>
-        <Route path="/" component={Home} />
+        <Route path="/" component={SlidesApp} />
         <Route path="/slides" component={SlidesApp} />
+        <Route path="/info" component={Home} />
         {/* Fallback to 404 */}
         <Route component={NotFound} />
       </Switch>

@@ -70,28 +70,15 @@ export default function Slide10() {
               <QrCode className="w-5 h-5" />
               exodus-demo.vercel.app
             </a>
-            <div
-              className="w-32 h-32 border-2 flex items-center justify-center"
-              style={{ borderColor: "var(--accent-blue)" }}
-            >
-              <div className="flex flex-col gap-0.5">
-                {[
-                  [1,1,1,0,1,1,1],
-                  [1,0,1,0,1,0,1],
-                  [1,1,1,0,1,1,1],
-                  [0,0,0,0,0,0,0],
-                  [1,1,1,0,1,1,1],
-                  [1,0,1,0,1,0,1],
-                  [1,1,1,0,1,1,1],
-                ].map((row, ri) => (
-                  <div key={ri} className="flex gap-0.5">
-                    {row.map((cell, ci) => (
-                      <div key={ci} className={`w-3.5 h-3.5 ${cell ? "bg-foreground" : "bg-transparent"}`} />
-                    ))}
-                  </div>
-                ))}
-              </div>
-            </div>
+            <a href="https://exodus-demo.vercel.app" target="_blank" rel="noopener noreferrer">
+              <img
+                src="https://api.qrserver.com/v1/create-qr-code/?size=140x140&data=https%3A%2F%2Fexodus-demo.vercel.app&bgcolor=ffffff&color=000000&margin=6"
+                alt="QR Code: exodus-demo.vercel.app"
+                width={140}
+                height={140}
+                className="border border-border"
+              />
+            </a>
             <p className="text-[10px] font-mono uppercase tracking-widest" style={{ color: "var(--accent-blue)" }}>
               Demo scannen
             </p>

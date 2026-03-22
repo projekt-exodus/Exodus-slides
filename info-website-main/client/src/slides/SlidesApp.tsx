@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+// Using reveal.js directly instead of @revealjs/react (no official React package exists)
 import Reveal from "reveal.js";
 import "reveal.js/reveal.css";
 import "./slides.css";

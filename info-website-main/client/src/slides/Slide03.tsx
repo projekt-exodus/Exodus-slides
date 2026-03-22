@@ -66,7 +66,7 @@ export default function Slide03() {
             <Cloud className="w-5 h-5 shrink-0 text-muted-foreground/60" />
             <div className="flex-1 min-w-0">
               <p className="text-sm font-semibold leading-tight">Eigene Cloud</p>
-              <p className="text-xs text-muted-foreground">iCloud · OneDrive · Dropbox</p>
+              <p className="text-xs text-muted-foreground">iCloud · OneDrive · Dropbox · Nextcloud · Self-hosted</p>
             </div>
           </div>
 

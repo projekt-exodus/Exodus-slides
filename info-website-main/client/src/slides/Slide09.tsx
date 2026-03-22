@@ -57,10 +57,6 @@ export default function Slide09() {
       <h2 className="text-4xl font-bold tracking-tight mb-2 max-w-3xl leading-tight">
         Wir stehen nicht am Anfang.
       </h2>
-      <p className="text-base text-muted-foreground mb-2 max-w-2xl">
-        aws eingereicht ✅ · FFG läuft ✅ · über 400.000 € Potenzial · 10. Mai Deadline · tech2b Linz
-      </p>
-      <p className="text-xs font-mono text-muted-foreground/50 mb-6">Schritt für Schritt.</p>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         <div>

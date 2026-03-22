@@ -8,6 +8,7 @@ import { ErrorBoundary } from "@/components/ErrorBoundary";
 
 const Home = lazy(() => import("@/pages/Home"));
 const NotFound = lazy(() => import("@/pages/not-found"));
+const SlidesApp = lazy(() => import("@/slides/SlidesApp"));
 
 function Router() {
   return (
@@ -20,6 +21,7 @@ function Router() {
     >
       <Switch>
         <Route path="/" component={Home} />
+        <Route path="/slides" component={SlidesApp} />
         {/* Fallback to 404 */}
         <Route component={NotFound} />
       </Switch>

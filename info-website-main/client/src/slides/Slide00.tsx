@@ -1,22 +1,79 @@
+import { useEffect, useRef, useState } from "react";
+import ShaderBackground from "./ShaderBackground";
+
 export const notes =
   "Willkommen zu EXODUS — Länger leben. Gesünder altern. Präventive Gesundheit für alle.";
 
 export default function Slide00() {
+  const rootRef = useRef<HTMLDivElement>(null);
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const el = rootRef.current;
+    if (!el) return;
+    const section = el.closest("section");
+    if (section) {
+      section.setAttribute("data-background-color", "#ffffff");
+    }
+    const timer = setTimeout(() => setVisible(true), 100);
+    return () => {
+      clearTimeout(timer);
+      if (section) section.removeAttribute("data-background-color");
+    };
+  }, []);
+
   return (
     <div
-      className="fixed inset-0 flex flex-col items-center justify-center"
-      style={{ background: "var(--background)", width: "100%", height: "100%" }}
+      ref={rootRef}
+      style={{
+        position: "absolute",
+        inset: 0,
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        width: "100%",
+        height: "100%",
+        overflow: "hidden",
+        background: "#ffffff",
+      }}
     >
+      <ShaderBackground />
       <h1
         className="font-black tracking-tighter leading-none mb-8 text-center"
-        style={{ fontSize: "clamp(6rem, 18vw, 14rem)", letterSpacing: "-0.04em" }}
+        style={{
+          fontSize: "clamp(6rem, 18vw, 14rem)",
+          letterSpacing: "-0.04em",
+          position: "relative",
+          zIndex: 1,
+          color: "#0A0A0A",
+          opacity: visible ? 1 : 0,
+          transform: visible ? "translateY(0)" : "translateY(30px)",
+          transition: "opacity 0.8s ease-out, transform 0.8s ease-out",
+        }}
       >
         EXODUS
       </h1>
-      <div className="flex flex-col items-center gap-3">
-        <p className="text-xl font-medium tracking-tight text-muted-foreground">Länger leben.</p>
-        <p className="text-xl font-medium tracking-tight text-muted-foreground">Gesünder altern.</p>
-        <p className="text-xl font-medium tracking-tight text-muted-foreground">Präventive Gesundheit für alle.</p>
+      <div
+        className="flex flex-col items-center gap-3"
+        style={{ position: "relative", zIndex: 1 }}
+      >
+        {["Länger leben.", "Gesünder altern.", "Präventive Gesundheit für alle."].map(
+          (text, i) => (
+            <p
+              key={i}
+              className="text-xl font-medium tracking-tight"
+              style={{
+                color: "rgba(0, 0, 0, 0.45)",
+                opacity: visible ? 1 : 0,
+                transform: visible ? "translateY(0)" : "translateY(20px)",
+                transition: `opacity 0.7s ease-out ${0.3 + i * 0.15}s, transform 0.7s ease-out ${0.3 + i * 0.15}s`,
+              }}
+            >
+              {text}
+            </p>
+          )
+        )}
       </div>
     </div>
   );

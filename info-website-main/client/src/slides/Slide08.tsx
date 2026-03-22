@@ -7,7 +7,7 @@ export default function Slide08() {
   return (
     <div className="min-h-screen flex flex-col justify-center px-16 py-16 max-w-6xl mx-auto">
       <p className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground/40 mb-4">
-        08 — Revenue · Felix
+        08 — Revenue · Martin
       </p>
 
       <h2 className="text-4xl font-bold tracking-tight mb-2 max-w-3xl leading-tight">

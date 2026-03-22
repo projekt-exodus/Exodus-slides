@@ -1,11 +1,7 @@
-import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
 
-const anim = (delay = 0) => ({
-  initial: { opacity: 0, y: 12 },
-  animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.4, delay },
-});
+export const notes =
+  "Wir kommen alle aus OÖ. Wir studieren alle an Institutionen aus Linz. Und wir nutzen alle das Produkt selbst — weil es unser Problem ist. Hannah: CEO & Operations. Paula: Sales & Medizintechnik. Felix: COO & Sales. Martin: CTO. Plus David Kraus für Cybersecurity. LOIs in Vorbereitung: JKU, Kepler, FH Gesundheitsberufe OÖ.";
 
 const team = [
   {
@@ -49,27 +45,21 @@ const team = [
 export default function Slide07() {
   return (
     <div className="min-h-screen flex flex-col justify-center px-16 py-16 max-w-6xl mx-auto">
-      <motion.p {...anim(0)} className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground/40 mb-4">
+      <p className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground/40 mb-4">
         07 — Team · Felix
-      </motion.p>
+      </p>
 
-      <motion.h2 {...anim(0.05)} className="text-3xl sm:text-4xl font-bold tracking-tight mb-2 max-w-3xl leading-tight">
+      <h2 className="text-4xl font-bold tracking-tight mb-2 max-w-3xl leading-tight">
         Vier aus Linz. Alle aus Überzeugung.
-      </motion.h2>
-      <motion.p {...anim(0.08)} className="text-base text-muted-foreground mb-8 max-w-2xl">
+      </h2>
+      <p className="text-base text-muted-foreground mb-8 max-w-2xl">
         Wir kommen alle aus OÖ. Wir studieren alle an Institutionen aus Linz.
         Und wir nutzen alle das Produkt selbst — weil es unser Problem ist.
-      </motion.p>
+      </p>
 
       <div className="grid grid-cols-2 gap-4 mb-6">
         {team.map((member, i) => (
-          <motion.div
-            key={i}
-            initial={{ opacity: 0, y: 12 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.35, delay: 0.12 + i * 0.08 }}
-            className="p-5 border border-border/70 bg-card"
-          >
+          <div key={i} className="p-5 border border-border/70 bg-card">
             <div className="flex items-start justify-between gap-2 mb-0.5">
               <h4 className="text-sm font-normal">{member.name}</h4>
               {member.linkedin && (
@@ -95,11 +85,11 @@ export default function Slide07() {
                 </span>
               ))}
             </div>
-          </motion.div>
+          </div>
         ))}
       </div>
 
-      <motion.div {...anim(0.5)} className="flex items-center gap-6 flex-wrap">
+      <div className="flex items-center gap-6 flex-wrap">
         <div className="flex items-center gap-2 px-4 py-2 border border-border/70 bg-card">
           <div className="w-2 h-2 rounded-full" style={{ backgroundColor: "var(--accent-violet)" }} />
           <div>
@@ -115,7 +105,7 @@ export default function Slide07() {
             <span key={partner} className="text-[10px] font-mono px-2 py-0.5 border border-border text-muted-foreground bg-card">{partner}</span>
           ))}
         </div>
-      </motion.div>
+      </div>
     </div>
   );
 }

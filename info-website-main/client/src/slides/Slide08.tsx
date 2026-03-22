@@ -1,28 +1,24 @@
-import { motion } from "framer-motion";
 import { Database, Stethoscope, Pill, TrendingUp, Repeat, ArrowRightLeft } from "lucide-react";
 
-const anim = (delay = 0) => ({
-  initial: { opacity: 0, y: 14 },
-  animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.4, delay },
-});
+export const notes =
+  "Die ersten Connections sind kostenlos — erste Wearables, erste Laborwerte. Wer mehr verbinden will, mehr automatisieren, mehr Agenten nutzen — zahlt monatlich. Und der Preis wächst mit dem Wert. Dazu: Supplements, personalisiert aus dem Profil — Röhrchen kurz zeigen — und ärztliche Beratung auf Datenbasis.";
 
 export default function Slide08() {
   return (
     <div className="min-h-screen flex flex-col justify-center px-16 py-16 max-w-6xl mx-auto">
-      <motion.p {...anim(0)} className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground/40 mb-4">
+      <p className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground/40 mb-4">
         08 — Revenue · Felix
-      </motion.p>
+      </p>
 
-      <motion.h2 {...anim(0.05)} className="text-3xl sm:text-4xl font-bold tracking-tight mb-2 max-w-3xl leading-tight">
+      <h2 className="text-4xl font-bold tracking-tight mb-2 max-w-3xl leading-tight">
         Wir verkaufen keine App.
-      </motion.h2>
-      <motion.p {...anim(0.08)} className="text-2xl font-medium text-muted-foreground mb-8">
+      </h2>
+      <p className="text-2xl font-medium text-muted-foreground mb-8">
         Wir verkaufen Connections.
-      </motion.p>
+      </p>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 mb-6">
-        <motion.div {...anim(0.12)} className="p-5 border-2 bg-card" style={{ borderColor: "var(--accent-blue)" }}>
+        <div className="p-5 border-2 bg-card" style={{ borderColor: "var(--accent-blue)" }}>
           <div className="flex items-center gap-3 mb-3">
             <div className="w-9 h-9 flex items-center justify-center" style={{ color: "var(--accent-blue)", backgroundColor: "var(--accent-blue)15" }}>
               <Database className="w-5 h-5" />
@@ -37,14 +33,12 @@ export default function Slide08() {
           </p>
           <div className="space-y-1.5">
             {[
-              { label: "Free", desc: "Erste Wearables + 1 Labor" },
-              { label: "Premium", desc: "Unbegrenzt, KI-Erklärungen, Agentic Layer" },
-              { label: "Family", desc: "Mehrere Profile, eigene KI-Endpunkte" },
+              { icon: <Database className="w-3.5 h-3.5" />, label: "Free", desc: "Erste Wearables + 1 Labor" },
+              { icon: <TrendingUp className="w-3.5 h-3.5" />, label: "Premium", desc: "Unbegrenzt, KI-Erklärungen, Agentic Layer" },
+              { icon: <Repeat className="w-3.5 h-3.5" />, label: "Family", desc: "Mehrere Profile, eigene KI-Endpunkte" },
             ].map((tier, i) => (
               <div key={i} className="flex items-start gap-2 p-2 bg-[var(--diagram-bg)] border border-border">
-                <div className="mt-0.5" style={{ color: "var(--accent-blue)" }}>
-                  {i === 0 ? <Database className="w-3.5 h-3.5" /> : i === 1 ? <TrendingUp className="w-3.5 h-3.5" /> : <Repeat className="w-3.5 h-3.5" />}
-                </div>
+                <div className="mt-0.5" style={{ color: "var(--accent-blue)" }}>{tier.icon}</div>
                 <div>
                   <p className="text-[11px] font-medium">{tier.label}</p>
                   <p className="text-[10px] text-muted-foreground font-light">{tier.desc}</p>
@@ -52,9 +46,9 @@ export default function Slide08() {
               </div>
             ))}
           </div>
-        </motion.div>
+        </div>
 
-        <motion.div {...anim(0.18)} className="p-5 border-2 bg-card" style={{ borderColor: "var(--accent-violet)" }}>
+        <div className="p-5 border-2 bg-card" style={{ borderColor: "var(--accent-violet)" }}>
           <div className="flex items-center gap-3 mb-3">
             <div className="w-9 h-9 flex items-center justify-center" style={{ color: "var(--accent-violet)", backgroundColor: "var(--accent-violet)15" }}>
               <Stethoscope className="w-5 h-5" />
@@ -79,9 +73,9 @@ export default function Slide08() {
               </div>
             ))}
           </div>
-        </motion.div>
+        </div>
 
-        <motion.div {...anim(0.24)} className="p-5 border-2 bg-card" style={{ borderColor: "var(--accent-green)" }}>
+        <div className="p-5 border-2 bg-card" style={{ borderColor: "var(--accent-green)" }}>
           <div className="flex items-center gap-3 mb-3">
             <div className="w-9 h-9 flex items-center justify-center" style={{ color: "var(--accent-green)", backgroundColor: "var(--accent-green)15" }}>
               <Pill className="w-5 h-5" />
@@ -109,16 +103,16 @@ export default function Slide08() {
               </div>
             ))}
           </div>
-        </motion.div>
+        </div>
       </div>
 
-      <motion.div {...anim(0.35)} className="p-4 border border-border/70 bg-[var(--diagram-bg)] flex items-start gap-3">
+      <div className="p-4 border border-border/70 bg-[var(--diagram-bg)] flex items-start gap-3">
         <TrendingUp className="w-4 h-4 shrink-0 mt-0.5" style={{ color: "var(--accent-violet)" }} />
         <p className="text-xs text-muted-foreground font-light leading-relaxed">
           <strong className="text-foreground font-medium">Synergie:</strong>{" "}
           Mehr Daten → bessere Pläne → passendere Supplements → mehr Vertrauen → mehr Connections
         </p>
-      </motion.div>
+      </div>
     </div>
   );
 }

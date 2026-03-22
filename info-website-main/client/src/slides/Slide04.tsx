@@ -1,11 +1,7 @@
-import { motion } from "framer-motion";
 import { Watch, Heart, FileText, Bot, BookOpen, Network } from "lucide-react";
 
-const anim = (delay = 0) => ({
-  initial: { opacity: 0, y: 12 },
-  animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.4, delay },
-});
+export const notes =
+  "Wearables & Fitness: Apple Health, WHOOP, Oura Ring, Garmin, Dexcom CGM. Labor & Befunde: ELGA, FHIR R4, Spike API, e-Befund. Klinische Systeme: Arztbriefe, Medikationspläne via HL7. KI-Agenten: OpenClaw lokal. Wissen & Evidenz: PubMed, Cochrane Library, SNOMED CT. Protokolle: MCP, REST API, OAuth 2.0. Felix, zeig ihnen jetzt, was das in der Praxis bedeutet.";
 
 const connections = [
   {
@@ -51,24 +47,21 @@ const protocolBadges = ["MCP", "FHIR R4", "REST API", "OAuth 2.0", "HL7", "SNOME
 export default function Slide04() {
   return (
     <div className="min-h-screen flex flex-col justify-center px-16 py-16 max-w-6xl mx-auto">
-      <motion.p {...anim(0)} className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground/40 mb-4">
+      <p className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground/40 mb-4">
         04 — Connections · Martin
-      </motion.p>
+      </p>
 
-      <motion.h2 {...anim(0.05)} className="text-3xl sm:text-4xl font-bold tracking-tight mb-2 max-w-3xl leading-tight">
+      <h2 className="text-4xl font-bold tracking-tight mb-2 max-w-3xl leading-tight">
         Was Exodus verbindet — konkret.
-      </motion.h2>
-      <motion.p {...anim(0.08)} className="text-base text-muted-foreground mb-8 max-w-2xl">
+      </h2>
+      <p className="text-base text-muted-foreground mb-8 max-w-2xl">
         Alles auf offenen Standards. Kein proprietärer Lock-in.
-      </motion.p>
+      </p>
 
-      <motion.div {...anim(0.12)} className="grid grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+      <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
         {connections.map((cat, i) => (
-          <motion.div
+          <div
             key={i}
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.35, delay: 0.12 + i * 0.06 }}
             className="p-4 border border-border/70 bg-card"
             style={{ borderLeftColor: cat.color, borderLeftWidth: "3px" }}
           >
@@ -83,11 +76,11 @@ export default function Slide04() {
                 <p key={j} className="text-xs text-muted-foreground">{item}</p>
               ))}
             </div>
-          </motion.div>
+          </div>
         ))}
-      </motion.div>
+      </div>
 
-      <motion.div {...anim(0.5)} className="flex items-center gap-3 flex-wrap">
+      <div className="flex items-center gap-3 flex-wrap">
         <span className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground/50">Offene Standards:</span>
         {protocolBadges.map((badge) => (
           <span
@@ -97,7 +90,7 @@ export default function Slide04() {
             {badge}
           </span>
         ))}
-      </motion.div>
+      </div>
     </div>
   );
 }

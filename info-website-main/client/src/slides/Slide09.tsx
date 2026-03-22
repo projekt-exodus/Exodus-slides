@@ -1,11 +1,7 @@
-import { motion } from "framer-motion";
 import { BadgeCheck, Clock, Circle } from "lucide-react";
 
-const anim = (delay = 0) => ({
-  initial: { opacity: 0, y: 12 },
-  animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.4, delay },
-});
+export const notes =
+  "Während Felix den Prototyp gebaut und getestet hat, haben wir parallel die Förderstruktur aufgesetzt. aws First Incubator: eingereicht. FFG Projekt.Start: eingereicht. FFG Kleinprojekt: Deadline 10. Mai — das ist in wenigen Wochen. Kumuliertes Potenzial: über 400.000 Euro. tech2b in der Tabakfabrik Linz ist unser geplanter nächster Schritt. Felix, bring das jetzt nach Hause.";
 
 const funding = [
   { program: "aws First Incubator", amount: "5.000 €", type: "Cash-Zuschuss (+ 5.000 Sachleistung)", status: "eingereicht", statusColor: "var(--accent-amber)" },
@@ -29,19 +25,19 @@ const milestones = [
 export default function Slide09() {
   return (
     <div className="min-h-screen flex flex-col justify-center px-16 py-16 max-w-6xl mx-auto">
-      <motion.p {...anim(0)} className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground/40 mb-4">
+      <p className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground/40 mb-4">
         09 — Traction & Förderungen · Martin
-      </motion.p>
+      </p>
 
-      <motion.h2 {...anim(0.05)} className="text-3xl sm:text-4xl font-bold tracking-tight mb-2 max-w-3xl leading-tight">
+      <h2 className="text-4xl font-bold tracking-tight mb-2 max-w-3xl leading-tight">
         Wir stehen nicht am Anfang.
-      </motion.h2>
-      <motion.p {...anim(0.08)} className="text-base text-muted-foreground mb-8 max-w-2xl">
+      </h2>
+      <p className="text-base text-muted-foreground mb-8 max-w-2xl">
         Kumuliertes Förderpotenzial: <strong className="text-foreground">über 400.000 Euro</strong>
-      </motion.p>
+      </p>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        <motion.div {...anim(0.12)}>
+        <div>
           <p className="text-xs font-mono uppercase tracking-widest text-muted-foreground/50 mb-3">Förderungen</p>
           <div className="border border-border/70 overflow-hidden bg-card">
             <table className="w-full text-xs">
@@ -70,19 +66,13 @@ export default function Slide09() {
               </tbody>
             </table>
           </div>
-        </motion.div>
+        </div>
 
-        <motion.div {...anim(0.2)}>
+        <div>
           <p className="text-xs font-mono uppercase tracking-widest text-muted-foreground/50 mb-3">Status-Timeline</p>
           <div className="space-y-1.5">
             {milestones.map((m, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, x: 6 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.25, delay: 0.2 + i * 0.05 }}
-                className="flex items-center gap-3"
-              >
+              <div key={i} className="flex items-center gap-3">
                 {m.done ? (
                   <BadgeCheck className="w-4 h-4 shrink-0" style={{ color: "var(--accent-green)" }} />
                 ) : (
@@ -92,17 +82,17 @@ export default function Slide09() {
                   <p className={`text-xs ${m.done ? "text-foreground" : "text-muted-foreground"}`}>{m.label}</p>
                   <span className="text-[10px] font-mono text-muted-foreground/60 whitespace-nowrap">{m.date}</span>
                 </div>
-              </motion.div>
+              </div>
             ))}
           </div>
 
-          <motion.div {...anim(0.6)} className="mt-4 p-3 border border-border/50 bg-[var(--diagram-bg)] flex items-center gap-2">
+          <div className="mt-4 p-3 border border-border/50 bg-[var(--diagram-bg)] flex items-center gap-2">
             <Clock className="w-4 h-4 shrink-0" style={{ color: "var(--accent-violet)" }} />
             <p className="text-xs text-muted-foreground">
               <strong className="text-foreground">FFG Kleinprojekt Deadline: 10. Mai 2026</strong> — wenige Wochen.
             </p>
-          </motion.div>
-        </motion.div>
+          </div>
+        </div>
       </div>
     </div>
   );

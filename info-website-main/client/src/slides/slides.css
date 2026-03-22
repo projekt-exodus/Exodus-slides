@@ -1,0 +1,103 @@
+.reveal-viewport {
+  background: hsl(var(--background));
+}
+
+.reveal {
+  font-family: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+  color: hsl(var(--foreground));
+  --r-background-color: hsl(var(--background));
+  --r-main-color: hsl(var(--foreground));
+  --r-main-font: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+  --r-main-font-size: 16px;
+  --r-heading-color: hsl(var(--foreground));
+  --r-heading-font: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+  --r-heading-font-weight: 700;
+  --r-heading-letter-spacing: -0.025em;
+  --r-heading-text-transform: none;
+  --r-heading-text-shadow: none;
+  --r-link-color: var(--accent-blue);
+  --r-link-color-hover: var(--accent-blue);
+  --r-selection-background-color: var(--accent-blue);
+  --r-block-margin: 0;
+  --r-heading-margin: 0 0 0.5rem 0;
+}
+
+.reveal .slides section {
+  text-align: left !important;
+  top: auto !important;
+  padding: 0 !important;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.reveal .slides > section {
+  height: 100%;
+}
+
+.reveal .progress {
+  color: var(--accent-blue);
+  height: 2px;
+}
+
+.reveal .controls {
+  color: hsl(var(--muted-foreground));
+  bottom: 28px;
+  right: 12px;
+  transform: scale(0.7);
+  transform-origin: bottom right;
+}
+
+.reveal .slide-number {
+  background: transparent;
+  color: hsl(var(--muted-foreground));
+  font-family: 'DM Mono', 'DM Sans', monospace;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.reveal h1, .reveal h2, .reveal h3, .reveal h4 {
+  letter-spacing: -0.025em;
+  text-transform: none;
+  word-wrap: break-word;
+}
+
+.reveal p, .reveal li, .reveal span {
+  margin: 0;
+}
+
+.reveal img, .reveal video, .reveal iframe {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.reveal table {
+  margin: 0;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.reveal table th, .reveal table td {
+  text-align: left;
+}
+
+.reveal blockquote {
+  display: block;
+  position: relative;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.reveal pre {
+  display: block;
+  position: relative;
+  margin: 0;
+  text-align: left;
+  box-shadow: none;
+}

@@ -1,46 +1,42 @@
-import { motion } from "framer-motion";
-import { Lock, Bot, Smartphone, ShoppingCart, FileCheck, ArrowDown, Monitor, Cloud, ShieldCheck, Wifi, X } from "lucide-react";
+import { Lock, Bot, Smartphone, ShoppingCart, FileCheck, Monitor, Cloud, X } from "lucide-react";
 
-const anim = (delay = 0) => ({
-  initial: { opacity: 0, y: 12 },
-  animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.4, delay },
-});
+export const notes =
+  "Wir bauen keine neue Gesundheits-App. Wir bauen den Ort, an dem alle anderen zusammenkommen. USP 1: Alles an einem Ort. USP 2: Bring Your Own AI — du wählst, welche KI deine Daten analysiert. Standard ist immer lokal. USP 3: Persönlicher Gesundheits-Agent — OpenClaw arbeitet für dich, nicht für uns.";
 
 export default function Slide03() {
   return (
     <div className="min-h-screen flex flex-col justify-center px-16 py-16 max-w-6xl mx-auto">
-      <motion.p {...anim(0)} className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground/40 mb-4">
+      <p className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground/40 mb-4">
         03 — Lösung & USPs · Martin
-      </motion.p>
+      </p>
 
-      <motion.h2 {...anim(0.05)} className="text-3xl sm:text-4xl font-bold tracking-tight mb-2 max-w-3xl leading-tight">
+      <h2 className="text-4xl font-bold tracking-tight mb-2 max-w-3xl leading-tight">
         Eine Plattform. Alle Daten. Deine KI.
-      </motion.h2>
-      <motion.p {...anim(0.08)} className="text-base text-muted-foreground mb-8 max-w-2xl">
+      </h2>
+      <p className="text-base text-muted-foreground mb-8 max-w-2xl">
         Wir bauen keine neue Gesundheits-App. Wir bauen den Ort, an dem alle anderen zusammenkommen.
-      </motion.p>
+      </p>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 mb-6">
-        <motion.div {...anim(0.12)} className="p-5 border-2 bg-card" style={{ borderColor: "var(--accent-blue)" }}>
+        <div className="p-5 border-2 bg-card" style={{ borderColor: "var(--accent-blue)" }}>
           <p className="text-[10px] font-mono uppercase tracking-widest mb-2" style={{ color: "var(--accent-blue)" }}>USP 1</p>
           <h3 className="text-sm font-semibold mb-2">Alles an einem Ort</h3>
-          <div className="flex items-center gap-2 text-xs text-muted-foreground flex-wrap">
+          <div className="flex items-center gap-2 text-xs text-muted-foreground flex-wrap mb-3">
             {["Import", "→", "Verstehen", "→", "Freigabe"].map((s, i) => (
               <span key={i} className={s === "→" ? "text-muted-foreground/40" : "px-2 py-0.5 bg-[var(--diagram-bg)] border border-border"}>
                 {s}
               </span>
             ))}
           </div>
-          <p className="text-xs text-muted-foreground mt-3 leading-relaxed">
+          <p className="text-xs text-muted-foreground leading-relaxed">
             Labor · Schlaf · Arztbrief · Training — strukturierte Timeline, KI erklärt in normaler Sprache.
           </p>
-        </motion.div>
+        </div>
 
-        <motion.div {...anim(0.18)} className="p-5 border-2 bg-card" style={{ borderColor: "var(--accent-violet)" }}>
+        <div className="p-5 border-2 bg-card" style={{ borderColor: "var(--accent-violet)" }}>
           <p className="text-[10px] font-mono uppercase tracking-widest mb-2" style={{ color: "var(--accent-violet)" }}>USP 2</p>
           <h3 className="text-sm font-semibold mb-2">Bring Your Own AI</h3>
-          <div className="space-y-1.5">
+          <div className="space-y-1.5 mb-3">
             {[
               { icon: <Monitor className="w-3.5 h-3.5" />, label: "Mac/PC", sub: "Llama, Mistral — lokal", color: "var(--accent-violet)" },
               { icon: <Smartphone className="w-3.5 h-3.5" />, label: "Smartphone", sub: "Apple Intelligence, Gemma", color: "var(--accent-green)" },
@@ -55,12 +51,12 @@ export default function Slide03() {
               </div>
             ))}
           </div>
-          <p className="text-[10px] font-mono mt-2 px-2 py-1 border" style={{ color: "var(--accent-green)", borderColor: "var(--accent-green)40", backgroundColor: "var(--accent-green)08" }}>
+          <p className="text-[10px] font-mono px-2 py-1 border" style={{ color: "var(--accent-green)", borderColor: "var(--accent-green)40", backgroundColor: "var(--accent-green)08" }}>
             Standard ist immer lokal.
           </p>
-        </motion.div>
+        </div>
 
-        <motion.div {...anim(0.24)} className="p-5 border-2 bg-card" style={{ borderColor: "var(--accent-green)" }}>
+        <div className="p-5 border-2 bg-card" style={{ borderColor: "var(--accent-green)" }}>
           <p className="text-[10px] font-mono uppercase tracking-widest mb-2" style={{ color: "var(--accent-green)" }}>USP 3</p>
           <h3 className="text-sm font-semibold mb-2">Persönlicher Health-Agent</h3>
           <div className="space-y-1 mb-3">
@@ -83,10 +79,10 @@ export default function Slide03() {
           <p className="text-[10px] text-muted-foreground font-mono">
             Dein Agent arbeitet für dich. Nur mit deiner Freigabe.
           </p>
-        </motion.div>
+        </div>
       </div>
 
-      <motion.div {...anim(0.35)} className="flex flex-wrap gap-3">
+      <div className="flex flex-wrap gap-3">
         <p className="text-xs font-mono uppercase tracking-widest text-muted-foreground/50 mr-2">Was Exodus NICHT ist:</p>
         {[
           "Kein weiteres Silo",
@@ -99,7 +95,7 @@ export default function Slide03() {
             {item}
           </span>
         ))}
-      </motion.div>
+      </div>
     </div>
   );
 }

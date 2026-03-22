@@ -74,6 +74,17 @@ A high-fidelity, interactive scientific documentation page for Project Exodus �
 - Mobile navigation (hamburger menu)
 - Scroll-to-top button
 
+## Pitch Deck (/slides route)
+- 10-slide Reveal.js presentation for Linz hACkT 2026
+- Located at `client/src/slides/` — `SlidesApp.tsx` is the Reveal.js wrapper
+- Each slide (Slide01.tsx–Slide10.tsx) exports a default React component + named `notes` string
+- Speaker notes: press **S** in the browser (Reveal.js Notes plugin)
+- Navigation: arrow keys, space bar, or Reveal.js controls
+- Reuses existing helpers: `PhaseCard`, `ExplainCard`, `StatusBadge` from `helpers.tsx`
+- CSS overrides in `slides.css` adapt Reveal.js to the project design system
+- Import paths: `reveal.js/reveal.css` and `reveal.js/plugin/notes` (per package exports map)
+- Slide order: Opener → Problem → Lösung+USPs → Connections → Demo → USP+Wettbewerb → Team → Revenue → Traction+Förderungen → Closing+QR
+
 ## Technical Notes
 - Smooth scroll enabled via `scroll-behavior: smooth`
 - `@tailwindcss/typography` is NOT usable (v3 only)

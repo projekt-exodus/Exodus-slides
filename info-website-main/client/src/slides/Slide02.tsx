@@ -1,11 +1,7 @@
-import { motion } from "framer-motion";
 import { FileText, Heart, Watch, Stethoscope, ArrowRight, Users, BarChart3, Globe, TrendingUp } from "lucide-react";
 
-const anim = (delay = 0) => ({
-  initial: { opacity: 0, y: 14 },
-  animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.4, delay },
-});
+export const notes =
+  "Arztbrief vom Kepler Uniklinikum: PDF irgendwo. Laborwerte: ausgedruckt in einem Ordner. Schlafdaten: in einer US-Cloud, der ich nie zugestimmt habe. Beim nächsten Arzttermin — fangen wir wieder von vorne an. Fünf Millionen Menschen in Österreich haben chronische Erkrankungen. Nicht weil es zu wenig Daten gibt — sondern weil die Daten nirgendwo zusammenarbeiten. Martin, was haben wir gebaut?";
 
 const stats = [
   {
@@ -41,19 +37,19 @@ const stats = [
 export default function Slide02() {
   return (
     <div className="min-h-screen flex flex-col justify-center px-16 py-20 max-w-6xl mx-auto">
-      <motion.p {...anim(0)} className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground/40 mb-6">
+      <p className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground/40 mb-6">
         02 — Problem · Felix
-      </motion.p>
+      </p>
 
-      <motion.h2 {...anim(0.05)} className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-3 max-w-3xl leading-tight">
+      <h2 className="text-4xl lg:text-5xl font-bold tracking-tight mb-3 max-w-3xl leading-tight">
         Das Problem ist nicht zu wenig Apps.
-      </motion.h2>
-      <motion.p {...anim(0.1)} className="text-2xl font-medium text-muted-foreground mb-10 max-w-2xl">
+      </h2>
+      <p className="text-2xl font-medium text-muted-foreground mb-10 max-w-2xl">
         Das Problem ist, dass sie nicht reden.
-      </motion.p>
+      </p>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-10">
-        <motion.div {...anim(0.15)} className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4">
           <div className="p-6 border border-border bg-[var(--diagram-bg)]">
             <p className="text-xs font-mono uppercase tracking-widest text-muted-foreground mb-4">Heute — Silos</p>
             <div className="space-y-2.5">
@@ -70,9 +66,9 @@ export default function Slide02() {
               ))}
             </div>
           </div>
-        </motion.div>
+        </div>
 
-        <motion.div {...anim(0.2)} className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4">
           <div className="flex items-center gap-3 mb-2">
             <ArrowRight className="w-6 h-6" style={{ color: "var(--accent-blue)" }} />
             <span className="text-sm font-medium" style={{ color: "var(--accent-blue)" }}>Exodus löst das</span>
@@ -97,10 +93,10 @@ export default function Slide02() {
               ))}
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
 
-      <motion.div {...anim(0.35)} className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
         {stats.map((s, i) => (
           <div key={i} className="p-4 border border-border/70 bg-card flex flex-col gap-1">
             <div style={{ color: s.color }}>{s.icon}</div>
@@ -109,7 +105,7 @@ export default function Slide02() {
             <p className="text-[10px] text-muted-foreground leading-snug">{s.sub}</p>
           </div>
         ))}
-      </motion.div>
+      </div>
     </div>
   );
 }

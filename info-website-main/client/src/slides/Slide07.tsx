@@ -147,9 +147,7 @@ export default function Slide07() {
         <MemberCard member={advisor} i={team.length} inView={true} />
         <div className="p-3 border border-border/50 bg-[var(--diagram-bg)] flex flex-col justify-center gap-2">
           <p className="text-xs font-mono uppercase tracking-widest text-muted-foreground/50">Kooperationen (LOIs)</p>
-          {["JKU Medizin", "Kepler Uniklinikum", "tech2b"].map((partner) => (
-            <span key={partner} className="text-[10px] font-mono px-2 py-0.5 border border-border text-muted-foreground bg-card self-start">{partner}</span>
-          ))}
+          <span className="text-[10px] font-mono px-2 py-0.5 border border-border text-muted-foreground bg-card self-start">JKU Medizin</span>
           <div className="flex flex-col gap-1">
             <FHLogo />
             <span className="text-[9px] font-mono text-muted-foreground/50">FH Gesundheitsberufe OÖ</span>

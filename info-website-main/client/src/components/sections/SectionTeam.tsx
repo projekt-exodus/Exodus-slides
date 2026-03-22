@@ -157,7 +157,7 @@ function MemberAvatar({ member }: { member: TeamMember }) {
     <img
       src={member.photo}
       alt={member.name}
-      className="w-20 h-20 rounded-full object-cover shrink-0"
+      className="w-28 h-28 rounded-full object-cover shrink-0"
       style={{ border: `2px solid var(--accent-${member.color})40`, objectPosition: member.photoPosition ?? "center" }}
       onError={() => setFailed(true)}
     />

@@ -39,6 +39,21 @@ export default function Slide00() {
       }}
     >
       <ShaderBackground />
+      <img
+        src="/exodus-logo-transparent.png"
+        alt="Exodus Logo"
+        style={{
+          width: 120,
+          height: 120,
+          objectFit: "contain",
+          position: "relative",
+          zIndex: 1,
+          marginBottom: "1rem",
+          animation: "pulse-beat 1.6s ease-in-out infinite",
+          opacity: visible ? 1 : 0,
+          transition: "opacity 0.8s ease-out",
+        }}
+      />
       <h1
         className="font-black tracking-tighter leading-none mb-8 text-center"
         style={{

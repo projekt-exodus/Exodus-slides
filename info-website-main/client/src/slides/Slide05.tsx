@@ -21,11 +21,11 @@ export default function Slide05() {
             Exodus.<br />
             <span className="text-muted-foreground font-medium">Live.</span>
           </h2>
-          <p className="text-base text-muted-foreground leading-relaxed mb-8 max-w-sm">
+          <p className="text-base text-muted-foreground leading-relaxed mb-6 max-w-sm">
             Alle Gesundheitsdaten auf einen Blick — Laborwerte, Arztbriefe,
             Wearable-Daten. Strukturiert. Verständlich. Unter deiner Kontrolle.
           </p>
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap gap-2 mb-6">
             {["Labor", "Fitness", "Arztbriefe", "Wearables"].map((tag) => (
               <span
                 key={tag}
@@ -35,6 +35,24 @@ export default function Slide05() {
               </span>
             ))}
           </div>
+
+          <a
+            href="https://exodus-demo-app.vercel.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-3 group"
+          >
+            <img
+              src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data=https%3A%2F%2Fexodus-demo-app.vercel.app&bgcolor=ffffff&color=000000&margin=4"
+              alt="QR Code: exodus-demo-app.vercel.app"
+              width={80}
+              height={80}
+              className="border border-border shrink-0"
+            />
+            <p className="text-[10px] font-mono text-muted-foreground/60 group-hover:text-muted-foreground transition-colors">
+              exodus-demo-app.vercel.app
+            </p>
+          </a>
         </div>
 
         <div className="flex-shrink-0">

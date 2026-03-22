@@ -85,7 +85,13 @@ export default function Slide03() {
           </p>
         </div>
 
-        <div className="p-7 border-2 bg-card" style={{ borderColor: "var(--accent-green)" }}>
+        <div className="p-7 border-2 bg-card relative overflow-hidden" style={{ borderColor: "var(--accent-green)" }}>
+          <img
+            src="/openclaw-logo.png"
+            alt="OpenClaw"
+            className="absolute top-3 right-3 opacity-90"
+            style={{ width: 56, height: 56, objectFit: "contain" }}
+          />
           <p className="text-xs font-mono uppercase tracking-widest mb-3" style={{ color: "var(--accent-green)" }}>USP 3</p>
           <h3 className="text-xl font-semibold mb-3">Persönlicher Health-Agent</h3>
           <div className="space-y-2 mb-4">

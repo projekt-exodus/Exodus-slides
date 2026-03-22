@@ -44,9 +44,22 @@ export default function Slide03() {
           <p className="text-base text-muted-foreground leading-relaxed mb-3">
             Labor · Schlaf · Arztbrief · Training — strukturierte Timeline, KI erklärt in normaler Sprache.
           </p>
-          <p className="text-sm font-mono px-3 py-1.5 border" style={{ color: "var(--accent-green)", borderColor: "var(--accent-green)40", backgroundColor: "var(--accent-green)08" }}>
-            Alles lokal gespeichert · Exodus Health Vault &amp; Claude optional
-          </p>
+          <div className="flex flex-wrap gap-2">
+            {[
+              { label: "Lokal gespeichert", dot: true },
+              { label: "Health Vault optional" },
+              { label: "KI optional" },
+            ].map((b, i) => (
+              <span
+                key={i}
+                className="flex items-center gap-1.5 text-xs font-mono px-2.5 py-1 rounded-full border"
+                style={{ color: "var(--accent-green)", borderColor: "color-mix(in srgb, var(--accent-green) 35%, transparent)", backgroundColor: "color-mix(in srgb, var(--accent-green) 8%, transparent)" }}
+              >
+                {b.dot && <span className="w-1.5 h-1.5 rounded-full shrink-0" style={{ backgroundColor: "var(--accent-green)" }} />}
+                {b.label}
+              </span>
+            ))}
+          </div>
         </div>
 
         <div className="p-7 border-2 bg-card" style={{ borderColor: "var(--accent-violet)" }}>
@@ -56,7 +69,7 @@ export default function Slide03() {
             {[
               { icon: <Monitor className="w-5 h-5" />, label: "Lokal", sub: "z.B. Ollama", color: "var(--accent-violet)" },
               { icon: <Smartphone className="w-5 h-5" />, label: "Smartphone", sub: "Apple Intelligence, Gemma", color: "var(--accent-green)" },
-              { icon: <Cloud className="w-5 h-5" />, label: "Cloud (opt-in)", sub: "ChatGPT, Claude oder Gemini", color: "var(--accent-amber)" },
+              { icon: <Cloud className="w-5 h-5" />, label: "Cloud optional", sub: "ChatGPT, Claude oder Gemini", color: "var(--accent-amber)" },
             ].map((item, i) => (
               <div key={i} className="flex items-center gap-3 p-2.5 border border-border/50 bg-[var(--diagram-bg)]">
                 <span style={{ color: item.color }}>{item.icon}</span>

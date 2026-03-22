@@ -1,6 +1,6 @@
 import { motion, AnimatePresence } from "framer-motion";
 import {
-  Eye, CheckCircle2, AlertTriangle, ChevronDown
+  Eye, CheckCircle2, AlertTriangle, ChevronDown, XCircle
 } from "lucide-react";
 import { useState } from "react";
 
@@ -91,7 +91,7 @@ export function StatusBadge({ status, note }: { status: string; note?: string })
   }
   return (
     <div className="flex items-center gap-2">
-      <span className="text-muted-foreground text-sm" aria-hidden="true">—</span>
+      <XCircle className="w-4 h-4 shrink-0" style={{ color: "var(--accent-red, #ef4444)" }} aria-hidden="true" />
       <span className="sr-only">Nicht vorgesehen</span>
       {note && <span className="text-xs text-muted-foreground">{note}</span>}
     </div>

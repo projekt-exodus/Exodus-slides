@@ -1,4 +1,4 @@
-import { FileText, Heart, Watch, Stethoscope, Unlink, ShieldCheck, Bell, LayoutDashboard, Activity, Pill, Dumbbell, ChevronRight, Wifi } from "lucide-react";
+import { FileText, Heart, Watch, Stethoscope, Unlink, ShieldCheck, Activity, Pill, Dumbbell, ChevronRight, Users, BarChart3, Globe, TrendingUp } from "lucide-react";
 
 export const notes =
   "Arztbrief vom Kepler Uniklinikum: PDF irgendwo. Laborwerte: ausgedruckt in einem Ordner. Schlafdaten: in einer US-Cloud, der ich nie zugestimmt habe. Beim nächsten Arzttermin — fangen wir wieder von vorne an. Fünf Millionen Menschen in Österreich haben chronische Erkrankungen. Nicht weil es zu wenig Daten gibt — sondern weil die Daten nirgendwo zusammenarbeiten. Martin, was haben wir gebaut?";
@@ -20,10 +20,10 @@ const vault = [
 ];
 
 const stats = [
-  { value: "~5,6 Mio.", label: "Chronisch Erkrankte (AT)", color: "var(--accent-amber)" },
-  { value: "€ 57,8 Mrd.", label: "Gesundheitsausgaben 2024", color: "var(--accent-violet)" },
-  { value: "$ 549 Mrd.", label: "Digital Health Markt 2028", color: "var(--accent-blue)" },
-  { value: "€ 61 Mrd.", label: "EU Digital Health 2035", color: "var(--accent-green)" },
+  { value: "~5,6 Mio.", label: "Chronisch Erkrankte (AT)", sub: "~66 % ab 15 J.", icon: <Users className="w-5 h-5" />, color: "var(--accent-amber)" },
+  { value: "€ 57,8 Mrd.", label: "Gesundheitsausgaben 2024", sub: "Tendenz steigend", icon: <BarChart3 className="w-5 h-5" />, color: "var(--accent-violet)" },
+  { value: "$ 549 Mrd.", label: "Digital Health Markt 2028", sub: "CAGR ~25 %", icon: <Globe className="w-5 h-5" />, color: "var(--accent-blue)" },
+  { value: "€ 61 Mrd.", label: "EU Digital Health 2035", sub: "CAGR ~15,1 %", icon: <TrendingUp className="w-5 h-5" />, color: "var(--accent-green)" },
 ];
 
 export default function Slide02() {
@@ -34,7 +34,6 @@ export default function Slide02() {
         inset: 0,
         display: "flex",
         flexDirection: "column",
-        justifyContent: "center",
         padding: "48px 88px",
         width: "100%",
         height: "100%",
@@ -42,32 +41,32 @@ export default function Slide02() {
         overflow: "hidden",
       }}
     >
-      <p className="text-sm font-mono uppercase tracking-widest text-muted-foreground/40 mb-4">
+      <p className="text-sm font-mono uppercase tracking-widest text-muted-foreground/40 mb-3">
         02 — Problem · Felix
       </p>
-      <h2 className="text-6xl font-bold tracking-tight mb-2 leading-tight">Das Problem.</h2>
-      <p className="text-2xl font-medium text-muted-foreground mb-8">
+      <h2 className="text-5xl font-bold tracking-tight mb-2 leading-tight">Das Problem.</h2>
+      <p className="text-xl font-medium text-muted-foreground mb-6">
         Das Problem ist, dass sie nicht reden.
       </p>
 
-      <div className="grid grid-cols-2 gap-6 mb-5" style={{ flex: "0 0 auto" }}>
+      <div className="grid grid-cols-2 gap-6 mb-5" style={{ flex: "1 1 0", minHeight: 0 }}>
 
         {/* LEFT — Silos */}
-        <div className="flex flex-col" style={{ borderTop: "2px solid var(--accent-amber)" }}>
-          <div className="flex items-center gap-2 pt-3 pb-4">
+        <div className="flex flex-col min-h-0" style={{ borderTop: "2px solid var(--accent-amber)" }}>
+          <div className="flex items-center gap-2 pt-3 pb-3 shrink-0">
             <Unlink className="w-3.5 h-3.5" style={{ color: "var(--accent-amber)" }} />
             <p className="text-xs font-mono uppercase tracking-widest" style={{ color: "var(--accent-amber)" }}>
               Heute — Silos
             </p>
           </div>
-          <div className="space-y-2">
+          <div className="flex flex-col gap-2">
             {silos.map((item, i) => (
               <div
                 key={i}
-                className="flex items-center gap-3 px-4 py-2.5 border border-dashed border-border/60"
+                className="flex items-center gap-3 px-4 py-3 border border-dashed border-border/60"
                 style={{ backgroundColor: "var(--diagram-bg)" }}
               >
-                <span className="text-muted-foreground/40">{item.icon}</span>
+                <span className="text-muted-foreground/40 shrink-0">{item.icon}</span>
                 <div className="min-w-0 flex-1">
                   <p className="text-sm font-medium leading-tight">{item.label}</p>
                   <p className="text-xs text-muted-foreground/50">{item.sub}</p>
@@ -78,82 +77,73 @@ export default function Slide02() {
           </div>
         </div>
 
-        {/* RIGHT — App UI Mockup */}
-        <div className="flex flex-col rounded-lg overflow-hidden border border-border/70 shadow-lg" style={{ background: "var(--diagram-bg)" }}>
-
-          {/* Window chrome */}
-          <div className="flex items-center justify-between px-3 py-2 border-b border-border/50" style={{ background: "var(--card)" }}>
-            <div className="flex items-center gap-1.5">
-              <div className="w-2.5 h-2.5 rounded-full bg-red-400/70" />
-              <div className="w-2.5 h-2.5 rounded-full bg-yellow-400/70" />
-              <div className="w-2.5 h-2.5 rounded-full bg-green-400/70" />
-            </div>
-            <div className="flex items-center gap-1 px-3 py-0.5 rounded border border-border/50 text-xs font-mono text-muted-foreground/50" style={{ background: "var(--diagram-bg)" }}>
-              exodus.health / vault
-            </div>
-            <div className="flex items-center gap-2 text-muted-foreground/40">
-              <Wifi className="w-3 h-3" />
-              <ShieldCheck className="w-3 h-3" style={{ color: "var(--accent-green)" }} />
-              <Bell className="w-3 h-3" />
-            </div>
+        {/* RIGHT — Mobile App UI */}
+        <div className="flex flex-col min-h-0" style={{ borderTop: "2px solid var(--accent-blue)" }}>
+          <div className="flex items-center gap-2 pt-3 pb-3 shrink-0">
+            <ShieldCheck className="w-3.5 h-3.5" style={{ color: "var(--accent-blue)" }} />
+            <p className="text-xs font-mono uppercase tracking-widest" style={{ color: "var(--accent-blue)" }}>
+              Morgen — Exodus Health Vault
+            </p>
+            <span className="ml-auto text-xs font-mono px-2 py-0.5 rounded-full" style={{ background: "color-mix(in srgb, var(--accent-green) 12%, transparent)", color: "var(--accent-green)" }}>
+              lokal · sicher
+            </span>
           </div>
 
-          {/* App nav tabs */}
-          <div className="flex items-center gap-0 border-b border-border/40 px-3" style={{ background: "var(--card)" }}>
-            {[
-              { icon: <LayoutDashboard className="w-3 h-3" />, label: "Dashboard" },
-              { icon: <ShieldCheck className="w-3 h-3" />, label: "Vault", active: true },
-              { icon: <Activity className="w-3 h-3" />, label: "Trends" },
-            ].map((tab, i) => (
-              <div
-                key={i}
-                className="flex items-center gap-1.5 px-3 py-2 text-xs font-mono border-b-2 transition-colors"
-                style={{
-                  borderBottomColor: tab.active ? "var(--accent-blue)" : "transparent",
-                  color: tab.active ? "var(--accent-blue)" : "var(--muted-foreground)",
-                  opacity: tab.active ? 1 : 0.5,
-                }}
-              >
-                {tab.icon}
-                {tab.label}
+          {/* App frame */}
+          <div className="flex flex-col rounded-xl overflow-hidden border border-border/60 shadow-sm" style={{ background: "var(--card)", flex: "1 1 0", minHeight: 0 }}>
+
+            {/* App status bar */}
+            <div className="flex items-center justify-between px-4 py-2 shrink-0" style={{ background: "color-mix(in srgb, var(--accent-blue) 6%, var(--card))", borderBottom: "1px solid var(--border)" }}>
+              <div className="flex items-center gap-1.5">
+                <div className="w-2 h-2 rounded-full" style={{ background: "var(--accent-green)" }} />
+                <span className="text-xs font-mono text-muted-foreground/60">Health Vault</span>
               </div>
-            ))}
-            <div className="ml-auto text-xs font-mono text-muted-foreground/30 py-2 flex items-center gap-1">
-              <ShieldCheck className="w-2.5 h-2.5" style={{ color: "var(--accent-green)" }} />
-              lokal · verschlüsselt
+              <div className="flex items-center gap-1 text-xs font-mono text-muted-foreground/40">
+                <ShieldCheck className="w-3 h-3" style={{ color: "var(--accent-green)" }} />
+                Ende-zu-Ende verschlüsselt
+              </div>
             </div>
-          </div>
 
-          {/* Vault entries */}
-          <div className="flex flex-col divide-y divide-border/30 overflow-hidden">
-            {vault.map((item, i) => (
-              <div key={i} className="flex items-center gap-3 px-3 py-2 bg-card/50 hover:bg-card/80 relative">
-                <div className="w-0.5 self-stretch rounded-full shrink-0" style={{ backgroundColor: item.color }} />
-                <div style={{ color: item.color }} className="shrink-0">{item.icon}</div>
-                <div className="min-w-0 flex-1">
-                  <p className="text-xs font-semibold leading-tight">{item.label}</p>
-                  <p className="text-xs text-muted-foreground/50 leading-tight">{item.sub}</p>
+            {/* Section label */}
+            <div className="px-4 py-2 shrink-0" style={{ borderBottom: "1px solid var(--border)" }}>
+              <p className="text-xs font-mono uppercase tracking-wider text-muted-foreground/40">Alle Einträge</p>
+            </div>
+
+            {/* Entries */}
+            <div className="flex flex-col divide-y overflow-hidden" style={{ divideColor: "var(--border)", flex: "1 1 0" }}>
+              {vault.map((item, i) => (
+                <div key={i} className="flex items-center gap-3 px-4 py-2.5 shrink-0" style={{ background: i % 2 === 0 ? "var(--card)" : "var(--diagram-bg)" }}>
+                  <div className="w-0.5 self-stretch rounded-full shrink-0" style={{ backgroundColor: item.color }} />
+                  <div className="shrink-0" style={{ color: item.color }}>{item.icon}</div>
+                  <div className="min-w-0 flex-1">
+                    <p className="text-xs font-semibold leading-tight truncate">{item.label}</p>
+                    <p className="text-xs text-muted-foreground/50 leading-tight truncate">{item.sub}</p>
+                  </div>
+                  <span
+                    className="text-xs font-mono px-1.5 py-0.5 rounded shrink-0"
+                    style={{ backgroundColor: `color-mix(in srgb, ${item.color} 12%, transparent)`, color: item.color, fontSize: "0.6rem" }}
+                  >
+                    {item.tag}
+                  </span>
+                  <ChevronRight className="w-3 h-3 text-muted-foreground/20 shrink-0" />
                 </div>
-                <span
-                  className="text-xs font-mono px-1.5 py-0.5 rounded shrink-0"
-                  style={{ backgroundColor: `${item.color}18`, color: item.color, fontSize: "0.6rem" }}
-                >
-                  {item.tag}
-                </span>
-                <ChevronRight className="w-3 h-3 text-muted-foreground/20 shrink-0" />
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </div>
 
       {/* Stats */}
-      <div className="grid grid-cols-4 gap-3">
+      <div className="grid grid-cols-4 gap-3 shrink-0">
         {stats.map((s, i) => (
-          <div key={i} className="px-4 py-3 border border-border/50 bg-card relative overflow-hidden">
+          <div key={i} className="px-4 py-3 border border-border/50 bg-card relative overflow-hidden flex items-center gap-3">
             <div className="absolute top-0 left-0 right-0 h-0.5" style={{ backgroundColor: s.color }} />
-            <p className="text-lg font-bold tracking-tight leading-none mb-1" style={{ color: s.color }}>{s.value}</p>
-            <p className="text-xs text-muted-foreground leading-snug">{s.label}</p>
+            <div className="shrink-0" style={{ color: s.color }}>{s.icon}</div>
+            <div className="min-w-0">
+              <p className="text-base font-bold tracking-tight leading-none mb-0.5" style={{ color: s.color }}>{s.value}</p>
+              <p className="text-xs text-foreground leading-snug">{s.label}</p>
+              <p className="text-xs text-muted-foreground/50 leading-snug">{s.sub}</p>
+            </div>
           </div>
         ))}
       </div>

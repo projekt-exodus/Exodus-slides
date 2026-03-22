@@ -155,16 +155,16 @@ export default function Slide07() {
         <MemberCard member={advisor} i={team.length} inView={true} />
         <div className="p-3 border border-border/50 bg-[var(--diagram-bg)] flex flex-col justify-center gap-3">
           <p className="text-xs font-mono uppercase tracking-widest text-muted-foreground/50">Kooperationen (LOIs)</p>
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col gap-4">
             <img
               src="/logos/fh-gesundheitsberufe.png"
               alt="FH Gesundheitsberufe OÖ"
-              className="h-8 object-contain object-left grayscale opacity-60"
+              className="h-16 object-contain object-left"
             />
             <img
               src="/logos/jku.png"
               alt="JKU Linz"
-              className="h-8 object-contain object-left grayscale opacity-60"
+              className="h-16 object-contain object-left"
             />
           </div>
         </div>

@@ -1,3 +1,5 @@
+import { Download } from "lucide-react";
+
 export const notes =
   "Das ist Exodus — live. Links das Produkt, rechts die Vision. Alle Gesundheitsdaten an einem Ort, unter deiner Kontrolle.";
 
@@ -87,6 +89,34 @@ export default function Slide01() {
             </span>
           ))}
         </div>
+
+        <a
+          href="/slides?print-pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            marginTop: "32px",
+            display: "inline-flex",
+            alignItems: "center",
+            gap: "10px",
+            padding: "14px 28px",
+            background: "#0A0A0A",
+            color: "#ffffff",
+            fontFamily: "monospace",
+            fontSize: "0.8rem",
+            letterSpacing: "0.1em",
+            textTransform: "uppercase",
+            textDecoration: "none",
+            border: "none",
+            cursor: "pointer",
+            transition: "opacity 0.2s",
+          }}
+          onMouseEnter={(e) => (e.currentTarget.style.opacity = "0.75")}
+          onMouseLeave={(e) => (e.currentTarget.style.opacity = "1")}
+        >
+          <Download style={{ width: 16, height: 16 }} />
+          Als PDF herunterladen
+        </a>
       </div>
 
       {/* RIGHT — Phone Mockup */}

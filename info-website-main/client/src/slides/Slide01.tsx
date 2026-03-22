@@ -7,7 +7,7 @@ export default function Slide01() {
   return (
     <div className="min-h-screen flex flex-col justify-center px-16 py-20 max-w-6xl mx-auto">
       <p className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground/40 mb-6">
-        01 — Opener · Felix
+        02 — Opener · Felix
       </p>
 
       <h1 className="text-5xl lg:text-6xl font-bold tracking-tight mb-6 leading-tight max-w-3xl">

@@ -4,6 +4,7 @@ import Reveal from "reveal.js";
 import "reveal.js/reveal.css";
 import "./slides.css";
 
+import Slide00Content, { notes as notes00 } from "./Slide00";
 import Slide01Content, { notes as notes01 } from "./Slide01";
 import Slide02Content, { notes as notes02 } from "./Slide02";
 import Slide03Content, { notes as notes03 } from "./Slide03";
@@ -16,6 +17,7 @@ import Slide09Content, { notes as notes09 } from "./Slide09";
 import Slide10Content, { notes as notes10 } from "./Slide10";
 
 const SLIDES = [
+  { Component: Slide00Content, notes: notes00 },
   { Component: Slide01Content, notes: notes01 },
   { Component: Slide02Content, notes: notes02 },
   { Component: Slide03Content, notes: notes03 },

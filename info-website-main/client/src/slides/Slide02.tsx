@@ -38,7 +38,7 @@ export default function Slide02() {
   return (
     <div className="min-h-screen flex flex-col justify-center px-16 py-20 max-w-6xl mx-auto">
       <p className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground/40 mb-6">
-        02 — Problem · Felix
+        03 — Problem · Felix
       </p>
 
       <h2 className="text-4xl lg:text-5xl font-bold tracking-tight mb-3 max-w-3xl leading-tight">

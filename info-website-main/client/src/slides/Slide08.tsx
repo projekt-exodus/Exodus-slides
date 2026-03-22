@@ -7,7 +7,7 @@ export default function Slide08() {
   return (
     <div className="min-h-screen flex flex-col justify-center px-16 py-16 max-w-6xl mx-auto">
       <p className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground/40 mb-4">
-        08 — Revenue · Felix
+        09 — Revenue · Felix
       </p>
 
       <h2 className="text-4xl font-bold tracking-tight mb-2 max-w-3xl leading-tight">
@@ -33,8 +33,8 @@ export default function Slide08() {
           </p>
           <div className="space-y-1.5">
             {[
-              { icon: <Database className="w-3.5 h-3.5" />, label: "Free", desc: "Erste Wearables + 1 Labor" },
-              { icon: <TrendingUp className="w-3.5 h-3.5" />, label: "Premium", desc: "Unbegrenzt, KI-Erklärungen, Agentic Layer" },
+              { icon: <Database className="w-3.5 h-3.5" />, label: "Free", desc: "2 Connections + 5 Labortests (PDF-Upload)" },
+              { icon: <TrendingUp className="w-3.5 h-3.5" />, label: "Premium", desc: "Mehr Connections, KI-Erklärungen, Agentic Layer + Beratungsgespräche" },
               { icon: <Repeat className="w-3.5 h-3.5" />, label: "Family", desc: "Mehrere Profile, eigene KI-Endpunkte" },
             ].map((tier, i) => (
               <div key={i} className="flex items-start gap-2 p-2 bg-[var(--diagram-bg)] border border-border">
@@ -64,7 +64,7 @@ export default function Slide08() {
           <div className="space-y-1.5">
             {[
               { icon: <Stethoscope className="w-3.5 h-3.5" />, label: "Heilplan-Erstellung" },
-              { icon: <ArrowRightLeft className="w-3.5 h-3.5" />, label: "Beratungsgespräche (Video/Chat)" },
+              { icon: <ArrowRightLeft className="w-3.5 h-3.5" />, label: "Beratungsgespräche (Chat)" },
               { icon: <TrendingUp className="w-3.5 h-3.5" />, label: "Provision pro Beratung" },
             ].map((item, i) => (
               <div key={i} className="flex items-center gap-2 p-2 bg-[var(--diagram-bg)] border border-border">

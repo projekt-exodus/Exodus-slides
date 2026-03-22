@@ -75,30 +75,59 @@ const advisor: TeamMember = {
   advisor: true,
 };
 
+const accentColorMap: Record<string, string> = {
+  blue: "var(--accent-blue)",
+  green: "var(--accent-green)",
+  amber: "var(--accent-amber)",
+  rose: "var(--accent-rose)",
+  violet: "var(--accent-violet)",
+};
+
+const highlightedNames = ["Felix Ratzenböck", "Martin Hausleitner"];
+
 export default function Slide07() {
   return (
-    <div className="min-h-screen flex flex-col justify-center px-16 py-16 max-w-6xl mx-auto">
-      <p className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground/40 mb-4">
-        07 — Team · Felix
+    <div
+      className="fixed inset-0 flex flex-col px-12 py-6 overflow-hidden"
+      style={{ width: "100%", height: "100%" }}
+    >
+      <p className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground/40 mb-2">
+        08 — Team · Felix
       </p>
 
-      <h2 className="text-4xl font-bold tracking-tight mb-2 max-w-3xl leading-tight">
+      <h2 className="text-3xl font-bold tracking-tight mb-1 leading-tight">
         Vier aus Linz. Alle aus Überzeugung.
       </h2>
-      <p className="text-base text-muted-foreground mb-8 max-w-2xl">
+      <p className="text-sm text-muted-foreground mb-3 max-w-2xl">
         Wir kommen alle aus OÖ. Wir studieren alle an Institutionen aus Linz.
         Und wir nutzen alle das Produkt selbst — weil es unser Problem ist.
       </p>
 
-      <div className="grid grid-cols-2 gap-4 mb-5">
-        {team.map((member, i) => (
-          <MemberCard key={i} member={member} i={i} inView={true} />
-        ))}
+      <div className="grid grid-cols-4 gap-3 mb-3 flex-shrink-0">
+        {team.map((member, i) => {
+          const isHighlighted = highlightedNames.includes(member.name);
+          const accentColor = accentColorMap[member.color] ?? "var(--accent-blue)";
+          return (
+            <div
+              key={i}
+              style={
+                isHighlighted
+                  ? {
+                      outline: `2px solid ${accentColor}`,
+                      outlineOffset: "2px",
+                    }
+                  : {}
+              }
+            >
+              <MemberCard member={member} i={i} inView={true} />
+            </div>
+          );
+        })}
       </div>
 
-      <div className="grid grid-cols-2 gap-4 mb-4">
+      <div className="grid grid-cols-2 gap-3 flex-shrink-0">
         <MemberCard member={advisor} i={team.length} inView={true} />
-        <div className="p-4 border border-border/50 bg-[var(--diagram-bg)] flex flex-col justify-center gap-2">
+        <div className="p-3 border border-border/50 bg-[var(--diagram-bg)] flex flex-col justify-center gap-2">
           <p className="text-xs font-mono uppercase tracking-widest text-muted-foreground/50">Kooperationen (LOIs)</p>
           {["JKU Medizin", "Kepler Uniklinikum", "FH Gesundheitsberufe OÖ", "tech2b"].map((partner) => (
             <span key={partner} className="text-[10px] font-mono px-2 py-0.5 border border-border text-muted-foreground bg-card self-start">{partner}</span>

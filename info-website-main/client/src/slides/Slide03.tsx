@@ -7,7 +7,7 @@ export default function Slide03() {
   return (
     <div className="min-h-screen flex flex-col justify-center px-16 py-16 max-w-6xl mx-auto">
       <p className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground/40 mb-4">
-        03 — Lösung & USPs · Martin
+        04 — Lösung & USPs · Martin
       </p>
 
       <h2 className="text-4xl font-bold tracking-tight mb-2 max-w-3xl leading-tight">
@@ -38,9 +38,9 @@ export default function Slide03() {
           <h3 className="text-sm font-semibold mb-2">Bring Your Own AI</h3>
           <div className="space-y-1.5 mb-3">
             {[
-              { icon: <Monitor className="w-3.5 h-3.5" />, label: "Mac/PC", sub: "Llama, Mistral — lokal", color: "var(--accent-violet)" },
+              { icon: <Monitor className="w-3.5 h-3.5" />, label: "Lokal", sub: "z.B. Ollama", color: "var(--accent-violet)" },
               { icon: <Smartphone className="w-3.5 h-3.5" />, label: "Smartphone", sub: "Apple Intelligence, Gemma", color: "var(--accent-green)" },
-              { icon: <Cloud className="w-3.5 h-3.5" />, label: "Cloud (opt-in)", sub: "GPT-4o, Claude — nur wenn du willst", color: "var(--accent-amber)" },
+              { icon: <Cloud className="w-3.5 h-3.5" />, label: "Cloud (opt-in)", sub: "ChatGPT, Claude oder Gemini", color: "var(--accent-amber)" },
             ].map((item, i) => (
               <div key={i} className="flex items-center gap-2 p-1.5 border border-border/50 bg-[var(--diagram-bg)]">
                 <span style={{ color: item.color }}>{item.icon}</span>

@@ -1,17 +1,17 @@
-import { CheckCircle2, X } from "lucide-react";
+import { CheckCircle2 } from "lucide-react";
 import { StatusBadge } from "@/components/sections/helpers";
 
 export const notes =
   "Felix: Ich habe Apple Health. Ich habe WHOOP. Ich habe Oura. Die reden alle nicht miteinander. Keine zeigt mir Laborwerte. Keine hat ärztliche Freigabe. Und bei keiner darf ich selbst entscheiden, welche KI meine Daten sieht. Martin (15 Sekunden): Kein anderer Anbieter weltweit kombiniert lokale KI by default, offenen Agentic Layer, EU-DSGVO als Architektur und den Supplement-Kanal in einer Plattform.";
 
 const matrix = [
-  { feature: "Lokal-first KI (default)", exodus: "check", appleHealth: "none", whoop: "none", oura: "none" },
-  { feature: "Bring Your Own AI", exodus: "check", appleHealth: "none", whoop: "none", oura: "none" },
-  { feature: "Offener Agentic Layer", exodus: "check", appleHealth: "none", whoop: "none", oura: "none" },
-  { feature: "Labor + Wearables + Arztbriefe", exodus: "check", appleHealth: "warn", whoop: "none", oura: "none" },
-  { feature: "EU-DSGVO als Architektur", exodus: "check", appleHealth: "none", whoop: "none", oura: "none" },
-  { feature: "Supplement-Kanal", exodus: "check", appleHealth: "none", whoop: "none", oura: "none" },
-  { feature: "Open Source bevorzugt", exodus: "check", appleHealth: "none", whoop: "none", oura: "none" },
+  { feature: "Lokal-first KI (default)", exodus: "check", andere: "none" },
+  { feature: "Bring Your Own AI", exodus: "check", andere: "none" },
+  { feature: "Offener Agentic Layer", exodus: "check", andere: "none" },
+  { feature: "Labor + Wearables + Arztbriefe", exodus: "check", andere: "warn" },
+  { feature: "EU-DSGVO als Architektur", exodus: "check", andere: "none" },
+  { feature: "Supplement-Kanal", exodus: "check", andere: "none" },
+  { feature: "Open Source bevorzugt", exodus: "check", andere: "none" },
 ];
 
 const usps = [
@@ -27,7 +27,7 @@ export default function Slide06() {
   return (
     <div className="min-h-screen flex flex-col justify-center px-16 py-16 max-w-6xl mx-auto">
       <p className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground/40 mb-4">
-        06 — USP & Wettbewerb · Felix + Martin
+        07 — USP & Wettbewerb · Felix + Martin
       </p>
 
       <h2 className="text-4xl font-bold tracking-tight mb-2 max-w-3xl leading-tight">
@@ -45,20 +45,16 @@ export default function Slide06() {
               <thead>
                 <tr className="bg-[var(--diagram-bg)] border-b border-border/70">
                   <th className="text-left p-3 font-mono text-muted-foreground/60 uppercase tracking-wider text-[10px] w-1/2">Feature</th>
-                  <th className="p-2 font-mono text-[10px] uppercase tracking-wider" style={{ color: "var(--accent-blue)" }}>Exodus</th>
-                  <th className="p-2 font-mono text-[10px] uppercase text-muted-foreground/50">Apple H.</th>
-                  <th className="p-2 font-mono text-[10px] uppercase text-muted-foreground/50">WHOOP</th>
-                  <th className="p-2 font-mono text-[10px] uppercase text-muted-foreground/50">Oura</th>
+                  <th className="p-3 font-mono text-[10px] uppercase tracking-wider" style={{ color: "var(--accent-blue)" }}>Exodus</th>
+                  <th className="p-3 font-mono text-[10px] uppercase text-muted-foreground/50">Andere</th>
                 </tr>
               </thead>
               <tbody>
                 {matrix.map((row, i) => (
                   <tr key={i} className="border-b border-border/50 last:border-0">
                     <td className="p-3 text-muted-foreground">{row.feature}</td>
-                    <td className="p-2 text-center"><StatusBadge status={row.exodus} /></td>
-                    <td className="p-2 text-center"><StatusBadge status={row.appleHealth} /></td>
-                    <td className="p-2 text-center"><StatusBadge status={row.whoop} /></td>
-                    <td className="p-2 text-center"><StatusBadge status={row.oura} /></td>
+                    <td className="p-3 text-center"><StatusBadge status={row.exodus} /></td>
+                    <td className="p-3 text-center"><StatusBadge status={row.andere} /></td>
                   </tr>
                 ))}
               </tbody>

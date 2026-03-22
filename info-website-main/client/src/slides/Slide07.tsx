@@ -22,13 +22,13 @@ const team: TeamMember[] = [
   },
   {
     name: "Martin Hausleitner",
-    role: "Fullstack Softwareentwickler",
+    role: "Fullstack Softwareentwickler & Unternehmer",
     location: "Linz, OÖ",
     desc: "JKU Linz, Artificial Intelligence. CEO von servas.ai (KI-Agentur, seit April 2024). Architekt hinter der Exodus-Plattform.",
     timeline: [
       { label: "HTL Leonding", sub: "Informatik · Matura" },
       { label: "JKU Linz", sub: "Artificial Intelligence" },
-      { label: "servas.ai", sub: "CEO & Founder · KI-Agentur (seit Apr 2024)", current: true },
+      { label: "servas.ai FlexCo", sub: "CEO & Founder · KI-Agentur (seit Apr 2024)", current: true },
     ],
     skills: ["App-Entwicklung", "KI-Agenten", "Full Stack Development"],
     linkedin: "https://www.linkedin.com/in/martin-hausleitner",

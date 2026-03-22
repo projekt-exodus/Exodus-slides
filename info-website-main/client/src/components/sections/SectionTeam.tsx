@@ -146,7 +146,7 @@ function MemberAvatar({ member }: { member: TeamMember }) {
   if (!member.photo || failed) {
     return (
       <div
-        className="w-28 h-28 rounded-full flex items-center justify-center text-lg font-mono font-semibold shrink-0"
+        className="w-40 h-40 rounded-full flex items-center justify-center text-xl font-mono font-semibold shrink-0"
         style={{ backgroundColor: `var(--accent-${member.color})20`, color: `var(--accent-${member.color})`, border: `2px solid var(--accent-${member.color})40` }}
       >
         {initials}
@@ -157,7 +157,7 @@ function MemberAvatar({ member }: { member: TeamMember }) {
     <img
       src={member.photo}
       alt={member.name}
-      className="w-28 h-28 rounded-full object-cover shrink-0"
+      className="w-40 h-40 rounded-full object-cover shrink-0"
       style={{ border: `2px solid var(--accent-${member.color})40`, objectPosition: member.photoPosition ?? "center" }}
       onError={() => setFailed(true)}
     />
@@ -170,7 +170,7 @@ export function MemberCard({ member, i, inView }: { member: TeamMember; i: numbe
       initial={{ opacity: 0, y: 12 }}
       animate={inView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.35, delay: i * 0.1 }}
-      className="p-6 border border-border/70 bg-card flex flex-col gap-4"
+      className="p-4 border border-border/70 bg-card flex flex-col gap-2"
       data-testid={`card-team-${i}`}
     >
       <div>

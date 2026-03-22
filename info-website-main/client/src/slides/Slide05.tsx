@@ -3,11 +3,11 @@ export const notes =
 
 export default function Slide05() {
   const border = 3;
-  const padding = 7;
+  const padding = 0;
   const phoneWidth = 260;
-  const innerWidth = phoneWidth - 2 * (border + padding);
+  const innerWidth = phoneWidth - 2 * border;
   const scale = innerWidth / 390;
-  const phoneHeight = Math.ceil(844 * scale + 2 * (border + padding));
+  const phoneHeight = Math.ceil(844 * scale + 2 * border);
 
   return (
     <div

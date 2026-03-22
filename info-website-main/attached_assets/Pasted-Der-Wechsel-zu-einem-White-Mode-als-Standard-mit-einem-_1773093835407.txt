@@ -1,0 +1,94 @@
+Der Wechsel zu einem „White Mode“ als Standard – mit einem wissenschaftlichen, beinahe akademischen und hochprofessionellen Design – ist ein brillanter Schachzug. Es signalisiert: *„Wir sind keine bunte Lifestyle-App, wir bauen ernsthafte, medizinische Kerninfrastruktur.“* Ein klinisch reines Weiß (`#FAFAFA` oder `#FFFFFF`), kombiniert mit gestochen scharfem Schwarz für den Text, feinen grauen Linien (1px Borders) und einer klaren Typografie (z. B. einer eleganten Serifen-Schrift für Überschriften gepaart mit einer strengen serifenlosen Schrift für Daten) verleiht dem Dossier die Autorität eines Nature- oder Lancet-Papers – nur eben interaktiv und ultramodern in React umgesetzt.
+
+Wenn du das Ganze als interaktives Next.js-Dossier baust, bekommst du hier die **extrem ausführlichen, wissenschaftlich und technisch tiefgehenden Texte**, die du direkt in deine Komponenten einfügen kannst. Begleitet werden sie von präzisen Beschreibungen, wie die Interaktionen und Animationen aussehen müssen.
+
+---
+
+### Sektion 1: Executive Abstract (Der wissenschaftliche Einstieg)
+
+**Visuelle Umsetzung (Next.js/React):**
+Ein fast leerer, blendend weißer Bildschirm. Keine Bilder. Nur Text in perfekter Typografie. Beim Scrollen faden die Absätze sanft ein (`framer-motion` mit `opacity` und leichtem `y`-Offset). Oben rechts ein dezenter Toggle für den Dark Mode (nur als technischer Flex).
+
+**Dein ausführlicher Text für die UI:**
+
+> **Abstract: Project Exodus – Souveräne Gesundheitsinfrastruktur (2026–2126)**
+> Das aktuelle Gesundheitssystem krankt an einer systemischen Datenfragmentierung. Hochsensible longitudinale Patientendaten (Laborwerte, Arztbriefe, Wearable-Biometrie) existieren in isolierten, proprietären Silos ohne semantische Interoperabilität. Project Exodus adressiert diese infrastrukturelle Schwachstelle durch den Aufbau eines dezentralen, offline-fähigen "Health Data Vaults".
+> Unser Ansatz verlagert die Datensouveränität vollständig auf das Endgerät des Nutzers (Edge-Computing). Durch die Implementierung modernster kryptographischer Verfahren, asynchroner Replikationsprotokolle (PowerSync) und der Standardisierung durch das Model Context Protocol (MCP) transformieren wir isolierte Datenpunkte in eine maschinenlesbare, hochsichere Basis für klinische Entscheidungsunterstützung. Wir bauen keine App – wir entwickeln das protokollarische Fundament für eine KI-gestützte, präventive Gesundheitsversorgung, bei der der Nutzer die alleinige Hoheit über den Datenabfluss behält.
+
+---
+
+### Sektion 2: Edge-Computing & Asynchrone Replikation (PowerSync)
+
+**Visuelle Umsetzung (Interaktive Datenfluss-Animation):**
+Ein interaktives Diagramm (ideal via React Flow oder animierten SVGs). Links steht das "Device" (Smartphone/Flutter-Logo), in der Mitte eine durchgestrichene rote Linie zum "Internet", rechts die "Cloud" (Hetzner/EU).
+*Interaktion:* Der User klickt auf "Lokale Speicherung". Ein Datenpaket wandert in einen Tresor auf dem Smartphone. Klickt der User auf "PowerSync aktivieren", baut sich ein grüner, verschlüsselter Tunnel zur Cloud auf, und Datenpakete pulsieren hin und her.
+
+**Dein ausführlicher Text für die UI:**
+
+> **Architektur-Paradigma: Offline-First & Local-by-Default**
+> Die größte Schwachstelle klassischer Cloud-Health-Apps ist der permanente, unverschlüsselte Datentransfer zu zentralen Servern. Project Exodus eliminiert diesen Angriffsvektor durch eine kompromisslose Offline-First-Architektur.
+> **1. Lokale Persistenz (Flutter & SQLite):** Alle importierten Dokumente (via BelegJaeger OCR extrahiert) und Wearable-Daten werden primär und ausschließlich in einer lokalen, verschlüsselten SQLite-Datenbank auf dem Endgerät des Nutzers persistiert. Die Applikation ist ohne Latenz und ohne Internetverbindung voll funktionsfähig.
+> **2. Asynchrone Replikation via PowerSync:** Um geräteübergreifende Synchronisation (z. B. Smartphone zu Tablet) oder Backup-Szenarien zu ermöglichen, nutzen wir die PowerSync-Engine. Diese ermöglicht eine bidirektionale, konfliktfreie Replikation der lokalen Datenbank mit unserem europäischen Backend (oder optional der privaten Apple iCloud des Nutzers).
+> **3. Opt-In Cloud Sync:** Der Sync-Prozess ist standardmäßig deaktiviert (Opt-In). Wenn aktiviert, dient die Cloud lediglich als "Dumb Storage" – sie speichert verschlüsselte Blobs (Binary Large Objects), deren Entschlüsselungs-Keys das Endgerät niemals verlassen. Ein serverseitiger Datenabfluss (Data Breach) ist somit mathematisch nutzlos für Angreifer.
+
+---
+
+### Sektion 3: Kryptographische Entkopplung & Zero-Knowledge-Design
+
+**Visuelle Umsetzung (Die Verschlüsselungs-Animation):**
+Eine komplexe, aber flüssige Animation. Ein Datensatz ("Max Mustermann, Blutdruck 140/90") fließt auf den Bildschirm. Er wird physisch in zwei Blöcke zerschnitten. Block A ("Max Mustermann") bekommt ein Schloss-Symbol und bleibt lokal. Block B ("Blutdruck 140/90") bekommt eine generierte UUID (`e4b7c...`) und einen Hash-Algorithmus animiert.
+
+**Dein ausführlicher Text für die UI:**
+
+> **De-Identification & Kryptographische Segregation**
+> Um selbst bei einer hypothetischen Kompromittierung unserer Infrastruktur oder der Nutzung von externen KI-Modellen maximale Sicherheit zu garantieren, wendet Project Exodus strikte De-Identification-Prozesse an, bevor Datenpunkte verarbeitet werden.
+> **Strikte Trennung von PII und PHI:**
+> * **PII (Personally Identifiable Information):** Identifizierende Daten (Name, Adresse, E-Mail) verbleiben strikt getrennt von medizinischen Parametern. Sie werden clientseitig verschlüsselt und sind für unsere Backend-Systeme blind (Zero-Knowledge-Architektur).
+> * **PHI (Protected Health Information):** Medizinische Parameter (Laborwerte, Vitaldaten) werden mit anonymisierten UUIDs versehen. Wenn diese Daten für KI-Analysen herangezogen werden, enthalten sie keinerlei Rückschlüsse auf die reale Identität des Nutzers.
+> 
+> 
+> **Asymmetrische Verschlüsselung:** Der Datenaustausch zwischen dem lokalen Vault und autorisierten Gegenstellen erfolgt über asymmetrische Kryptographie (Public/Private Key Infrastructure). Nur der Nutzer, der im Besitz des lokalen Private Keys ist, kann die aggregierte Gesundheits-Historie im Klartext lesen.
+
+---
+
+### Sektion 4: Der Vault als MCP-Server (Model Context Protocol)
+
+**Visuelle Umsetzung (Das KI-Ökosystem):**
+Ein zentraler, weißer Kreis (Dein Exodus-Vault). Außen rotieren Logos (OpenAI, Anthropic, lokale Llama-Modelle, Forschungseinrichtungen).
+*Interaktion:* Klickt der Betrachter auf "ChatGPT 4.5", zieht sich eine animierte Linie vom Vault zum GPT-Logo. Ein Modal-Window ploppt auf: *"Exodus erteilt temporären Lesezugriff auf 'Eisenwert 2024-2026' via MCP. Zugriff widerrufbar."*
+
+**Dein ausführlicher Text für die UI:**
+
+> **Interoperabilität: Project Exodus als universeller MCP-Provider**
+> Das isolierte Trainieren von eigenen LLMs (Large Language Models) für Gesundheitsfragen ist ineffizient und veraltet schnell. Project Exodus wählt einen überlegenen, agnostischen Ansatz: Wir integrieren das Model Context Protocol (MCP).
+> **Der Tresor als Schnittstelle:** Unsere Architektur verwandelt die Exodus-App in einen lokalen MCP-Server. Das bedeutet, der Nutzer kann jede beliebige, MCP-kompatible KI (sei es ChatGPT, Claude oder ein datenschutzkonformes, lokal auf dem Mac laufendes Open-Source-Modell) anweisen, sich temporär mit seinem Exodus-Vault zu verbinden.
+> **Granulare Zugriffskontrolle:** Die KI erhält keinen Komplettzugriff. Der Nutzer definiert präzise den Kontext-Scope (z. B. *"Erlaube der KI nur Zugriff auf meine Schilddrüsenwerte der letzten 12 Monate"*). Exodus injiziert diese Daten über die standardisierte MCP-Schnittstelle direkt in den Kontext der KI, ohne dass die rohen Daten in die Trainingsdatenbanken der LLM-Anbieter abfließen. Wir machen jede KI sofort zur hochspezialisierten, auf Evidenz basierenden Gesundheitsassistenz – 100% gesteuert durch den Patienten.
+
+---
+
+### Sektion 5: Klinische Evidenz & Regulatorischer Pfad (MDR)
+
+**Visuelle Umsetzung (Tabellarische Matrix):**
+Eine extrem saubere, wissenschaftlich anmutende Matrix. Dünne Linien, viel Weißraum (Whitespace). Wenn man mit der Maus über die Risikoklassen fährt, erscheinen Tooltips mit den exakten Paragraphen der Medical Device Regulation (MDR) und des EU AI Acts.
+
+**Dein ausführlicher Text für die UI:**
+
+> **Regulatorische Compliance & Clinician-in-the-Loop Architektur**
+> Im Umgang mit medizinischen Daten ist die rechtliche Klassifizierung (Intended Purpose) der Software das kritische Nadelöhr. Unsere Roadmap ist exakt auf die Vorgaben der europäischen Medical Device Regulation (MDR 2017/745) und den kommenden AI Act abgestimmt.
+> **Phase 1: Souveränes Informationssystem (Nicht-MDR-pflichtig)**
+> Im ersten Go-to-Market-Schritt agiert Exodus ausschließlich als Datenspeicher und Visualisierungstool. Die Explainable AI (XAI) übersetzt medizinische Terminologie in allgemeinverständliche Sprache, trifft jedoch *keine* patientenindividuellen therapeutischen Entscheidungen. Das Haftungsrisiko für Eigendiagnosen ist systemisch ausgeschlossen.
+> **Die Brückentechnologie: Clinician-in-the-Loop**
+> Um dennoch personalisierte Handlungs- und Trainingspläne generieren zu können, integrieren wir ein dediziertes HCP-Dashboard (Healthcare Professionals).
+> 1. Die KI analysiert die Daten via MCP.
+> 2. Ein Plan-Entwurf wird generiert und in Quarantäne gelegt.
+> 3. **Human Validation:** Ein verifizierter Experte (z. B. Physiotherapeut, Arzt) prüft die abgeleitete Evidenz, nimmt Anpassungen vor und autorisiert den Plan kryptographisch.
+> 4. Erst nach dieser menschlichen Freigabe wird der Plan für den Patienten in der Exodus-App sichtbar.
+> 
+> 
+> Dieses hybride Modell garantiert klinische Sicherheit im Vorfeld aufwendiger Studien und bereitet die Plattform sauber auf eine zukünftige Zertifizierung als Medizinprodukt der Klasse IIa vor.
+
+---
+
+Wenn du diese Detailtiefe, das klinisch-weiße Design und die Next.js-Animationen im Meeting mit Beikircher präsentierst, katapultiert euch das sofort aus der „Studenten-Startup“-Ecke in die Liga ernstzunehmender Health-Tech-Infrastruktur-Entwickler.
+
+Soll ich für den Footer oder einen separaten Reiter noch die exakten Beschreibungen eurer Partner (JKU, Kepler Klinikum, FH) im gleichen wissenschaftlichen, extrem detaillierten Duktus verfassen?

@@ -1,0 +1,76 @@
+# Teamprofil – Hanna, Felix, Martin & Paula
+
+Rollen: Paula = CEO (+ Sales), Martin = CTO, Felix = COO (+ Sales), Hanna = Operatives.
+
+Zusatz: Felix = Experte im sportlichen Bereich. Paula = Expertin in ihrem Bereich.
+
+---
+
+## Übersicht
+
+| **Name** | **Rolle** | **Fokus** | **Kurzprofil** |
+| --- | --- | --- | --- |
+| Paula Mittermayr | CEO (+ Sales) | Leadership & Medizintechnik | Puchenau (OÖ), SANTESIS (Teilzeit), LinkedIn-Profil vorhanden |
+| Martin Hausleitner | CTO | AI/Tech/Produkt | Linz (OÖ), servas.ai, Founder- und Tech-Erfahrung |
+| Felix Ratzenböck | COO (+ Sales) | Sportbereich & Sales | Sportbereich laut Profilnotiz |
+| Hanna Haslberger | Operatives | Operations / Tagesgeschäft | Physio-Studentin FH Linz laut Profilnotiz |
+
+---
+
+## Paula Mittermayr – Lebenslauf (einheitlich)
+
+| **Bereich** | **Details** |
+| --- | --- |
+| Wohnort | Puchenau, Oberösterreich, Österreich |
+| Aktuelle Position | Medizintechnikerin bei SANTESIS (Teilzeit) |
+| LinkedIn | linkedin.com/in/paula-mittermayr-a36064328 |
+| Berufserfahrung | SANTESIS; Praktika: Kepler UKH, JKU, Radiologie Urfahr |
+| Ausbildung | JKU Medical Engineering (laufend); HTBLA Leonding Medizintechnik (Auszeichnung) |
+| Projekt | „Künstliche Haut“ (Sensorik, JKU-Kooperation) |
+| Skills | C, C#, Python; Medizintechnik, Sensorik |
+
+---
+
+## Martin Hausleitner – Lebenslauf (einheitlich)
+
+| **Bereich** | **Details** |
+| --- | --- |
+| Aktuelle Position | CEO & Founder bei servas.ai (seit Apr 2024) |
+| Ort | Linz, Oberösterreich |
+| Profil | www.linkedin.com/in/martin-hausleitner |
+| Berufserfahrung | servas.ai; Austrian Armed Forces (Cyber); Nochba; LAWOG-Praktika |
+| Ausbildung | JKU: Business Informatics + Artificial Intelligence |
+| Projekte | Nochba, Cellarius |
+| Skills/Awards | u.a. C, Supabase; Edison Awards |
+
+---
+
+## Felix Ratzenböck – Lebenslauf (einheitlich)
+
+Felix Ratzenböck maturierte im Leistungssportzweig des BORG Linz (Honauerstraße) und absolvierte anschließend seinen Präsenzdienst beim Österreichischen Bundesheer. Nach der Grundausbildung in Langenlebern (Niederösterreich) schloss er in Hörsching erfolgreich die Ausbildung zum Rettungssanitäter ab. Seine Disziplin und Zielstrebigkeit spiegeln sich stark in seiner fußballerischen Laufbahn wider: Ab der U14 durchlief er sämtliche Stationen der LASK-Fußballakademie, spielte für die LASK Juniors sowie die LASK Amateure OÖ und war in der Folge unter anderem für die SU Bad Leonfelden aktiv. Sein ausgeprägtes sportliches und medizinisches Interesse führte ihn an die Vitalakademie Linz, wo er die Ausbildung zum Medizinischen Masseur (mit ausständiger kommissioneller Prüfung) absolvierte. Um seine Fachexpertise weiter zu vertiefen, studiert er aktuell im zweiten Semester Physiotherapie an der FH Gesundheitsberufe OÖ in Linz.
+
+| **Bereich** | **Details** |
+| --- | --- |
+| Rolle | COO (+ Sales) |
+| Sportlicher Fokus | Experte im sportlichen Bereich |
+| Profilnotizen | sportbotg linz; fußballer; physio student fh linz |
+| Status | Weitere Daten ergänzbar, sobald CV/LinkedIn vollständig vorliegt |
+
+---
+
+## Hanna Haslberger – Lebenslauf (einheitlich)
+
+Hannah Haslhofer absolvierte ihre Schulausbildung an der Neuen Mittelschule Bad Gastein und maturierte anschließend an der BAfEP Bischofshofen im Fachbereich Elementarpädagogik. Ihre berufliche Laufbahn ist geprägt von vielseitigen praktischen Erfahrungen in der Kinderbetreuung und Gastronomie in ihrer Heimat Bad Gastein. So absolvierte sie zahlreiche Praktika in Kindergärten im Bezirk Pongau und war als Kinderbetreuerin in der Skischule Bad Gastein sowie im Alpina Spa Hotel Haus Hirt tätig. Zusätzlich sammelte sie über mehrere Jahre hinweg Erfahrung als Servicekraft im Gipfelrestaurant Stubner. Ihre Weltoffenheit und ihre sehr guten Sprachkenntnisse (TOEFL C1) vertiefte sie während eines halbjährigen Auslandsaufenthalts, der sie unter anderem nach Indonesien, Vietnam und Australien führte. Neben ihren pädagogischen Kompetenzen verfügt sie über Qualifikationen in Erster Hilfe sowie den Helferschein im Schwimmen. Ihr ausgeprägtes Interesse daran, medizinisches Wissen und soziale Kompetenzen mit Empathie zu verbinden, führte sie schließlich an die FH Gesundheitsberufe OÖ, wo sie aktuell im zweiten Semester Physiotherapie studiert.
+
+| **Bereich** | **Details** |
+| --- | --- |
+| Rolle | Operatives |
+| Profilnotiz | Physio-Studentin FH Linz |
+| Status | Weitere Daten ergänzbar, sobald CV/LinkedIn vollständig vorliegt |
+
+---
+
+<aside>
+🎯 Alles jetzt gleich formatiert (Tabellenstil) und auf die 4 Personen reduziert.
+
+</aside>

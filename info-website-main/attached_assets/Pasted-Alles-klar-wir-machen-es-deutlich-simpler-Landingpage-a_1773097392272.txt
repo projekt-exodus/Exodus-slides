@@ -1,0 +1,274 @@
+Alles klar — wir machen es **deutlich simpler**, **Landingpage‑artig**, aber weiterhin **uni-/professoren‑tauglich**. Ziel: **Beikircher versteht es schnell**, sieht **ihr habt Datenschutz & Regulatorik ernsthaft im Griff**, und er kann euch **gezielt zu den richtigen Leuten weiterempfehlen**, weil ihr eure offenen Punkte sauber benennt.
+
+Unten ist ein **kompakter Website‑Plan (One‑Pager)** + **konkrete Texte** + **Grafik‑Ideen** + **Demo‑Einbindung**.
+
+---
+
+## 1) Zielbild der Seite in einem Satz
+
+**“Interaktive Projekt‑Übersicht (nicht Sales): Was wir bauen, warum es sicher ist, wie wir regulatorisch sauber starten – plus Demo.”**
+
+---
+
+## 2) Header / Navigation (einfach, klar, mit Demo)
+
+**Header links:** Project Exodus (Logo)
+**Header rechts (5 Punkte max):**
+
+1. Produkt
+2. Sicherheit & Datenschutz
+3. Regulatorik (MDR/AI)
+4. Roadmap
+5. Team
+
+**Ganz rechts als Primary Button:** **Demo‑App**
+**Secondary:** Kontakt (oder Footer)
+
+**Demo‑App Verhalten (empfohlen):**
+
+* Klick öffnet `/demo` (eigene Seite) oder ein Modal mit eingebettetem Prototype (Figma/Streamlit/Vercel).
+* Im Demo‑Screen: oben ein Hinweis “Prototype / Simulated Data”.
+
+---
+
+## 3) One‑Pager Struktur (nur 6 Sektionen + Footer)
+
+### Überblick als Tabelle (damit du sofort bauen kannst)
+
+| Sektion                      | Was sieht man (Grafik/Interaktion)                                          | Was steht dort (kurz & verständlich)                                    |
+| ---------------------------- | --------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| 1) Hero + Kurzüberblick      | 1 sauberes App‑Mock (Data Wall) + 3 Kennzahlen/Claims                       | Was ist Exodus? Für wen? Was ist Phase 1 (Informationssystem)?          |
+| 2) Problem → Lösung          | “Vorher/Nachher” (Silos → eine Timeline)                                    | Warum das heute kaputt ist, was eure Data Wall konkret löst             |
+| 3) So funktioniert’s         | 3‑Schritte Flow (Import → Verstehen → Freigabe)                             | “Beraten” ohne Risiko: KI erklärt, Mensch gibt frei                     |
+| 4) Sicherheit & Datenschutz  | Interaktiver Datenfluss (Device → optional Sync) + “Schlüssel bleibt lokal” | Drei Prinzipien: lokal‑by‑default, opt‑in sync, kontrollierte Freigaben |
+| 5) Regulatorik (klar & kurz) | kleine Matrix Phase 1 vs Phase 2                                            | Was ihr **heute** macht vs **später** (MDR‑Pfad)                        |
+| 6) Roadmap + Offene Fragen   | Timeline Q1–Q4 2026 + “Open Questions” Box                                  | Was bis wann passiert + wo ihr Mentoring/Introductions braucht          |
+| Footer                       | Kontakt, Impressum, Dossier‑Stand                                           | Seriosität, Versionierung                                               |
+
+---
+
+# 4) Konkrete Website‑Texte (Copy‑Paste‑fähig, aber nicht “zu technisch”)
+
+## Sektion 1 — Hero (Landing‑Style, aber wissenschaftlich ruhig)
+
+**H1:**
+**Project Exodus — Health Data Vault für Linz (2026–2126)**
+
+**Subline:**
+Wir sammeln Gesundheitsdaten (Befunde, Laborwerte, Wearables) **an einem Ort**, machen sie **verständlich** und bauen schrittweise in Richtung **klinisch nutzbarer Entscheidungsunterstützung** aus — mit einem **Safety‑First** Ansatz.
+
+**3 Mini‑Bullets (unter der Subline):**
+
+* **Phase 1:** Daten sammeln, strukturieren, anzeigen (Wellness‑First)
+* **Sicherheit:** lokal verschlüsselt, optionaler EU‑Sync, klare Freigaben
+* **Phase 2:** Evidence‑to‑Plan mit **Clinician‑in‑the‑Loop**
+
+**Buttons:**
+
+* Primary: **Demo‑App öffnen**
+* Secondary: **Sicherheit & Datenschutz ansehen** (scroll)
+
+**Kleiner Hinweis (unauffällig):**
+*Stand: 03.03.2026 · Dokumentationsseite (kein Verkaufs‑Funnel)*
+
+---
+
+## Sektion 2 — Problem → Lösung (ohne Buzzwords)
+
+**Headline:**
+**Heute: Daten überall. Morgen: eine Timeline, die Sinn ergibt.**
+
+**Kurztext (2–3 Sätze):**
+Gesundheitsdaten liegen oft verteilt: PDFs, Arztbriefe, Laborwerte, Wearable‑Apps. Dadurch fehlt der Überblick, Trends gehen unter und Entscheidungen werden schwer. Project Exodus bringt diese Informationen in eine **strukturierte Timeline** (“Health Data Wall”), die auch Nicht‑Expert:innen verstehen.
+
+**Grafik‑Idee:**
+Links: “Silos” (PDF, Wearable, Klinik, Notizen)
+Rechts: 1 saubere Timeline mit 2–3 Beispielkarten (z. B. Vitamin D Trend, Training, Arztbrief).
+
+---
+
+## Sektion 3 — So funktioniert’s (Beratung ohne Risiko)
+
+**Headline:**
+**Import → Verstehen → Freigabe**
+
+**Drei Kacheln (sehr verständlich):**
+
+1. **Import**
+   Dokumente (PDF/Scan) und Wearable‑Daten werden in den Vault übernommen und geordnet.
+
+2. **Verstehen (Erklärkarten)**
+   Die App übersetzt Werte in klare, allgemeine Erklärungen: *Was ist das? Warum relevant? Was könnte ich beobachten?*
+   Keine Diagnose, kein “Therapie‑Befehl”.
+
+3. **Freigabe durch Fachperson (optional)**
+   Wenn personalisierte Pläne entstehen, werden sie **nicht automatisch ausgespielt**. Ein:e Physio/Arzt prüft, ändert und gibt frei (**Clinician‑in‑the‑Loop**).
+
+**Mini‑Callout (sehr wichtig für Beikircher):**
+**Safety‑Prinzip:** KI darf vorschlagen — **aber nicht ungeprüft entscheiden.**
+
+**Grafik‑Idee (Flow‑Diagramm):**
+User → Vault → “Draft Plan” (in Quarantäne) → HCP Review → “Released Plan”
+
+---
+
+## Sektion 4 — Sicherheit & Datenschutz (verständlich, aber stark)
+
+**Headline:**
+**Datenschutz durch Architektur — nicht nur durch Text.**
+
+**Kurztext:**
+Wir behandeln Gesundheitsdaten als hochsensibel. Deshalb ist unser Grundprinzip: **Daten bleiben standardmäßig beim Nutzer**. Synchronisation und Weitergabe passieren nur, wenn der Nutzer es aktiv erlaubt — und nur im notwendigen Umfang.
+
+### Drei Kernpunkte (in klaren Cards)
+
+**1) Lokal‑by‑Default**
+Daten werden primär lokal gespeichert (verschlüsselt). Die App bleibt auch offline nutzbar.
+
+**2) Optionaler EU‑Sync**
+Wer Sync möchte, kann ihn aktivieren. Ziel: EU‑Hosting (z. B. Netcup/Hetzner) und verschlüsselte Übertragung/Storage.
+
+**3) Kontrollierte Freigaben (z. B. für KI‑Analyse)**
+Wenn Daten an Analyse‑Tools gehen, passiert das **granular**: Datentyp, Zeitraum, Zweck, Dauer. Freigaben sind **widerrufbar** und nachvollziehbar.
+
+**Grafik‑Block (das ist der Aha‑Moment): “Wo liegen die Daten?”**
+Ein interaktives Diagramm mit 2 Zuständen:
+
+* **Modus A: Offline‑Only** → alles bleibt am Device
+* **Modus B: Sync‑On** → verschlüsselte Pakete → EU‑Cloud
+  Dazu eine kleine Animation “Key stays local”.
+
+**Mini‑Disclaimer (seriös):**
+*Die konkrete kryptografische Ausgestaltung (Key‑Recovery, Multi‑Device Keys, Audit‑Granularität) wird als eigenes Arbeitspaket mit Security‑Expert:innen finalisiert.*
+
+---
+
+## Sektion 5 — Regulatorik (Phase 1 vs Phase 2, ohne Juristen‑Deutsch)
+
+**Headline:**
+**Regulatorik: Wir starten bewusst “unterhalb” der Medizinprodukt‑Schwelle.**
+
+**Kurztext:**
+In der EU hängt viel an der Zweckbestimmung (“Intended Purpose”). Darum trennen wir Funktionen modular und starten mit einem **Informationssystem**: sammeln, strukturieren, anzeigen — plus allgemeine Erklärungen.
+
+**Mini‑Matrix (super verständlich):**
+
+| Funktion                      | Phase 1 (Start)                           | Phase 2 (Ausbau)         |
+| ----------------------------- | ----------------------------------------- | ------------------------ |
+| Daten speichern/anzeigen      | ✅                                         | ✅                        |
+| Dokumente strukturieren (OCR) | ✅                                         | ✅                        |
+| Allgemeine Erklärungen        | ✅                                         | ✅                        |
+| Personalisierte Pläne         | ⚠️ nur als Entwurf + menschliche Freigabe | ✅ mit klinischer Evidenz |
+| Diagnose/Therapie automatisch | ❌                                         | ⚠️ nur mit MDR‑Pfad      |
+
+**Hinweis:**
+*Diese Seite ist keine Rechtsberatung. MDR/AI‑Act Einordnung wird im Projekt mit Expert:innen geprüft.*
+
+---
+
+## Sektion 6 — Roadmap + “Was wir von dir brauchen” (Mentor‑freundlich)
+
+**Headline:**
+**2026: Substanz aufbauen — Prototyp, Sicherheit, Pilotpartner**
+
+**Timeline (kurz):**
+
+* **März 2026:** FFG Projekt.Start, Dossier v1, Demo‑Prototype
+* **März–Mai 2026:** 10–15 Experteninterviews + LOI‑Anbahnung
+* **Q2 2026:** Offline‑Vault + Data Wall “Happy Path” stabil
+* **Q3 2026:** Clinician‑Review Prototype + erster Pilot‑Scope
+* **Q4 2026:** Evidence‑to‑Plan (RAG + Erklärkarten) in Pilot‑Form
+
+### “Open Questions” Box (extrem wichtig, weil er nicht alles wissen muss)
+
+**Wobei wir Mentoring/Introductions suchen:**
+
+1. **Datenschutz/Security Review:** Wer in OÖ/AT ist gut für Crypto/Health‑Data Security Audits?
+2. **Regulatory (MDR/AI Act):** Wen empfiehlst du für eine saubere Intended‑Purpose‑Formulierung und MDR‑Roadmap?
+3. **Klinische Piloten:** Welche Abteilung/Person wäre am ehesten offen für einen kleinen Pilot mit klarer Abgrenzung?
+4. **FFG‑Sprache:** Welche Formulierungen für “Entwicklungsrisiko” funktionieren in der Praxis?
+
+> Diese Box macht es für Beikircher leicht, euch **gezielt** weiterzuvernetzen, ohne selbst jedes Detail lösen zu müssen.
+
+---
+
+# 5) Datenschutz‑FAQ (kurz, aber “satisfying”)
+
+> 8–10 Fragen reichen. Jede Antwort 4–6 Zeilen, verständlich.
+
+### FAQ — Sicherheit & Datenschutz
+
+**1) Wo liegen meine Daten?**
+Standardmäßig lokal im Vault (Endgerät). Optional kann Sync aktiviert werden, um Backup/Multi‑Device zu ermöglichen.
+
+**2) Ist Sync verpflichtend?**
+Nein. Sync ist opt‑in. Offline‑Nutzung bleibt möglich.
+
+**3) Gehen Daten automatisch an KI‑Modelle oder externe Anbieter?**
+Nein. Analysen sind nur nach expliziter Freigabe möglich, mit klarer Begrenzung (Datentyp, Zeitraum, Zweck, Dauer).
+
+**4) Können Betreiber/Teammitglieder meine Gesundheitsdaten ansehen?**
+Zielbild: so wenig wie möglich. Betreiberzugriffe sind nicht “Standard”, sondern müssen technisch und organisatorisch streng begrenzt sein.
+
+**5) Was passiert bei Geräteverlust?**
+Das hängt von deinen Einstellungen ab: ohne Sync kann es Datenverlust geben; mit Sync ist Wiederherstellung möglich. Dieser Trade‑off wird transparent gemacht.
+
+**6) Was bedeutet “Clinician‑in‑the‑Loop”?**
+Personalisierte Pläne werden nicht ungeprüft ausgespielt. Eine Fachperson prüft und gibt frei.
+
+**7) Diagnostiziert die App Krankheiten?**
+Nein, nicht in Phase 1. Fokus: sammeln, strukturieren, anzeigen, allgemein erklären.
+
+**8) Kann ich meine Daten exportieren/löschen?**
+Ja. Portabilität und Löschung sind Kernprinzipien. (Details werden im Produkt konkretisiert.)
+
+---
+
+# 6) Grafiken, die wirklich helfen (ohne Overkill)
+
+Du brauchst nur **3–4 “Signature Graphics”**:
+
+### Grafik A: “Data Location Map” (die wichtigste)
+
+* Knoten: **Device Vault** (groß)
+* Optionaler Pfad: **EU Sync Storage**
+* Optionaler Pfad: **Share/Export**
+* Hinweis: “User controls switches”
+
+**Interaktion:** Toggle “Sync Off/On” → Pfad erscheint/verschwindet.
+
+### Grafik B: “Encryption Split” (verständlich)
+
+Ein Beispiel‑Datensatz wird visuell getrennt:
+
+* Block 1: Identität (PII)
+* Block 2: Gesundheitswerte (PHI)
+  Dann “Lock” Animation + “Key stays local”.
+
+### Grafik C: “Clinician Gate”
+
+KI‑Entwurf → Quarantäne → Freigabe → Nutzer sieht Plan
+**Interaktion:** Klick auf Schritt zeigt 2–3 Sätze Erklärung.
+
+### Grafik D: “Permissions Modal” für MCP/Integrationen (optional)
+
+Ein Dialog: “Erlaube Zugriff auf Laborwerte 2024–2026 für Trend‑Analyse (30 min)”.
+
+---
+
+# 7) Mini‑Design‑Regeln (damit es “uni‑mäßig” aussieht)
+
+* White background, dünne graue Linien, **Paper‑Layout** (wie Report).
+* Headlines eher “ruhig” statt marketingig.
+* Jede Grafik bekommt eine Caption: **“Fig. 1 — …”**
+* Tooltips statt langer Gesetzestexte.
+* Keine grellen Farben, keine “Startup‑Sales” Claims.
+
+---
+
+## Wenn du das exakt so baust, versteht Beikircher es auch ohne Deep‑Tech‑Wissen
+
+…und er kann euch trotzdem sehr schnell sagen:
+**“Dafür braucht ihr Person X (Security), dafür Person Y (Regulatory), dafür Klinik Z (Pilot).”**
+
+Wenn du magst, kann ich dir als Nächstes **eine super kurze Text‑Version** (wirklich nur 1–2 Absätze pro Sektion) schreiben, die du direkt als erstes MVP der Seite online stellst — und dann Schritt für Schritt erweitern kannst.

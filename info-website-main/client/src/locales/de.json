@@ -1,0 +1,439 @@
+{
+  "lang": {
+    "de": "DE",
+    "en": "EN",
+    "label": "Sprache"
+  },
+  "theme": {
+    "light": "Hell",
+    "dark": "Dunkel",
+    "toLightMode": "Zum hellen Modus wechseln",
+    "toDarkMode": "Zum dunklen Modus wechseln"
+  },
+  "nav": {
+    "overview": "Überblick",
+    "vision": "Vision & USP",
+    "aiChoice": "KI-Wahl",
+    "team": "Team",
+    "market": "Markt & Impact",
+    "problem": "Problem",
+    "how": "So funktioniert's",
+    "product": "Produktpfade",
+    "agent": "Agentic Layer",
+    "revenue": "Revenue",
+    "tech": "Technologie",
+    "security": "Sicherheit",
+    "regulation": "Regulatorik",
+    "roadmap": "Roadmap",
+    "risks": "Risiken",
+    "faq": "FAQ",
+    "navigation": "Navigation",
+    "open": "Menü",
+    "close": "Schließen"
+  },
+  "hero": {
+    "title": "Project Exodus",
+    "subtitle": "Länger leben. Gesünder altern.",
+    "subtitleBreak": "Präventive Gesundheit für alle.",
+    "tags": ["Souverän", "KI-gestützt", "Klinisch fundiert"],
+    "intro": "Wir bauen die Infrastruktur für <strong>präventive Gesundheit und Longevity</strong>: Alle Gesundheitsdaten an einem Ort, verständlich aufbereitet, mit KI-Unterstützung und ärztlicher Qualitätssicherung. Unser Ziel: Jeden Menschen dabei unterstützen, <strong>lange gesund zu bleiben</strong> und selbstbestimmt die besten Entscheidungen für ein langes, vitales Leben zu treffen.",
+    "phase1Label": "Phase 1",
+    "phase1Text": "Daten sammeln, strukturieren, anzeigen",
+    "securityLabel": "Sicherheit",
+    "securityText": "Lokal verschlüsselt, optionaler EU-Sync",
+    "phase2Label": "Phase 2",
+    "phase2Text": "Evidence-to-Plan mit Clinician-in-the-Loop",
+    "quicknav": "Direkt zu",
+    "quicknavItems": {
+      "vision": "Vision & USP",
+      "team": "Team",
+      "problem": "Problem & Lösung",
+      "how": "So funktioniert's",
+      "product": "Produktpfade",
+      "revenue": "Revenue",
+      "tech": "Technologie",
+      "security": "Sicherheit",
+      "regulation": "Regulatorik",
+      "roadmap": "Roadmap",
+      "risks": "Risiken",
+      "faq": "FAQ"
+    },
+    "demoLabel": "Live App Demo",
+    "demoDesc": "Alle deine Gesundheitsdaten auf einen Blick: Laborwerte, Arztbriefe, Wearable-Daten — strukturiert als Timeline, verständlich aufbereitet und immer in deiner Kontrolle.",
+    "demoTags": ["Labor", "Fitness", "Arztbriefe", "Wearables"]
+  },
+  "vision": {
+    "title": "Warum Exodus?",
+    "titleSub": "Eine Plattform statt zehn Apps.",
+    "desc": "Heute brauchst du eine App für Labor, eine für Fitness, eine für Supplements, eine für den Arzt. Exodus bringt alles zusammen — <strong>ganzheitlich, verständlich und sicher</strong>.",
+    "cards": [
+      { "title": "Health Vault / Data Wall", "desc": "Laborbefunde, Arztbriefe, Trainings- und Wearable-Daten — alles importiert, strukturiert und als Timeline visualisiert." },
+      { "title": "Simpel wie Instagram", "desc": "Voice-first Bedienung. Zugänglich auch für Ältere — per SMS oder Anruf nutzbar." },
+      { "title": "Arzt-/HCP-Dashboard", "desc": "Ärzte und Therapeuten sehen relevante Daten, prüfen KI-Vorschläge und geben Pläne frei." },
+      { "title": "Supplement-Ökosystem", "desc": "Eigener Supplement-Hersteller mit Custom-Abfüllung, Kooperationen (z.B. Biogena) und In-App-Kauf — personalisiert auf dein Profil." },
+      { "title": "KI-gestützte Analysen", "desc": "Schrittweise: von allgemeinen Erklärungen bis hin zu personalisierten Trainings- und Gesundheitsplänen." },
+      { "title": "Kern-USP", "desc": "Ganzheitliche Abdeckung: Labor + Fitness + Supplements + ärztliche Betreuung — statt Insellösungen." }
+    ],
+    "diffTitle": "Differenzierung",
+    "diffDesc": "Im Gegensatz zu tandemhealth.ai, Oura, Apple Health, Whoop oder spezialisierten Einzel-Apps bietet Exodus eine <strong>integrierte End-to-End Plattform</strong>: von der Datenerfassung über KI-Analyse bis zur ärztlichen Freigabe.",
+    "compTitle": "Wettbewerbsvergleich",
+    "compDesc": "Wie unterscheidet sich Exodus von bestehenden Lösungen? Ein Überblick über die wichtigsten Dimensionen — verglichen mit 10 Wettbewerbern.",
+    "compHint": "Spaltenheader anklicken für Anbieter-Details · Feature-Label anklicken für Glossar-Definition.",
+    "compFeature": "Feature",
+    "compPartial": "teilw.",
+    "compFooter": "Stand: März 2026. Vergleich basiert auf öffentlich verfügbaren Produktinformationen. „teilw.“ = Funktion vorhanden, aber eingeschränkt oder ohne zentrale Integration. Quellen: Produktwebsites, App Stores, öffentliche Dokumentation der jeweiligen Anbieter.",
+    "close": "Schließen",
+    "features": [
+      { "feature": "Labordaten & Arztbriefe", "tag": "Datenhaltung", "glossDef": "Die Fähigkeit, unstrukturierte medizinische Dokumente (PDFs, Scans) mittels KI zu digitalisieren, Biomarker zu extrahieren und longitudinale Trends über Jahre hinweg zu visualisieren." },
+      { "feature": "Wearable-Integration", "tag": "Biometrie", "glossDef": "Nahtlose Aggregation von Echtzeit-Biometrie (HRV, VO₂ Max, Schlafstadien) von verschiedenen Hardware-Anbietern in ein zentrales Dashboard." },
+      { "feature": "KI-Erklärungen", "tag": "XAI", "glossDef": "Einsatz erklärbarer KI (Explainable AI), die Kausalzusammenhänge zwischen Lebensstil und Laborwerten aufzeigt, anstatt nur isolierte Datenpunkte zu liefern." },
+      { "feature": "Ärztliche Freigabe", "tag": "Medizin", "glossDef": "Ein Prozess, bei dem generierte Gesundheitspläne oder Laboranalysen von approbierten Medizinern geprüft und für den Nutzer freigegeben werden." },
+      { "feature": "Supplements integriert", "tag": "Shop / Rx", "glossDef": "Ein direkt in die App integrierter Marktplatz für personalisierte Nährstoffe oder klinische Medikamente (z. B. Peptide, HRT), basierend auf den individuellen Daten." },
+      { "feature": "Trainingspläne & Fitness", "tag": "Sportwissenschaft", "glossDef": "Bereitstellung von sportwissenschaftlich fundierten Programmen, die Belastungs- und Erholungsdaten (RHR, HRV) dynamisch in die Workout-Steuerung einbeziehen." },
+      { "feature": "Lokal-first / Privacy", "tag": "Architektur", "glossDef": "Eine Architektur, bei der die sensiblen Gesundheitsdaten primär auf dem Gerät des Nutzers verschlüsselt gespeichert und verarbeitet werden." },
+      { "feature": "KI-Wahl", "tag": "Technologie", "glossDef": "Die technologische Freiheit, zwischen verschiedenen KI-Modellen (z.\u00a0B. lokale LLMs für maximale Privacy vs. leistungsstarke Cloud-Modelle) zu wechseln." },
+      { "feature": "EU-DSGVO", "tag": "Compliance", "glossDef": "Nachweisbare Einhaltung europäischer Datenschutzstandards, inklusive Serverstandorten in der EU und dem Verzicht auf unautorisierte Drittanbieter-Weitergaben." }
+    ]
+  },
+  "aiChoice": {
+    "title": "Bring your own AI",
+    "titleSub": "Du wählst deine KI",
+    "desc": "Exodus ist keine geschlossene Black Box. Der Health Vault ist eine offene Schnittstelle — du bestimmst selbst, welches KI-Modell deine Gesundheitsdaten analysiert: lokal auf deinem Mac, direkt auf dem Smartphone, oder cloud-basiert wenn du es explizit freigibst. Das ist datenschutzrechtlich entscheidend und technisch einzigartig.",
+    "defaultBadge": "Default: 100% lokal — kein Cloud-Zwang",
+    "supportedModels": "Unterstützte Modelle",
+    "categories": [
+      {
+        "title": "Lokal auf Mac / PC",
+        "badge": "Maximale Privatsphäre",
+        "claim": "Daten verlassen nie dein Gerät"
+      },
+      {
+        "title": "Lokal auf dem Smartphone",
+        "badge": "On-Device · Empfohlen",
+        "claim": "Keine Internetverbindung nötig"
+      },
+      {
+        "title": "Cloud-Modelle (opt-in)",
+        "badge": "Opt-in · Du entscheidest",
+        "claim": "Volle Kontrolle — du entscheidest wann und was geteilt wird"
+      }
+    ],
+    "privacyPoints": [
+      { "title": "DSGVO-konform", "desc": "Daten gehen nur an die von dir gewählte KI — nie automatisch in die Cloud." },
+      { "title": "Du entscheidest", "desc": "Modell jederzeit wechselbar. Zugriff pro Analyse explizit steuerbar." },
+      { "title": "Lokal first", "desc": "Default ist immer lokal. Cloud ist explizites Opt-in — kein heimliches Teilen." }
+    ],
+    "techBasis": "Technische Basis",
+    "techDesc": "Der Health Vault implementiert ein offenes <strong>API-Interface (MCP-kompatibel)</strong> — jedes kompatible KI-Modell kann als Analyse-Engine eingebunden werden. Die Daten verlassen den Vault nur mit expliziter Freigabe; lokale Modelle erhalten direkten On-Device-Zugriff ohne Netzwerkkommunikation.",
+    "detailsLink": "Details zum Sicherheitsmodell und den MCP-Skills:",
+    "agentLink": "Agentic Layer",
+    "techLink": "Technologie"
+  },
+  "team": {
+    "title": "Team & Partnernetzwerk",
+    "desc": "Vier Gründer aus Linz / OÖ mit Expertise in Medizintechnik, KI, Sport und Operations. Starkes Netzwerk aus Forschung, Klinik und Industrie.",
+    "coreTitle": "Kernteam",
+    "coreDesc": "Alle Gründer sind sportlich aktiv und begeisterte Gym-Gänger — das Produkt entsteht aus echter persönlicher Überzeugung.",
+    "supportTitle": "Unterstützung",
+    "coopNote": "Kooperationslogik: LOIs, dokumentierte Experteninterviews mit JKU Medizin, Kepler Uniklinikum und FH Gesundheitsberufe OÖ. Für FFG: \"wirksame Kooperation\" (mind. 10 % der förderbaren Kosten bei Forschungseinrichtungen, Kooperationsbonus bis 70 %)."
+  },
+  "market": {
+    "title": "Markt & Impact",
+    "desc": "Der Digital-Health-Markt wächst rasant. Chronische Erkrankungen, fragmentierte Daten und steigende Gesundheitskosten schaffen enormen Bedarf für integrierte Lösungen.",
+    "stats": [
+      { "value": "$ 549 Mrd.", "label": "Globaler Digital Health Markt 2028", "sub": "Basis: 180 Mrd. USD (2023) · CAGR ~25 %" },
+      { "value": "€ 11 Mrd.", "label": "EU Digital Health 2023 → € 61 Mrd. (2035)", "sub": "CAGR ~15,1 % · Prognose EU-Kommission" },
+      { "value": "~5,6 Mio.", "label": "Chronisch Erkrankte in Österreich", "sub": "~66 % der Bev. ab 15 J. · Statistik Austria" },
+      { "value": "€ 57,8 Mrd.", "label": "Gesundheitsausgaben Österreich 2024", "sub": "Laufende Ausgaben gesamt · Tendenz steigend" }
+    ],
+    "tamTitle": "Adressierbarer Markt (Österreich)",
+    "tamItems": [
+      { "label": "TAM", "desc": "Gesamtmarkt Digital Health AT", "value": "~€ 1,2 Mrd." },
+      { "label": "SAM", "desc": "Health-Data + Supplement-Segment", "value": "~€ 180 Mio." },
+      { "label": "SOM", "desc": "Erreichbar in 3–5 Jahren", "value": "~€ 5–15 Mio." }
+    ],
+    "needTitle": "Bedarfsindikatoren",
+    "needItems": [
+      { "stat": "66 %", "desc": "der Österreicher:innen ab 15 J. haben mind. eine chronische Erkrankung oder ein Gesundheitsproblem" },
+      { "stat": "~2 Mio.", "desc": "Personen mit Beschwerden am Bewegungsapparat in Österreich (mind. 1× jährlich)" },
+      { "stat": "€ 3,5+ Mrd.", "desc": "Wertschöpfungsverlust durch Präsentismus und arbeitsbedingte Erkrankungen in Österreich" },
+      { "stat": "€ 57,8 Mrd.", "desc": "Laufende Gesundheitsausgaben Österreich 2024 — Tendenz stark steigend" }
+    ]
+  },
+  "problem": {
+    "figCaption": "Problem: Fragmentierte Gesundheitsdaten",
+    "title": "Heute: Daten überall.",
+    "titleSub": "Morgen: eine Timeline, die Sinn ergibt.",
+    "desc": "Gesundheitsdaten liegen oft verteilt: PDFs, Arztbriefe, Laborwerte, Wearable-Apps. Dadurch fehlt der Überblick, Trends gehen unter und Entscheidungen werden schwer. Project Exodus bringt diese Informationen in eine <strong>strukturierte Timeline</strong> (\"Health Data Wall\").",
+    "todayLabel": "Heute — Silos",
+    "todayItems": ["Arztbrief (PDF irgendwo)", "Wearable-App (eigene Cloud)", "Labor (Ausdruck im Ordner)", "Klinik-System (kein Zugriff)"],
+    "tomorrowLabel": "Morgen — Health Data Wall",
+    "tomorrowItems": [
+      { "label": "Vitamin D Trend", "sub": "↗ 28 → 45 ng/ml (6 Mo.)" },
+      { "label": "Blutdruck-Verlauf", "sub": "140/90 → 128/82 mmHg" },
+      { "label": "Arztbrief: Endokrinologie", "sub": "TSH 2.4 mU/L — erklärt" }
+    ]
+  },
+  "how": {
+    "title": "Import → Verstehen → Freigabe",
+    "desc": "In drei einfachen Schritten: Daten rein, verstehen, und bei Bedarf ärztlich freigeben lassen.",
+    "steps": [
+      { "step": "01", "title": "Import", "desc": "Dokumente (PDF/Scan) und Wearable-Daten werden in den Vault übernommen und geordnet." },
+      { "step": "02", "title": "Verstehen", "desc": "Die App übersetzt Werte in klare Erklärungen: Was ist das? Warum relevant? Was könnte ich beobachten?" },
+      { "step": "03", "title": "Freigabe", "desc": "Wenn personalisierte Pläne entstehen, prüft ein Arzt/Therapeut sie und gibt sie frei." }
+    ],
+    "safetyTitle": "Safety-Prinzip",
+    "safetyDesc": "KI darf vorschlagen — <strong>aber nicht ungeprüft entscheiden.</strong> Keine Diagnose, kein \"Therapie-Befehl\".",
+    "figCaption": "Dreistufiger Datenfluss: Import → Verstehen → Freigabe",
+    "exampleTitle": "Beispiel: Erklärkarten",
+    "exampleDesc": "Statt kryptischer Laborwerte bekommst du verständliche Karten, die erklären: Was wurde gemessen? Was bedeutet der Wert? Was könnte ich beobachten?",
+    "explainCards": [
+      {
+        "title": "Vitamin D — 28 ng/ml",
+        "status": "Niedrig-normal",
+        "explanation": "Vitamin D unterstützt Knochen, Immunsystem und Stimmung. Dein Wert liegt im unteren Bereich.",
+        "observation": "Beobachte: Müdigkeit, Infektanfälligkeit im Winter. Ein Trend über mehrere Messungen ist aussagekräftiger als ein Einzelwert."
+      },
+      {
+        "title": "TSH — 2.4 mU/L",
+        "status": "Normalbereich",
+        "explanation": "TSH steuert die Schilddrüse. Dein Wert liegt im Normalbereich (0.4–4.0 mU/L).",
+        "observation": "Kein Handlungsbedarf. Bei Symptomen wie Gewichtsveränderung oder Kälteempfinden: Arzt konsultieren."
+      }
+    ],
+    "importantNote": "<strong>Wichtig:</strong> Erklärkarten liefern allgemeine Informationen — keine individuelle Diagnose. Sie helfen dir, deine Werte besser zu verstehen und gezielt mit deinem Arzt zu besprechen.",
+    "phase2Title": "Phase 2 Vision: Evidence-to-Plan",
+    "phase2Desc": "In Phase 2 wird aus dem reinen Informationssystem ein Unterstützungssystem: Die App kann auf Basis wissenschaftlicher Evidenz (Studien, Leitlinien) <strong>personalisierte Entwürfe</strong> erstellen — zum Beispiel Ernährungsanpassungen oder Monitoring-Vorschläge.",
+    "phase2Steps": [
+      { "label": "Evidenz finden", "desc": "RAG durchsucht medizinische Literatur" },
+      { "label": "Plan-Entwurf", "desc": "KI erstellt personalisierten Vorschlag" },
+      { "label": "Arzt-Freigabe", "desc": "Fachperson prüft und gibt frei" }
+    ],
+    "phase2Note": "Phase 2 erfordert MDR-Konformität und klinische Validierung. Bis dahin: nur allgemeine Informationen."
+  },
+  "product": {
+    "title": "Drei Produktpfade — ein Stufenmodell",
+    "desc": "Wir starten pragmatisch (Wellness-App) und bauen schrittweise klinische Funktionen aus. Jeder Pfad hat eine klare regulatorische Abgrenzung.",
+    "paths": [
+      { "step": "Pfad 1", "title": "Health Data Wall", "desc": "Dokumente importieren, strukturieren, anzeigen. Wellness-first, kein MDR notwendig.", "tags": ["Kein MDR", "Sofort möglich"] },
+      { "step": "Pfad 2 ★", "title": "Evidence-to-Plan", "desc": "Literatur-RAG + Clinician-in-the-Loop. Arzt kann KI-Entwürfe freigeben, ändern oder ablehnen. \"Warum das?\"-Erklärkarten mit Safety-Logik.", "tags": ["Empfohlen", "MDR IIa nötig"] },
+      { "step": "Pfad 3", "title": "Sovereign Health AI Stack", "desc": "EU-/On-Prem LLM, De-Identification, Policy Engine, Audit-Logs. Volle digitale Souveränität.", "tags": ["Langfristig", "Hohe Komplexität"] }
+    ],
+    "gtmTitle": "Go-to-Market: Drei Phasen",
+    "phases": [
+      { "phase": "Phase 1", "title": "Consumer App (Wellness/Vault)", "desc": "Schneller Start, kein MDR. Export, Kommunikation, \"Arzt kontaktieren\". Supplements als paralleler Revenue-Stream." },
+      { "phase": "Phase 2", "title": "HCP-Modul (Physios/Ärzte)", "desc": "KI-Planvorschläge nur mit ärztlicher Freigabe. Klinische Evidenz als Grundlage." },
+      { "phase": "Phase 3", "title": "Voll zertifiziertes MDR-Produkt", "desc": "Perspektivisch erstattungsfähig. Vollständige klinische Validierung und CE-Kennzeichnung." }
+    ]
+  },
+  "agent": {
+    "title": "Agentic Layer",
+    "titleSub": "OpenClaw Integration",
+    "desc1": "<strong>OpenClaw</strong> ist ein viraler Open-Source-KI-Agent des österreichischen Entwicklers Peter Steinberger — 100.000+ GitHub Stars in wenigen Wochen, eines der am schnellsten wachsenden Open-Source-Projekte überhaupt. Er läuft lokal auf dem eigenen Gerät und lässt sich per WhatsApp, Telegram oder iMessage steuern.",
+    "desc2": "Exodus wird als offizielles <strong>OpenClaw Skill-Pack</strong> über ClawHub veröffentlicht — mit gesundheitsbezogenen Fähigkeiten für den Agenten, ohne dass OpenClaw je Rohdaten aus dem Vault zu sehen bekommt. Welches KI-Modell dabei zum Einsatz kommt, bleibt frei wählbar — lokal auf dem Gerät oder cloud-basiert per opt-in (",
+    "desc2Link": "Bring your own AI",
+    "desc2End": ").",
+    "phase": "Geplant: Phase 2 (2027) · Konzeptuell / Pilotphase",
+    "flowTitle": "Datenfluss",
+    "flowSteps": [
+      { "label": "Exodus Vault", "sub": "Gesundheitsdaten, Laborwerte und Supplement-History liegen lokal verschlüsselt — kein Cloud-Zwang" },
+      { "label": "Exodus Skill-Pack (MCP-Server)", "sub": "Exodus stellt dem Agenten typsichere Funktionen bereit — OpenClaw bekommt ausschließlich explizit freigegebene Daten, niemals Rohdaten oder direkten Datenbankzugriff" },
+      { "label": "OpenClaw Agent (lokal beim Nutzer)", "sub": "Läuft auf dem eigenen Gerät oder Server — empfängt Befehle per WhatsApp, Telegram oder iMessage und führt sie autonom aus" },
+      { "label": "Supplement-Shop (z.B. Biogena)", "sub": "Browser-Automation: Agent öffnet den Shop, legt die empfohlenen Produkte in den Warenkorb — Bestellung wird erst nach Nutzer-Bestätigung ausgelöst" },
+      { "label": "Bestätigung & Vault-Log", "sub": "Bestellbestätigung und Rechnung werden automatisch im Vault gespeichert — lückenlose Historie, jederzeit einsehbar" }
+    ],
+    "skillsTitle": "Skills (MCP-Tools)",
+    "skills": [
+      { "fn": "get_recommendations()", "desc": "Liefert aktuelle, KI-generierte Supplement-Empfehlungen aus dem Vault — abgestimmt auf das persönliche Gesundheitsprofil", "access": "read-only" },
+      { "fn": "get_health_context()", "desc": "Gibt dem Agenten nur explizit freigegebene Gesundheitsdaten (z.B. spezifische Biomarker, Laborwerte) — kein Vollzugriff", "access": "read-only" },
+      { "fn": "compare_supplements()", "desc": "Vergleicht verfügbare Supplemente anhand freigegebener Laborwerte — gibt konkrete Empfehlung mit Begründung zurück", "access": "read-only" },
+      { "fn": "check_stock()", "desc": "Prüft verfügbare und bereits bestellte Supplemente im Nutzerprofil — verhindert Doppelbestellungen", "access": "read-only" },
+      { "fn": "place_order()", "desc": "Löst Browser-Automation aus — öffnet den konfigurierten Shop und bereitet die Bestellung vor. Wird erst nach Nutzer-Bestätigung finalisiert", "access": "action" },
+      { "fn": "log_to_vault()", "desc": "Schreibt Bestätigung, Rechnung und Agenten-Aktionslog sicher in den Vault zurück", "access": "write" }
+    ],
+    "securityTitle": "Sicherheitsmodell",
+    "securityItems": [
+      "OpenClaw läuft lokal beim Nutzer — persönliche Daten verlassen das Gerät nicht. Exodus' Vault liefert nur explizit freigegebene Daten über MCP; kein Direktzugriff auf die Datenbank.",
+      "Jede Agenten-Aktion wird im Vault geloggt und kann vom Nutzer eingesehen, storniert oder rückgängig gemacht werden — vollständige Transparenz.",
+      "Bestellungen werden vorbereitet, aber erst nach expliziter Nutzer-Bestätigung ausgelöst (opt-in). Kein autonomes Bestellen ohne Freigabe."
+    ],
+    "techBasisLabel": "Technische Basis & Distribution",
+    "techBasis": "Exodus implementiert einen <strong>MCP-Server</strong> (Model Context Protocol) — die standardisierte Schnittstelle zwischen KI-Agenten und externen Tools. Das Skill-Pack wird über <strong>ClawHub</strong> (das offizielle OpenClaw Skill-Verzeichnis mit 5.400+ Skills) veröffentlicht und ist per <code>clawhub install exodus</code> in Minuten installiert. Der Agent authentifiziert sich mit einem nutzerspezifischen Token — kein direkter Datenbankzugriff, keine Rohdaten, nur explizit definierte Funktionsaufrufe."
+  },
+  "revenue": {
+    "title": "Revenue-Modell",
+    "desc": "Drei Einnahmequellen, die sich gegenseitig verstärken: ein Abo-Modell für den Health Data Vault, ärztliche Beratung und Heilpläne sowie der Verkauf von Supplements und Longevity-Produkten.",
+    "sub": {
+      "title": "Abo-Subscription",
+      "sub": "Health Data Vault",
+      "desc": "Monatliches oder jährliches Abo für den vollen Zugang zum Health Data Vault: Dokumente importieren, strukturieren, KI-Erklärungen, Timeline-Ansicht und optionaler Cloud-Sync.",
+      "tiers": [
+        { "label": "Free Tier", "desc": "Begrenzter Import, allgemeine Übersicht" },
+        { "label": "Premium", "desc": "Unbegrenzter Import, KI-Erklärungen, Cloud-Sync, Wearable-Integration" },
+        { "label": "Family", "desc": "Mehrere Profile, geteilte Verwaltung (z.B. für Eltern/Kinder)" }
+      ]
+    },
+    "consulting": {
+      "title": "Arzt-Beratung & Heilpläne",
+      "sub": "Plattformvermittlung",
+      "desc": "Ärzt:innen erstellen auf Basis der Gesundheitsdaten individuelle Heilpläne und Beratungen. Exodus verbindet Patient:innen und Ärzt:innen und erhält pro Vermittlung eine Provision.",
+      "items": [
+        { "label": "Heilplan-Erstellung", "desc": "Ärzte erstellen personalisierte Gesundheitspläne auf Datenbasis" },
+        { "label": "Beratungsgespräche", "desc": "Video- oder Chat-Beratung mit Fachärzten über die Plattform" },
+        { "label": "Provision", "desc": "Exodus als Vermittler erhält einen Anteil pro Beratung" }
+      ]
+    },
+    "supplements": {
+      "title": "Supplements & Longevity",
+      "sub": "Produkt-Verkauf",
+      "desc": "Eigene Supplements und Longevity-Produkte, personalisiert auf Basis deiner Gesundheitsdaten. Direkt in der App bestellbar — plus Kooperationen mit etablierten Herstellern.",
+      "items": [
+        { "label": "Eigene Produkte", "desc": "Custom-Abfüllung, personalisierte Zusammenstellung" },
+        { "label": "Kooperationen", "desc": "z.B. Biogena, weitere Premium-Hersteller" },
+        { "label": "In-App-Kauf", "desc": "Nahtlose Bestellung direkt aus der App heraus" }
+      ]
+    },
+    "synergyLabel": "Synergie:",
+    "synergy": "Die Abo-Plattform liefert die Datengrundlage für ärztliche Heilpläne und personalisierte Supplement-Empfehlungen. Ärzte nutzen die strukturierten Daten für bessere Beratung, Supplements generieren wiederkehrenden Umsatz — alles über eine zentrale Schnittstelle."
+  },
+  "tech": {
+    "title": "Technologie & Infrastruktur",
+    "desc": "Entwicklung mit modernsten KI-Methoden, EU-konformes Hosting und volle Transparenz durch Explainable AI.",
+    "cards": [
+      { "title": "KI-/Vibe-Coding", "desc": "Entwicklung über Agent-Swarm: 20–30 KI-Agents arbeiten parallel an verschiedenen Modulen." },
+      { "title": "EU-Hosting (DSGVO)", "desc": "Netcup/Hetzner als Hosting-Partner. Kryptographische Datenspeicherung. Keine US-Cloud als Default." },
+      { "title": "Erklärbare KI (EU-konform)", "desc": "Jede KI-Empfehlung ist nachvollziehbar: \"Warum dieser Vorschlag?\" Open-Source-Modelle (Mistral, Llama 3, Gemma 2) — EU-gehostet, DSG-konform, kein US-Anbieter als Default." },
+      { "title": "Datenintegration", "desc": "Import über Spike API, OCR/NLP-Pipeline. Audit-Logs für jede Datenverarbeitung." },
+      { "title": "Lokale KI-Modelle", "desc": "On-Device KI: Modelle laufen direkt auf dem Gerät — deine Daten verlassen nie das Smartphone, maximale Privatsphäre." },
+      { "title": "KI frei wählbar", "desc": "Lokal, on-device oder cloud-basiert — du wählst dein KI-Modell. Details im Abschnitt \"Bring your own AI\"." }
+    ],
+    "extTitle": "KI-Extensions: Offene Schnittstelle, kontrollierter Zugriff",
+    "extDesc": "Der Vault funktioniert wie ein App-Store für KI: Verschiedene KI-Apps können als Extensions angebunden werden. Jede Extension bekommt nur die Daten, die du explizit freigibst — mit klarer Begrenzung nach Typ, Zeitraum und Zweck.",
+    "extModels": [
+      { "name": "GPT-4o", "sub": "OpenAI" },
+      { "name": "Claude 3.5", "sub": "Anthropic" },
+      { "name": "Gemini Pro", "sub": "Google" },
+      { "name": "Llama 3", "sub": "Lokal/On-Device" },
+      { "name": "Mistral Large", "sub": "EU-hosted" },
+      { "name": "DeepSeek V3", "sub": "Open Source" }
+    ],
+    "extFeatures": [
+      "Jede Extension braucht deine Freigabe",
+      "Du siehst, welche Daten geteilt werden",
+      "Zugriff jederzeit widerrufbar"
+    ],
+    "intTitle": "Anbindungen & Schnittstellen",
+    "intDesc": "Der Health Vault verbindet sich mit Wearables, KIS/ERP-Systemen, klinischen Standards, Forschungspartnern, wissenschaftlichen Datenbanken und offenen Protokollen.",
+    "intCenter": "Zentrale",
+    "intConnections": "Anbindungen",
+    "openDataTitle": "Open-Data-Evidenz (data.gv.at)",
+    "openDataDesc": "Öffentliche Datensätze als Bedarfs- und Impact-Beleg: chronische Erkrankungen, muskuloskelettale Beschwerden, Diabetes-Trend, Präsentismus."
+  },
+  "security": {
+    "title": "Datenschutz durch Architektur — nicht nur durch Text.",
+    "desc": "Gesundheitsdaten sind hochsensibel. Unser Grundprinzip: <strong>Daten bleiben beim Nutzer</strong>. Synchronisation und Weitergabe passieren nur, wenn du es aktiv erlaubst.",
+    "cards": [
+      { "title": "Lokal-by-Default", "desc": "Daten werden primär lokal gespeichert (verschlüsselt). Die App bleibt auch offline nutzbar." },
+      { "title": "Jede Cloud — deine Wahl", "desc": "Sync ist optional. Du wählst selbst, welche Cloud du nutzt — unsere, deine eigene oder gar keine. Die Daten werden dort verschlüsselt gespeichert." },
+      { "title": "Kontrollierte Freigaben", "desc": "Datentyp, Zeitraum, Zweck, Dauer. Freigaben sind widerrufbar und nachvollziehbar." }
+    ],
+    "diagramLabel": "Wo liegen die Daten?",
+    "syncOn": "Sync An",
+    "syncOff": "Sync Aus",
+    "syncActivate": "Sync aktivieren",
+    "syncDeactivate": "Sync deaktivieren",
+    "deviceLabel": "Dein Gerät",
+    "encrypted": "Verschlüsselt",
+    "yourChoice": "Deine Wahl",
+    "keyLocal": "Schlüssel bleibt lokal",
+    "syncNote": "Du entscheidest, wo deine Daten gespeichert werden. Der Schlüssel bleibt immer bei dir.",
+    "figCaption": "Datenfluss: Device Vault → beliebige Cloud (Schlüssel bleibt lokal)",
+    "sharingTitle": "Wie funktionieren Freigaben?",
+    "sharingDesc": "Wenn du Daten teilen möchtest — z.B. mit deinem Arzt oder einem Forschungsprojekt — kontrollierst du genau, was geteilt wird. Jede Freigabe ist granular und widerrufbar.",
+    "sharingDims": [
+      { "label": "Datentyp", "desc": "Welche Werte?", "example": "z.B. nur Laborwerte" },
+      { "label": "Zeitraum", "desc": "Welcher Zeitraum?", "example": "z.B. letzte 6 Monate" },
+      { "label": "Zweck", "desc": "Wofür?", "example": "z.B. Zweitmeinung" },
+      { "label": "Dauer", "desc": "Wie lange gültig?", "example": "z.B. 30 Tage" }
+    ],
+    "revokeNote": "<strong>Widerruf jederzeit:</strong> Du kannst jede Freigabe jederzeit zurückziehen. Freigegebene Daten werden beim Empfänger als \"nicht mehr verfügbar\" markiert."
+  },
+  "regulation": {
+    "title": "Regulatorik: Wir starten bewusst \"unterhalb\" der Medizinprodukt-Schwelle.",
+    "desc": "In der EU hängt viel an der Zweckbestimmung (\"Intended Purpose\"). Darum trennen wir Funktionen modular und starten mit einem <strong>Informationssystem</strong>: sammeln, strukturieren, anzeigen — plus allgemeine Erklärungen.",
+    "colFunc": "Funktion",
+    "colPhase1": "Phase 1",
+    "colPhase2": "Phase 2",
+    "rows": [
+      { "func": "Daten speichern/anzeigen" },
+      { "func": "Dokumente strukturieren (OCR)" },
+      { "func": "Allgemeine Erklärungen" },
+      { "func": "Personalisierte Pläne", "p1note": "nur als Entwurf + Arzt-Freigabe", "p2note": "mit klinischer Evidenz" },
+      { "func": "Diagnose/Therapie automatisch", "p2note": "nur mit MDR-Pfad" }
+    ],
+    "disclaimer": "Diese Seite ist keine Rechtsberatung. MDR/AI-Act Einordnung wird im Projekt mit Expert:innen geprüft.",
+    "figCaption": "Regulatorische Einordnung: Phase 1 (Informationssystem) vs. Phase 2 (MDR-Pfad)"
+  },
+  "roadmap": {
+    "title": "Fahrplan: Jetzt → Gründung → Plattform → Longevity-Zentren",
+    "desc": "Linz, April 2026. Prototype fertig, FFG eingereicht, AWS Incubator beworben. FFG Kleinprojekt-Einreichung am 10. Mai. Firmengründung nach erster Förderzusage — dann schrittweiser Aufbau eines vollständigen Gesundheits-Ökosystems.",
+    "nearTitle": "Jetzt & Nächste Schritte",
+    "nearSub": "Stand März – Mai 2026",
+    "longTitle": "Langzeit-Roadmap",
+    "longSub": "Juni 2026 → 2029+",
+    "fundingTitle": "Förderstrategie (Stufenplan)",
+    "fundingDesc": "Rein förderfinanzierter Aufbau — von niedrigschwellig bis substantiell. Jede Stufe baut auf der vorherigen auf. Kumulierte potenzielle Fördersumme: über 400.000 € (FFG + aws + tech2b + OÖ).",
+    "ffgTitle": "FFG & aws — Bundesebene",
+    "regionalTitle": "tech2b & OÖ — Regionale Ebene (Oberösterreich)",
+    "fundingNote": "Wichtig für FFG-Einreichungen: häufigster Ablehnungsgrund ist \"zu wenig Entwicklungsrisiko\" — das technische Risiko muss klar herausgearbeitet werden. De-minimis-Konto beachten: max. 300.000 € in 3 Steuerjahren.",
+    "statusLabels": {
+      "done": "Erledigt",
+      "active": "Jetzt",
+      "pending": "Ausstehend",
+      "soon": "Bald",
+      "planned": "Geplant"
+    }
+  },
+  "risks": {
+    "title": "Hauptrisiken & Gegenstrategien",
+    "desc": "Wir benennen Risiken offen und haben für jedes eine klare Gegenstrategie.",
+    "items": [
+      { "risk": "MDR-/Benannte-Stellen-Komplexität", "counter": "Wellness-first Start, modulare Zweckbestimmung, MDR-Pfad erst in Phase 2" },
+      { "risk": "Datenzugang (Kepler Uniklinikum)", "counter": "LOIs, Pilotprojekt mit klarer Abgrenzung, dokumentierte Kooperation" },
+      { "risk": "Halluzinationen / KI-Bias", "counter": "Clinician-in-the-Loop, erklärbare KI (EU-konform), Safety Layer, keine automatischen Empfehlungen" },
+      { "risk": "Cybersecurity", "counter": "Privacy-by-Design, kryptographische Speicherung, EU-Hosting, Security Audits" },
+      { "risk": "Finanzierungslücke", "counter": "Stufenplan: FFG Projekt.Start → Innovationsscheck → Kleinprojekt → aws First Incubator → Impact Innovation → Basisprogramm" },
+      { "risk": "AI Act Compliance", "counter": "Frühzeitige Einordnung, Erklärbarkeits-Anforderungen (Art. 13 EU AI Act) von Beginn an, Open-Source-Modelle bevorzugt" },
+      { "risk": "Ärztliche Akzeptanz", "counter": "Clinician-in-the-Loop (Arzt behält Kontrolle), HCP-Dashboard, Pilotstudien" },
+      { "risk": "Interoperabilität", "counter": "Spike API, ELGA-nahe Strukturen, offene Standards" }
+    ],
+    "footer": "Weitere Risiken: Haftung, Ethik/Adhärenz, GPU-Kosten. Gegenstrategien: Patent-/IP-Plan, Gamification, Partnernetzwerk."
+  },
+  "faq": {
+    "title": "Häufige Fragen",
+    "desc": "Die wichtigsten Fragen zu Datenschutz, Produkt, Regulatorik und Finanzierung — kurz beantwortet.",
+    "items": [
+      { "q": "Wo liegen meine Daten?", "a": "Standardmäßig lokal im Vault (Endgerät). Optional kann Sync aktiviert werden — du wählst selbst, welche Cloud du nutzt (unsere, deine eigene, oder andere Anbieter). In jedem Fall werden die Daten verschlüsselt gespeichert." },
+      { "q": "Muss ich eure Cloud benutzen?", "a": "Nein. Du kannst jede beliebige Cloud nutzen oder ganz ohne Sync arbeiten. Der Schlüssel bleibt immer bei dir." },
+      { "q": "Gehen Daten automatisch an KI-Modelle?", "a": "Nein. Analysen sind nur nach expliziter Freigabe möglich, mit klarer Begrenzung: Datentyp, Zeitraum, Zweck und Dauer." },
+      { "q": "Können Betreiber meine Gesundheitsdaten ansehen?", "a": "Zielbild: so wenig wie möglich. Betreiberzugriffe sind nicht 'Standard', sondern müssen technisch und organisatorisch streng begrenzt sein." },
+      { "q": "Was passiert bei Geräteverlust?", "a": "Ohne Sync kann es Datenverlust geben. Mit Sync ist Wiederherstellung möglich. Dieser Trade-off wird transparent gemacht." },
+      { "q": "Was bedeutet 'Clinician-in-the-Loop'?", "a": "Personalisierte Pläne werden nicht ungeprüft ausgespielt. Eine Fachperson prüft und gibt frei." },
+      { "q": "Diagnostiziert die App Krankheiten?", "a": "Nein, nicht in Phase 1. Fokus: sammeln, strukturieren, anzeigen, allgemein erklären." },
+      { "q": "Kann ich meine Daten exportieren/löschen?", "a": "Ja. Portabilität und Löschung sind Kernprinzipien (Details werden im Produkt konkretisiert)." },
+      { "q": "Was unterscheidet Exodus von Oura, Apple Health oder Whoop?", "a": "Einzelne Apps decken jeweils nur einen Bereich ab (Fitness, Schlaf, Labor). Exodus ist eine integrierte End-to-End Plattform: Labor + Fitness + Supplements + ärztliche Betreuung in einer App." },
+      { "q": "Braucht die App ein Medizinprodukt-Zertifikat (CE)?", "a": "Phase 1 (Health Data Wall) ist ein Informationssystem — kein MDR nötig. Erst wenn personalisierte Therapie-/Gesundheitspläne durch KI erstellt werden (Phase 2), brauchen wir eine CE-Kennzeichnung nach MDR IIa." },
+      { "q": "Was ist mit Supplements?", "a": "Supplements sind ein paralleler Revenue-Stream: eigene Produkte und Kooperationen (z.B. mit Biogena). Kauf direkt in der App möglich." },
+      { "q": "Wie wird das Projekt finanziert?", "a": "Rein förderfinanzierter Aufbau über eine Förderkaskade aus FFG, aws, tech2b und OÖ-Landesmitteln. Kumuliertes Potenzial: über 400.000 €." }
+    ]
+  },
+  "footer": {
+    "projectName": "Project Exodus",
+    "contact": "Kontakt: exodus@servas.ai",
+    "partnersTitle": "Forschungspartner",
+    "partners": "JKU Medizin · Kepler Uniklinikum · FH Gesundheitsberufe OÖ · tech2b",
+    "docTitle": "Dokument",
+    "docDate": "Stand: März 2026 · v3.0",
+    "docNote": "Dokumentationsseite (kein Verkaufs-Funnel)"
+  }
+}

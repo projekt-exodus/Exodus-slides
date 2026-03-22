@@ -1,0 +1,337 @@
+Exodus pitch canvas v6 · MDCopyPROJECT EXODUS — Pitch Canvas v6
+Linz hACkT 2026 · Social Entrepreneurship
+5-Minuten-Pitch · 10 Slides · Felix + Martin
+
+SPRECHER-AUFTEILUNG
+SlideSprecherThema01FelixOpener — persönliche Geschichte02FelixProblem — gelebte Erfahrung03MartinLösung & USPs — was Exodus wirklich ist04MartinConnections — was verbunden wird05FelixDemo — Supplement-Prop, App zeigen06Felix + MartinUSP & Wettbewerb — kurz, knapp, überzeugend07FelixTeam — alle vier08FelixRevenue — Geschäftsmodell09MartinTraction & Förderungen10FelixClosing & QR
+
+
+SLIDE 01 · OPENER
+🎤 Felix
+🔑 Stichwörter:
+Physiotherapie-Student · Rettungssanitäter · LASK-Akademie · Mein Problem · Aus Linz
+Überschrift: Ich bin Felix. Und das war mein Problem.
+Felix spricht:
+
+„Ich komme aus dem Leistungssport. LASK-Akademie.
+Dann Bundesheer, Rettungssanitäter.
+Jetzt studiere ich Physiotherapie an der FH Gesundheitsberufe OÖ.
+Ich habe Blutbilder. Arztbriefe. Wearable-Daten. Trainingslogs.
+Und keinen einzigen Ort, wo das alles zusammenkommt.
+Wenn das mir passiert — jemandem mit medizinischem Hintergrund —
+was passiert dann mit allen anderen?"
+
+
+🖥️ Website-Components:
+
+Tagline: „Länger leben. Gesünder altern. Präventive Gesundheit für alle."
+Badges: Souverän · KI-gestützt · Klinisch fundiert
+Phase 1 + Phase 2 Karten
+Klein rechts unten: „Aus Linz. Für alle."
+
+
+
+SLIDE 02 · PROBLEM
+🎤 Felix
+🔑 Stichwörter:
+Silos · Niemand macht die Arbeit dazwischen · 10 Apps, kein Überblick · Prävention scheitert · 5,6 Mio. AT
+Überschrift: Das Problem ist nicht zu wenig Apps. Das Problem ist, dass sie nicht reden.
+Felix spricht:
+
+„Arztbrief vom Kepler Uniklinikum: PDF irgendwo.
+Laborwerte: ausgedruckt in einem Ordner.
+Schlafdaten: in einer US-Cloud, der ich nie zugestimmt habe.
+Beim nächsten Arzttermin — fangen wir wieder von vorne an.
+Fünf Millionen Menschen in Österreich haben chronische Erkrankungen.
+Nicht weil es zu wenig Daten gibt — sondern weil die Daten nirgendwo zusammenarbeiten.
+Martin, was haben wir gebaut?"
+
+[Übergabe an Martin]
+
+🖥️ Website-Components:
+
+Fig. 1 Silos-Grafik
+Statistik: ~5,6 Mio. chronisch Erkrankte AT · €57,8 Mrd. Gesundheitsausgaben 2024
+
+
+
+SLIDE 03 · LÖSUNG & USPs
+🎤 Martin
+🔑 Stichwörter:
+Nicht die nächste App · Alles an einem Ort · Bring Your Own AI · Du entscheidest · Offen, nicht proprietär
+Überschrift: Eine Plattform. Alle Daten. Deine KI.
+Martin spricht:
+
+„Wir bauen keine neue Gesundheits-App.
+Wir bauen den Ort, an dem alle anderen zusammenkommen."
+
+Die drei USPs — einfach erklärt:
+
+USP 1 — Alles an einem Ort
+Heute: Labor in einer App. Schlaf in einer anderen. Arztbrief als PDF. Training irgendwo.
+Exodus: eine strukturierte Timeline — alle Daten, alle Quellen, ein Überblick.
+Die KI erklärt dir in normaler Sprache, was dein Vitamin-D-Wert bedeutet.
+Nicht als Zahl. Als Kontext. Als Handlungshinweis.
+
+„Wir sind nicht eine weitere App — wir sind die Schnittstelle, die alle Apps verbindet."
+
+
+USP 2 — Bring Your Own AI
+Das ist der Punkt, der uns von allen anderen unterscheidet:
+
+„Du wählst, welche KI deine Daten analysiert. Nicht wir."
+
+
+Auf deinem Mac oder PC: Llama, Mistral — läuft lokal, keine Internetverbindung nötig
+Auf deinem Handy: Apple Intelligence, Gemma — direkt auf dem Gerät
+Deine eigene KI-Instanz: einfach den Endpunkt eintragen, fertig
+Cloud-Modelle wie GPT-4o oder Claude: nur wenn du es aktiv willst — Opt-in, nicht Opt-out
+
+
+„Standard ist immer lokal. Deine Daten verlassen dein Gerät nur, wenn du es sagst."
+„Das ist kein Feature-Flag. Das ist eine Grundsatzentscheidung."
+
+
+USP 3 — Dein persönlicher Gesundheits-Agent
+Der Vault ist nicht nur eine Anzeige — er ist eine offene Schnittstelle für KI-Agenten.
+OpenClaw ist ein Open-Source-Agent aus Österreich — läuft lokal auf deinem Gerät.
+Exodus liefert das Skill-Pack: OpenClaw kann deine Laborwerte lesen, Supplements empfehlen,
+den Shop öffnen, den Warenkorb befüllen — und erst nach deiner Bestätigung bestellen.
+
+„Dein Agent arbeitet für dich. Nicht für uns. Und nur mit deiner Freigabe."
+
+
+Was Exodus NICHT ist:
+❌ Nicht das nächste Silo · ❌ Keine Black Box · ❌ Kein US-Cloud-Zwang · ❌ Keine App, die deine Daten besitzt
+
+🖥️ Website-Components:
+
+<DataFlowDiagram /> Import → Verstehen → Freigabe
+<BringYourOwnAI /> Modell-Grid
+<SafetyBadge />
+Health Data Wall Vorher/Nachher
+OpenClaw Datenfluss-Diagramm
+
+
+
+SLIDE 04 · CONNECTIONS
+🎤 Martin
+🔑 Stichwörter:
+Wearables · ELGA / FHIR · KI-Agenten · PubMed · Offene Standards · Kein Lock-in
+Überschrift: Was Exodus verbindet — konkret.
+Martin spricht:
+
+„Damit das keine Theorie bleibt — hier was wirklich angebunden wird.
+Und wichtig: alles auf offenen Standards, kein proprietärer Lock-in."
+
+Connections — die wichtigsten für den Start:
+KategorieKonkrete BeispieleWearables & FitnessApple Health · WHOOP · Oura Ring · Garmin · Dexcom CGMLabor & BefundeELGA · FHIR R4 · Spike API · e-BefundKlinische SystemeArztbriefe · Medikationspläne · Entlassbriefe via HL7KI-AgentenOpenClaw lokal · eigene KI-Instanz · Custom EndpointWissen & EvidenzPubMed · Cochrane Library · SNOMED CTProtokolleMCP · REST API · OAuth 2.0 · On-Device SDK
+
+„Felix, zeig ihnen jetzt, was das in der Praxis bedeutet."
+
+[Übergabe an Felix]
+
+🖥️ Website-Components:
+
+Anbindungen Hub-Diagramm (aus Technologie-Abschnitt)
+Protokoll-Badges
+
+
+
+SLIDE 05 · DEMO
+🎤 Felix
+🔑 Stichwörter:
+Eigene Daten · 4 Supplement-Röhrchen · KI hat empfohlen · Morgen Training · Wir leben das Produkt
+Überschrift: Das sind meine echten Daten. Das sind echte Supplements.
+Felix spricht:
+
+[Stellt 4 Supplement-Röhrchen auf den Tisch]
+„Zwei vor dem Training morgen Mittag. Zwei vor dem Schlafengehen.
+Die hat unsere KI auf Basis meines Blutbilds empfohlen.
+Custom abgefüllt. Von mir persönlich getestet.
+Das ist kein Marketing. Das ist unser Prototyp — in der Praxis."
+[Öffnet App-Demo auf dem Bildschirm]
+„Hier: meine Health Data Wall. Labor-Tab.
+Hier die Erklärkarte: Vitamin D, was das bedeutet, was ich beobachten soll.
+Und hier: die Empfehlung, die daraus entstanden ist.
+Das hat die App vorgeschlagen. Das liegt jetzt auf dem Tisch."
+
+Demo-Link: https://exodus-demo.vercel.app
+🧪 Presenter-Reminder: Röhrchen VOR der Slide auf den Tisch stellen
+
+🖥️ Website-Components:
+
+App-Screenshot / iframe: https://exodus-demo.vercel.app (Labor-Tab aktiv)
+Tab-Navigation: Labor · Fitness · Arztbriefe · Wearables
+2× <ExplainerCard />: Vitamin D 28 ng/ml · TSH 2.4 mU/L
+
+
+
+SLIDE 06 · USP & WETTBEWERB
+🎤 Felix + Martin (Felix führt ein, Martin ergänzt kurz)
+🔑 Stichwörter:
+Kein anderer macht das · End-to-End · Lokal-first · Agentic Layer · EU-DSGVO · Open Source
+Überschrift: Das gibt es so kein zweites Mal.
+Felix spricht:
+
+„Ich habe Apple Health. Ich habe WHOOP. Ich habe Oura.
+Die reden alle nicht miteinander.
+Keine zeigt mir Laborwerte. Keine hat ärztliche Freigabe.
+Und bei keiner darf ich selbst entscheiden, welche KI meine Daten sieht."
+
+Martin ergänzt (15 Sekunden):
+
+„Kein anderer Anbieter weltweit kombiniert:
+lokale KI by default, offenen Agentic Layer, EU-DSGVO als Architektur
+und den Supplement-Kanal in einer Plattform.
+Das ist keine Behauptung — das ist die Tabelle."
+
+Was kein anderer bietet:
+
+✅ Lokal-first KI — deine Daten, dein Gerät, dein Modell
+✅ Bring Your Own AI — Llama, Mistral, Apple Intelligence, eigener Endpoint
+✅ Offener Agentic Layer — KI-Agenten können mit Freigabe für dich handeln
+✅ Labor + Wearables + Arztbriefe + Supplements — alles in einer Timeline
+✅ EU-DSGVO als Architektur, nicht als Checkbox
+✅ Open Source bevorzugt — kein Vendor Lock-in
+
+
+🖥️ Website-Components:
+
+<CompetitorMatrix /> Wettbewerbsmatrix (kompakt)
+<BringYourOwnAI /> (klein)
+Kern-USP-Box
+
+
+
+SLIDE 07 · TEAM
+🎤 Felix
+🔑 Stichwörter:
+Alle aus OÖ · FH Gesundheitsberufe · JKU · Kepler · servas.ai · Wir leben das Produkt
+Überschrift: Vier aus Linz. Alle aus Überzeugung.
+Felix spricht:
+
+„Wir kommen alle aus OÖ. Wir studieren alle an Institutionen aus Linz.
+Und wir nutzen alle das Produkt selbst — weil es unser Problem ist."
+
+Das Team:
+Hannah Haslhofer — CEO & Operations
+FH Gesundheitsberufe OÖ, Physiotherapie (laufend). BAfEP Bischofshofen.
+Erfahrung in Kinderbetreuung, Skischule, Alpina Spa Hotel.
+Sie hält das Ganze zusammen — mit klinischem Gespür und operativer Stärke.
+Paula Mittermayr — Sales & Medizintechnik
+JKU Linz, Medical Engineering (laufend). HTBLA Leonding, Medizintechnik mit Auszeichnung.
+Praktika am Kepler Uniklinikum, JKU, Radiologie Urfahr. Aktuell Medizintechnikerin bei SANTESIS GmbH.
+Sie versteht, wie klinische Systeme wirklich funktionieren.
+Felix Ratzenböck — COO & Sales
+FH Gesundheitsberufe OÖ, Physiotherapie (laufend). LASK-Akademie U14 bis Kampfmannschaft.
+Rettungssanitäter, Bundesheer. Er kennt Leistung, Regeneration und Medizin von innen.
+Martin Hausleitner — CTO
+JKU Linz, Artificial Intelligence. HTL Leonding, Informatik.
+Gründer & CEO von servas.ai (KI-Agentur, seit April 2024).
+Er baut die Plattform — KI-Agenten, Full Stack, Infrastruktur.
++ Unterstützung:
+David Kraus — Cybersecurity & Datenschutz (extern, beratend)
+Kooperationen aktiv:
+LOIs in Vorbereitung: JKU Medizin · Kepler Uniklinikum · FH Gesundheitsberufe OÖ
+
+🖥️ Website-Components:
+
+4× <TeamCard /> (Hannah · Paula · Felix · Martin)
+Support-Badge: David Kraus
+Kooperationslogik-Hinweis
+
+
+
+SLIDE 08 · REVENUE
+🎤 Felix
+🔑 Stichwörter:
+Connections-Modell · Erste gratis · Skaliert mit Nutzung · Supplements · Arzt-Provision
+Überschrift: Wir verkaufen keine App. Wir verkaufen Connections.
+Felix spricht:
+
+„Die ersten Connections sind kostenlos — erste Wearables, erste Laborwerte.
+Wer mehr verbinden will, mehr automatisieren, mehr Agenten nutzen —
+zahlt monatlich. Und der Preis wächst mit dem Wert.
+Dazu: Supplements, personalisiert aus dem Profil —
+[Röhrchen kurz zeigen] — und ärztliche Beratung auf Datenbasis."
+
+Die drei Einnahmesäulen:
+Säule 1 — Connection-Abo
+
+Free: Erste Connections kostenlos (z.B. 2 Wearables + 1 Labor)
+Premium: Unbegrenzte Connections, KI-Erklärungen, Agentic Layer
+Pro / Family: Mehrere Profile, eigene KI-Endpunkte
+
+Säule 2 — Arzt-Beratung & Heilpläne
+
+Personalisierte Pläne auf Datenbasis
+Provision pro Beratung
+Clinician-in-the-Loop: KI schlägt vor — Arzt gibt frei
+
+Säule 3 — Supplements & Longevity
+
+Personalisiert auf Gesundheitsprofil
+Biogena · Custom-Abfüllung · In-App oder via Agent
+KI empfiehlt → Agent bestellt → du bestätigst
+
+Synergie: „Mehr Daten → bessere Pläne → passendere Supplements → mehr Vertrauen → mehr Connections"
+🧪 Presenter-Reminder: Röhrchen bei Supplements-Säule kurz hochhalten
+
+🖥️ Website-Components:
+
+<RevenueTriptych />
+Produktpfade-Badges
+Synergie-Highlight-Box
+
+
+
+SLIDE 09 · TRACTION & FÖRDERUNGEN
+🎤 Martin
+🔑 Stichwörter:
+aws eingereicht ✅ · FFG läuft ✅ · >400.000 € Potenzial · 10. Mai Deadline · tech2b Linz · Schritt für Schritt
+Überschrift: Wir stehen nicht am Anfang. Wir sind schon in Bewegung.
+Martin spricht:
+
+„Während Felix den Prototyp gebaut und getestet hat, haben wir parallel die Förderstruktur aufgesetzt.
+aws First Incubator: eingereicht — mit Unterstützung von FH Gesundheitsberufe OÖ und Longevity-Kliniken.
+FFG Projekt.Start: eingereicht.
+FFG Kleinprojekt: Deadline 10. Mai — das ist in wenigen Wochen.
+Kumuliertes Potenzial: über 400.000 Euro — rein förderfinanziert, Schritt für Schritt.
+Und tech2b in der Tabakfabrik Linz ist unser geplanter nächster Schritt vor Ort.
+Felix, bring das jetzt nach Hause."
+
+[Übergabe an Felix]
+ProgrammBetragStatusaws First Incubator55.000 € · 100 %✅ EingereichtFFG Projekt.Start6.000 €✅ EingereichtFFG Kleinprojektbis 88.500 € · bis 70 %🔜 10. Maitech2b ACTIVATE5.000 € · 100 %🔜 GeplantFFG Impact Innovationbis 105.000 € · 70 %🔜 Nächste Runde
+Badge: „> €400.000 potenzielle Förderung"
+
+🖥️ Website-Components:
+
+<FundingTable />
+Status-Timeline: März ✅ · April ✅ · 10. Mai 🔜 · Firmengründung 🔜
+Kooperations-Logos: JKU · Kepler · FH Gesundheitsberufe OÖ · tech2b
+
+
+
+SLIDE 10 · CLOSING & QR-CODE
+🎤 Felix
+🔑 Stichwörter:
+Linz ist der Plan · Demo scannen · exodus@servas.ai · Aus Linz. Für alle.
+Überschrift: Linz ist nicht die Folie. Linz ist der Plan.
+Felix spricht:
+
+„Wir bauen nicht die nächste App.
+Wir bauen die Infrastruktur, auf der KI-Agenten für dich arbeiten können —
+mit deinen Daten, unter deiner Kontrolle.
+FH Gesundheitsberufe, Kepler, JKU, tech2b — alles hier.
+Prototype läuft. Förderungen laufen. Team steht.
+Supplements liegen auf dem Tisch.
+Scannt den QR-Code. Schaut euch die Demo an. Schreibt uns.
+Aus Linz. Für alle."
+
+QR-Code:
+→ https://exodus-demo.vercel.app
+→ Label: „App Demo live ansehen"
+→ exodus@servas.ai
+Roadmap kompakt:
+Q3 2026 Vault → Q4 2026 Pilot → 2027 OpenClaw live → 2029 Longevity-Zentren

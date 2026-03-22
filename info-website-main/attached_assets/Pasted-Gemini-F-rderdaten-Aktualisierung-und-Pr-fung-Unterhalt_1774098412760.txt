@@ -1,0 +1,428 @@
+Gemini
+Förderdaten Aktualisierung und Prüfung
+Unterhaltung mit Gemini
+Du hast gesagt
+Update die Förderdaten, schau ob die richtig auf der Zuge dabei stehen. Update die auf die richtigen Summen und Prozente. Und beim Client-Projekt schauen wir, dass wir die volle Förderung bekommen – AWS-Werst, Inkubator und Tech2B-Inkubator und alles, was mit Tech2B ist, auch noch bitte dazuschreiben. Und gib mal die komplette Data aus – was man dann noch ändern sollte, was falsch ist. 
+
+Gemini hat gesagt
+Hier ist ein Rechercheplan zu diesem Thema. Wenn du ihn ändern musst, sag Bescheid.
+ Förderdaten Update und Optimierung 
+Recherche-Websites
+(1) Analysiere das angehängte Bild "Förderstrategie (Stufenplan)" und extrahiere alle genannten Förderprogramme (FFG Projekt.Start, FFG Innovationsscheck, FFG Kleinprojekt, aws First Incubator, FFG Impact Innovation, FFG Basisprogramm) sowie die jeweils angegebenen Beträge und Zuschuss-Prozentsätze.
+(2) Suche auf den offiziellen Webseiten der österreichischen Förderstellen FFG und aws nach den aktuell gültigen Förderrichtlinien, maximalen Summen und Fördersätzen für jedes dieser im Bild genannten Programme.
+(3) Vergleiche die extrahierten Daten aus dem Bild mit den recherchierten aktuellen Werten und dokumentiere alle Abweichungen, Fehler oder veralteten Angaben.
+(4) Recherchiere detailliert die aktuellen Konditionen des "aws First Incubator" sowie des "tech2b Inkubators" in Oberösterreich, insbesondere im Hinblick auf Fördersummen, Voraussetzungen und Kombinierbarkeit.
+(5) Finde heraus, welche weiteren Förder- und Unterstützungsprogramme aktuell von tech2b in Oberösterreich angeboten werden, und sammle deren wichtigste Eckdaten.
+(6) Prüfe die Kombinationsmöglichkeiten der recherchierten FFG-, aws- und tech2b-Förderungen, um eine Strategie zu entwickeln, mit der für das Kundenprojekt die maximale Fördersumme ausgeschöpft werden kann.
+(7) Erstelle eine vollständige, korrigierte Übersicht aller Förderdaten, weise explizit darauf hin, welche Werte aus dem ursprünglichen Bild falsch sind und geändert werden müssen, und integriere alle relevanten tech2b-Programme in den neuen Plan.
+Analysiere Ergebnisse
+Erstelle Bericht
+In wenigen Minuten fertig
+
+
+Du hast gesagt
+Recherche starten
+
+Gemini hat gesagt
+Ich bin mit deiner Recherche fertig. Du kannst mir gerne Folgefragen stellen oder Änderungen anfordern.
+Förderdaten Update und Optimierung
+Abgeschlossen
+21. März, 14:04
+
+
+
+
+
+
+Gemini ist eine KI und kann Fehler machen, auch bei Informationen über Personen. Datenschutz und GeminiWird in einem neuen Fenster geöffnet
+
+Förderdaten Update und Optimierung
+Master-Report: Strategische Förderarchitektur und tiefgehende Datenkorrektur für Technologie-Projekte (FFG, aws, tech2b)
+Systemische Einordnung der österreichischen Förderlandschaft
+Die Einwerbung von nicht rückzahlbaren Zuschüssen, geförderten Darlehen und stillen Beteiligungen stellt für technologieorientierte und wissensintensive Gründungsvorhaben einen der kritischsten Erfolgsfaktoren dar. Um für ein spezifisches Klientenprojekt die maximale Förderkulisse – in der Praxis oft als "volle Förderung" bezeichnet – zu realisieren, bedarf es eines präzisen, stets aktuellen Verständnisses der zugrunde liegenden Richtlinien, Maximalbeträge und Förderquoten. Die Förderlandschaft in Österreich, die primär von der Österreichischen Forschungsförderungsgesellschaft (FFG), dem Austria Wirtschaftsservice (aws) sowie von starken regionalen Inkubatoren wie der tech2b Inkubator GmbH in Oberösterreich getragen wird, unterliegt einer ständigen Dynamik. Ausschreibungsbedingungen, Förderhöhen und Beihilfenregimes werden kontinuierlich an neue wirtschaftspolitische Ziele angepasst.
+
+Der vorliegende Bericht liefert eine erschöpfende Analyse und fundamentale Aktualisierung sämtlicher relevanter Förderdaten für die strategische Planung in den Jahren 2025 und 2026. Eine zentrale Aufgabe dieses Dokuments ist die minutiöse Überprüfung der vom Klienten bereitgestellten Präsentationsfolie (der "Zuge" zum Stufenplan der Förderstrategie). Es wird detailliert aufgezeigt, an welchen Stellen die bisherigen Annahmen massiv von der aktuellen regulatorischen Realität abweichen. Darauf aufbauend wird eine holistische Strategie zur Kumulierung dieser Instrumente entwickelt. Ziel ist es, das Klientenprojekt von der frühen Validierungsphase über die experimentelle Entwicklung bis hin zur internationalen Marktskalierung optimal durchzufinanzieren, ohne dabei in die Falle der europarechtlich verbotenen Doppelförderung zu tappen.
+
+Detaillierte Fehleranalyse und Richtigstellung der vorliegenden Präsentationsfolie
+Die Analyse der bereitgestellten grafischen Übersicht, welche einen rein förderfinanzierten Aufbau in einem Stufenplan suggeriert, offenbart gravierende inhaltliche und numerische Diskrepanzen zur aktuellen Rechts- und Richtlinienlage der Jahre 2025 und 2026. Die Verwendung dieser Folie in ihrer jetzigen Form für die Liquiditätsplanung oder für Investorenpitches stellt ein signifikantes Risiko dar, da sie Erwartungshaltungen weckt, die durch die Förderstellen faktisch nicht bedient werden können. Die nachfolgende Auswertung dekonstruiert die auf der Folie getroffenen Aussagen systematisch und liefert die zwingend erforderlichen Korrekturdaten.
+
+Förderinstrument (laut Folie)	Behauptung auf der Folie	Faktische Realität (Stand 2025/2026)	Status der Daten
+FFG PROJEKT.START	bis 50.000 € / 70 % Zuschuss	Max. Förderung: 6.000 € / Pauschaler Zuschuss	Kritisch Falsch
+FFG INNOVATIONSSCHECK	5.000 – 10.000 € / 100 % Zuschuss	Max. 10.000 € bei 12.500 € Kosten / 80 % Quote / 20 % Selbstbehalt	Falsch (Quote)
+FFG KLEINPROJEKT	bis 60.000 € / bis 70 % Zuschuss	Max. Förderung: 88.500 € / Kosten: 150.000 € / 45–60 % Quote	Veraltet / Falsch
+AWS FIRST INCUBATOR	Coaching + Zuschuss / auch ohne Firma	Max. 55.000 € Kosten / 90–100 % Quote (Max. 49k–55k €) / Modul A & B	Korrekt, aber unpräzise
+FFG IMPACT INNOVATION	bis 200.000 € / bis 70 % Zuschuss	Max. 75.000 € (50 %) regulär / Max. 105.000 € (70 %) für Social	Kritisch Falsch
+FFG BASISPROGRAMM	ab 100.000 €+ / 50–70 % Zuschuss	Unternehmensgrößenabhängig / Mix aus Zuschuss und Darlehen	Stark vereinfacht
+Kritische Diskrepanz: FFG Projekt.Start
+Die vorliegende Präsentationsfolie deklariert für das Instrument FFG Projekt.Start eine mögliche Fördersumme von "bis 50.000 €" bei einem "70 % Zuschuss". Diese Information entbehrt jeglicher aktuellen Grundlage. Das Instrument Projekt.Start dient ausschließlich der Vorbereitung konkreter Forschungs- und Entwicklungsprojekte und soll Klein- und Mittelunternehmen (KMU) sowie Start-ups dabei unterstützen, ein fundiertes Projektkonzept für einen späteren, größeren Förderantrag auszuarbeiten. Die absolute Obergrenze für diesen Vorbereitungszuschuss ist im Einreichzeitraum 2025/2026 auf exakt 6.000 EUR limitiert. Die Angabe von 50.000 EUR auf der Folie suggeriert eine Liquidität, die in dieser frühen Vorgründungs- oder Konzeptionsphase durch dieses spezifische Instrument niemals erreicht werden kann. Eine sofortige Korrektur auf "Zuschuss: max. 6.000 €" ist zwingend erforderlich, um die Finanzplanung des Klientenprojekts nicht zu gefährden.   
+
+Kritische Diskrepanz: FFG Innovationsscheck
+Die Folie suggeriert einen "100 % Zuschuss" für den FFG Innovationsscheck in einer Bandbreite von "5.000 – 10.000 €". Auch dies ist im aktuellen Regelwerk für 2026 inkorrekt. Der Innovationsscheck mit Selbstbehalt weist, wie der Name bereits impliziert, eine maximale Förderquote von 80 % der förderbaren Projektkosten auf. Der maximale Zuschusswert, der als De-minimis-Beihilfe direkt von der FFG ausbezahlt wird, beläuft sich zwar auf 10.000 EUR, jedoch müssen dafür förderbare Projektkosten in Höhe von exakt 12.500 EUR nachgewiesen werden. Der Differenzbetrag von 2.500 EUR – mithin 20 % der Projektkosten – ist vom antragstellenden Unternehmen zwingend als baurer Selbstbehalt aus Eigenmitteln zu tragen. Liegen die abgerechneten Kosten unter der Schwelle von 12.500 EUR, wird die Förderung strikt aliquot mit der maximalen Förderquote von 80 % berechnet. Die Angabe eines 100-prozentigen Zuschusses ist somit falsch und muss auf der Folie auf "80 % Quote bei max. 10.000 € Förderung (20 % Selbstbehalt)" geändert werden.   
+
+Kritische Diskrepanz: FFG Kleinprojekt
+Für das FFG Kleinprojekt listet die Präsentation "bis 60.000 €" bei "bis 70 % Zuschuss". Diese Zahlen spiegeln lang zurückliegende historische Stände wider. Für die aktuellen Ausschreibungen, insbesondere das Basisprogramm Kleinprojekt 2026, gelten signifikant abweichende Maximalbeträge und Quoten. Die maximalen förderbaren Gesamtkosten eines solchen Projekts sind auf 150.000 EUR angehoben worden. Der maximal mögliche Förderungsbetrag (reiner Zuschuss) beläuft sich auf exakt 88.500 EUR. Die Förderquote für Kleinunternehmen (KU) und Start-ups liegt in der Basisvariante bei 45 % der Projektkosten und kann lediglich durch eine nachgewiesene Kooperation mit wissenschaftlichen Partnern (z.B. Universitäten) auf maximal 60 % erhöht werden. Ein 70-prozentiger Zuschuss für ein Kleinprojekt ist unter den aktuellen Richtlinien für ein rein gewerbliches Unternehmen ohne universitäre Sonderkonstellationen nicht darstellbar. Die Folie muss zwingend auf "Kosten bis 150.000 € / Max. Zuschuss 88.500 € / Quote 45–60 %" aktualisiert werden.   
+
+Kritische Diskrepanz: FFG Impact Innovation
+Die gefährlichste Falschinformation auf der aktuellen Folie betrifft das Programm FFG Impact Innovation. Die Angabe "bis 200.000 €" bei "bis 70 % Zuschuss" führt zu massiven Fehlkalkulationen in fortgeschrittenen Businessplänen. Das Programm Impact Innovation, welches auf die Lösung von Problemen mittels iterativer Innovationsmethoden und die Entwicklung von Prozess- und Organisationsinnovationen abzielt , ist strikt in zwei Kategorien unterteilt. Für reguläre, gewerbliche KMU-Projekte (Impact Innovation) ist der Zuschuss auf maximal 75.000 EUR bei einer maximalen Förderintensität von 50 % limitiert. Lediglich für Projekte, die als "Social Innovations" klassifiziert werden und explizit ein soziales oder gesellschaftliches Problem lösen (Impact Innovation Social), steigt der maximale Zuschuss auf 105.000 EUR bei einer Förderintensität von 70 %. Eine Fördersumme von 200.000 EUR existiert in diesem Programm schlichtweg nicht und entstammt vermutlich einer Verwechslung mit älteren, themenspezifischen Call-Strukturen oder dem regulären Basisprogramm.   
+
+Architektonischer Aufbau der FFG-Förderkaskade (Detailanalyse 2025/2026)
+Die Österreichische Forschungsförderungsgesellschaft (FFG) ist der zentrale nationale Knotenpunkt für die Finanzierung von unternehmensnaher Forschung und Entwicklung in Österreich. Für das Klientenprojekt ist es essenziell zu verstehen, dass die FFG keine regulären Betriebskosten oder reinen Marketingausgaben finanziert, sondern strikt das technologische Entwicklungsrisiko sowie systematische Innovationsprozesse adressiert. Wie die Analyse der bereitgestellten Folie zeigt, ist der häufigste Ablehnungsgrund für FFG-Projekte ein "zu wenig ausgeprägtes Entwicklungsrisiko". Die technologische Flughöhe und der Stand der Technik müssen in jedem Antrag präzise herausgearbeitet werden.   
+
+Vorbereitungs- und Evaluierungsphase
+Der Einstieg in die FFG-Welt erfolgt idealerweise über die Instrumente Projekt.Start und Innovationsscheck. Diese Instrumente sind so konzipiert, dass sie administrative Hürden senken und technologische Unsicherheiten vor der Beantragung kapitalintensiverer Programme klären.
+
+Wie bereits in der Fehleranalyse dargelegt, stellt der Innovationsscheck mit Selbstbehalt eine De-minimis-Beihilfe dar, mit der Unternehmen externe Beratungs- und Forschungsleistungen einkaufen können. Dies ist strategisch von höchster Bedeutung, wenn das Klientenprojekt beispielsweise die Machbarkeit eines neuartigen Algorithmus, die Vorbereitung patentierbarer Entwicklungen oder die wissenschaftliche Begleitung bei der Prototypenentwicklung nachweisen muss. Gefördert werden Forschungseinrichtungen wie außeruniversitäre Institute, Fachhochschulen und Universitäten. Die Laufzeit der aktuellen Ausschreibung erstreckt sich kontinuierlich bis zum 31.12.2026. Ein strategischer Vorteil ist die Nutzung der FFG-Forscher:innendatenbank, um europaweit anerkannte Fachexpertise für das Projekt zu identifizieren.   
+
+Die Ergebnisse aus diesen förderbaren Leistungen – etwa Ideenstudien oder Konzeptentwicklungen – können nahtlos als methodisches Fundament in einen darauffolgenden Antrag für größere Programme einfließen. Dies erhöht die Bewilligungswahrscheinlichkeit für Folgeprojekte signifikant, da die FFG-Gutachter eine bereits extern validierte Datenlage vorfinden.   
+
+Prozess- und Marktinnovation: Impact Innovation
+Das Programm Impact Innovation nimmt innerhalb der FFG-Landschaft eine Sonderstellung ein, da es sich nicht auf tiefe technologische Forschung (Hardware/Deep-Tech), sondern auf iterative Innovationsmethoden fokussiert. Im Zentrum steht ein interaktiver Innovationsprozess, bei dem Ideen in enger Zusammenarbeit mit Betroffenen, Stakeholdern und Experten weiterentwickelt werden.   
+
+Für das Klientenprojekt bedeutet dies: Sollte das Geschäftsmodell stark auf neuen Dienstleistungsprozessen, Organisationsinnovationen oder disruptiven Nutzererfahrungen basieren, ist Impact Innovation das Instrument der Wahl. Es ist themen- und branchenoffen. Die Antragsberechtigung erstreckt sich von Start-ups über kleine und mittlere Unternehmen (KMU) bis hin zu großen Unternehmen (GU) und gemeinnützigen Vereinen.   
+
+Die finanzielle Ausstattung ist, wie korrigiert, auf 75.000 EUR für reguläre KMU-Projekte (50 % Quote) und 105.000 EUR für soziale Innovationen (70 % Quote) limitiert. Die Evaluierung der Anträge erfolgt durch FFG-interne Experten, wobei der Begutachtungsaufwand aufgrund der methodischen Offenheit oft intensiver ausfällt als bei klassischen Technologieprojekten. Für 2026 sind sieben Entscheidungsrunden (Beiratssitzungen) pro Jahr angesetzt, was eine relativ flexible, unterjährige Einreichung ermöglicht.   
+
+Experimentelle Entwicklung: Basisprogramm Kleinprojekt
+Das Basisprogramm Kleinprojekt ist das Rückgrat der FFG-Förderung für junge, technologieorientierte Start-ups und KMU. Es ist darauf ausgelegt, Forschung und experimentelle Entwicklung mit geringen Projektkosten effizient und schnell durchzuführen. Das Angebot ist offen für alle Technologien und Forschungsthemen.   
+
+Die förderbaren Kosten umfassen Personalkosten, Material- und Sachkosten, Drittkosten, Kosten für Anlagennutzung sowie Reisekosten. Mit einer Obergrenze von 150.000 EUR Projektvolumen und einem maximalen Zuschuss von 88.500 EUR  bietet es exakt die notwendige Liquidität, um einen funktionstüchtigen technischen Prototyp bis zur Marktreife zu entwickeln. Die Einreichung erfolgt online im eCall-System der FFG, wobei das Projekt jederzeit eingereicht werden kann.   
+
+Ein kritischer Erfolgsfaktor für die Bewilligung ist die korrekte Budgetierung nach dem FFG-Kostenleitfaden Version 3.2. Diese Vorgaben sind zwingend in die Finanzplanung des Klientenprojekts zu integrieren, um Kürzungen im Rahmen der Endabrechnung zu vermeiden:   
+
+Der anerkannte Stundensatz für mitarbeitende Gesellschafter (ohne regulären Dienstvertrag) wurde auf exakt 50 EUR fixiert. Dies bedeutet, dass eine höhere Entnahme in der Förderkalkulation nicht wirksam wird.   
+
+Für Personal ohne dedizierten Gehaltsnachweis gilt ein reduzierter Stundensatz von 45 EUR.   
+
+Unternehmen dürfen auf die förderbaren Personalkosten einen pauschalen Gemeinkostenzuschlag (GKZ) von 20 % aufschlagen (reduziert von ehemals 25 % in älteren Leitfäden). Dieser GKZ deckt indirekte Kosten wie Miete, Strom und allgemeine Verwaltung ab, ohne dass dafür Einzelbelege erbracht werden müssen.   
+
+Für Beschaffungen und Drittkosten, die einen Schwellenwert von 100.000 EUR überschreiten, müssen zwingend formelle Vergleichsangebote eingeholt und dokumentiert werden, um die Wirtschaftlichkeit der Maßnahme zu belegen.   
+
+Skalierung: Reguläres Basisprogramm
+Sollte das Klientenprojekt in seiner technologischen Ambition über ein Projektvolumen von 150.000 EUR hinauswachsen, greift das reguläre Basisprogramm. Dieses steht Unternehmen aller Größenklassen zur Verfügung und fördert Unternehmensprojekte der experimentellen Entwicklung, die verwertbare Produkte, Verfahren oder Dienstleistungen – einschließlich digitaler Innovationen – hervorbringen.   
+
+Die Förderintensität im regulären Basisprogramm hängt stark von der Unternehmensgröße und der Strukturierung ab (oft eine Kombination aus nicht rückzahlbarem Zuschuss und zinsgünstigem Darlehen). Die volkswirtschaftliche Hebelwirkung dieses Programms ist enorm: Im Mittel bewirkt 1 EUR Förderung aus dem Basisprogramm rund 8,6 EUR an zusätzlichem oder gesichertem Umsatz innerhalb von vier Jahren. Ohne diese direkte F&E-Förderung würden laut Evaluierungen 84 % der Innovationsprojekte in Österreich entweder gar nicht oder nur stark redimensioniert umgesetzt werden. Für das Klientenprojekt bedeutet dies: Das Basisprogramm ist der finale FFG-Skalierungsschritt, sobald der initiale Prototyp (finanziert durch ein Kleinprojekt) erfolgreich validiert wurde und die Überleitung in die industrielle Serie oder komplexe Weiterentwicklung ansteht.   
+
+Das aws-Inkubationsökosystem: Strukturelle Frühphasenfinanzierung
+Parallel zur technologiefokussierten FFG agiert das Austria Wirtschaftsservice (aws) als Förderbank des Bundes. Im Rahmen der strategischen "Vollen Förderung" spielt der aws First Incubator eine absolute Schlüsselrolle. Während die FFG das technische Entwicklungsrisiko abdeckt, finanziert der aws First Incubator die Entwicklung des Geschäftsmodells, den Aufbau des Teams und die Vorbereitung der eigentlichen Unternehmensgründung. Das Programm verbindet professionelles, intensives Coaching mit direkter finanzieller Unterstützung.   
+
+Ziel der Bundesregierung ist es, durch dieses Programm die Zahl der wissensintensiven Unternehmensgründungen signifikant zu steigern, den Unternehmergeist nachhaltig zu stärken und internationale Talente nach Österreich zu lotsen. Der methodische Ansatz basiert stark auf "Peer-to-Peer"-Learning, bei dem junge Gründerteams voneinander lernen, ergänzt durch hochkarätiges Mentoring von Industrieexperten.   
+
+Modulstruktur und Zielgruppen
+Der aws First Incubator ist modular aufgebaut, um Projekte in unterschiedlichen Reifegraden präzise abzuholen. Diese Differenzierung ist für das Klientenprojekt von enormer strategischer Bedeutung :   
+
+Modul A: Dieses Modul richtet sich an natürliche Personen (Einzelpersonen oder Teams von ein bis vier Köpfen), die noch kein Unternehmen gegründet haben. Es unterstützt vorwettbewerbliche unternehmerische Vorgründungsvorhaben. Im Fokus steht die Ausarbeitung eines geschäftsfähigen Businessmodells und die Entwicklung erster rudimentärer Prototypen.   
+
+Modul B: Dieses Modul ist für bereits gegründete rechtliche Einheiten konzipiert (juristische Personen, Personengesellschaften, Einzelunternehmen). Die strikten Voraussetzungen hierfür sind: Die Gründung darf zum Zeitpunkt der Antragsstellung nicht länger als sechs Monate zurückliegen, und die bisherigen Nettoumsätze des Unternehmens dürfen eine kumulierte Maximalhöhe von 10.000 EUR nicht überschritten haben. Ziel ist es, bereits entwickelte Produkte in erste wirtschaftliche Umsetzungsschritte und die Marktreife zu überführen.   
+
+Für das Jahr 2026 sind zwei dezidierte Ausschreibungsrunden (Calls) geplant, die demografische und sprachliche Schwerpunkte setzen :   
+
+Call #1 (2026): Dieser Call ist spezifisch auf junge Gründerinnen und Gründer im Alter von 18 bis 30 Jahren zugeschnitten. Die Einreichung und die gesamte Programmsprache erfolgen auf Deutsch. Die Einreichfrist ist für den Zeitraum vom 24. Februar bis zum 18. März 2026 (12:00 Uhr mittags) fixiert.   
+
+Call #2 (2026): Dieser Call hebt die Altersbeschränkung auf (ab 18 Jahren, ohne Alterslimit nach oben) und richtet sich explizit auch an internationale Gründer, die über eine gültige Aufenthaltserlaubnis verfügen. Die Einreichung und die Kommunikation im Inkubator finden auf Englisch statt. Das Einreichfenster öffnet am 1. Juni und schließt am 23. Juni 2026.   
+
+Finanzielle Konditionen und der strategische Gender-Bonus
+Die finanzielle Architektur des aws First Incubators muss in der Liquiditätsplanung des Klientenprojekts exakt abgebildet werden. Das maximal anerkannte Projektvolumen (förderbare Gesamtkosten) beläuft sich auf 55.000 EUR pro Projekt. Die maximale Projektdauer beträgt zwei Jahre. Zu den förderbaren Kostenkreisen zählen Personalkosten (die monatlich ausbezahlt werden), Materialkosten, Drittkosten, Mieten, Reisekosten sowie Maßnahmen zur Professionalisierung.   
+
+Der reguläre Zuschuss (nicht rückzahlbar) deckt maximal 90 % der eingereichten und genehmigten Kosten ab. Dies führt zu einem maximalen Auszahlungsbetrag von exakt 49.000 EUR. Die verbleibenden 10 % der Projektkosten (sowohl im Personal- als auch im Investitionsbereich) müssen zwingend als Eigenleistung vom Gründungsteam aufgebracht werden.   
+
+Ein entscheidender strategischer Hebel zur Erreichung der vom Klienten geforderten "vollen Förderung" ist die bewusste Integration des Gender Bonus. Das aws honoriert Vorhaben, bei denen Frauen in wesentlichen Führungspositionen vertreten sind. Wenn dem Projektteam zum Zeitpunkt der Förderungsgewährung mindestens eine Frau angehört, der zukünftig (oder bereits aktuell) in Summe mehr als 25 % der Geschäftsanteile am Unternehmen gehören, wird ein massiver finanzieller Vorteil schlagend: Der gewährte Zuschuss erhöht sich automatisch auf bis zu 100 % der förderbaren Kosten. In diesem Szenario steigt der abrufbare Maximalbetrag von 49.000 EUR auf die volle Obergrenze des Projektvolumens von 55.000 EUR, und die Pflicht zur Einbringung eines 10-prozentigen Eigenanteils entfällt vollständig. Dieser Mechanismus muss in der gesellschaftsrechtlichen Strukturierung des Klientenprojekts frühzeitig berücksichtigt werden.   
+
+Der Auswahlprozess ist mehrstufig und rigoros. Nach der formellen Einreichung (inklusive Projektbeschreibung, Bewerbungsvideo und Budgetplan)  werden aussichtsreiche Kandidaten zu einem verpflichtenden aws First Start-up Camp eingeladen, welches außerhalb Wiens stattfindet. Erst nach positiver Absolvierung dieses Camps erfolgt die formelle Aufnahme in das Inkubator-Programm.   
+
+Das regionale Exzellenzökosystem Oberösterreich: tech2b und Landesinstrumente
+Die dritte Säule zur Erreichung der maximalen Förderkulisse bildet das regionale Innovationsökosystem in Oberösterreich, das primär durch die tech2b Inkubator GmbH orchestriert wird. tech2b agiert nicht nur als reiner Fördervermittler, sondern bietet ein strukturiertes, phasenbasiertes Programm ("Entrepreneurship Journey"), das Gründer von der nackten Idee bis zur internationalen Skalierung begleitet. Das Programm ist kofinanziert durch das AplusB Scale-up Programm des Bundesministeriums (BMK), die aws und das Land Oberösterreich. Um die Vorgabe des Klienten ("alles, was mit Tech2B ist, auch noch bitte dazuschreiben") vollumfänglich zu erfüllen, werden im Folgenden sämtliche Programmlinien und assoziierten Landesförderungen im Detail dekonstruiert.   
+
+Phase 0: tech2b IDEATE
+Das IDEATE-Programm bildet den absolut niedrigschwelligen Einstieg. Es ist für Gründer konzipiert, deren Ideen sich noch in einer rudimentären Konzeptphase befinden. Das primäre Ziel dieser Phase ist die Validierung: Lohnt es sich, die Idee weiterzuverfolgen und in die Umsetzung zu gehen?  In dieser Phase werden keine baren Finanzmittel an das Start-up ausgeschüttet. Die Unterstützung besteht aus hochqualitativen Sachleistungen, die auf das De-minimis-Konto des Unternehmens angerechnet werden können. Zu den Vorteilen zählen intensives Mentoring zur Schärfung der Roadmap, der Zugang zu Flex-Desk-Arbeitsplätzen (in Inkubatoren wie der Tabakfabrik Linz, dem Open Innovation Center OIC oder dem techcEnter) sowie die Einbindung in das exklusive Netzwerk von Gründern und Investoren. Unterstützt werden bevorzugt entwicklungsintensive Geschäftsideen in den Bereichen Technik, MedTech, GreenTech und Hardware.   
+
+Phase 1: tech2b ACTIVATE
+Sobald die Idee validiert ist und das Team den Entschluss fasst, ein erstes Minimal Viable Product (MVP) zu entwickeln und erste Testkunden zu akquirieren, erfolgt der Übertritt in das ACTIVATE-Programm. Dieses Programm weist eine fixe Laufzeit von sechs Monaten auf.   
+
+Die finanzielle und strukturelle Förderung in der ACTIVATE-Phase umfasst:
+
+Einen nicht rückzahlbaren Barzuschuss in Höhe von exakt 5.000 EUR, der direkt als Liquidität in das Projekt fließt.   
+
+Die Bereitstellung und Bezahlung eines externen Mentors oder einer Mentorin durch tech2b, welche vom Gründerteam selbst ausgewählt werden können.   
+
+Intensives Business-Plan-Coaching und Zugang zu den exklusiven "BIZTrain"-Weiterbildungsmodulen in den Bereichen Teamstrukturierung, Marktanalyse, Finanzen und Technologie.   
+
+Die kontinuierliche Bereitstellung von Büroinfrastruktur.
+Die erfolgreiche Absolvierung des ACTIVATE-Programms (oder alternativ des aws First Incubators) gilt als formale Voraussetzung für die Bewerbung um das nachfolgende, deutlich kapitalintensivere INCUBATE-Programm.   
+
+Phase 2: tech2b INCUBATE
+Das INCUBATE-Programm ist das Flaggschiff der oberösterreichischen Start-up-Förderung. Es richtet sich an sogenannte "Changemaker", die bereits über ein MVP verfügen und dieses nun in ein stabiles, wachsendes und investitionsreifes ("ready-to-invest") Unternehmen skalieren wollen. Die Programmlaufzeit ist mit 15 Monaten signifikant länger als bei ACTIVATE. Die Aufnahme in dieses Programm ist hochkompetitiv und unterliegt der strengen Prüfung durch einen unabhängigen Vergabebeirat.   
+
+Die finanzielle Dimension des INCUBATE-Programms ist erheblich und muss in der Finanzplanung präzise verbucht werden:
+
+Das Start-up erhält Zugang zu bis zu 25.000 EUR an finanziellen Mitteln.   
+
+Wichtige finanztechnische Korrektur: Anders als beim ACTIVATE-Zuschuss handelt es sich bei diesen 25.000 EUR in der Regel nicht um einen bedingungslosen "Lost Grant". Die Mittel werden als Barvorschuss (Cash Advance) oder – laut Evaluierungsunterlagen des Landes OÖ in Kooperation mit der Hypo Landesbank – als Darlehenspaket strukturiert. Pro Gründer können bis zu 25.000 EUR (maximal 50.000 EUR pro Start-up bei zwei Gründern) als Darlehen zur Verfügung gestellt werden, um die Scale-up-Phase zu finanzieren, ohne das Unternehmen mit reinen Subventionen zu "verwöhnen", sondern um privates Kapital zu hebeln.   
+
+tech2b bezahlt in dieser Phase zwei dedizierte externe Mentorinnen oder Mentoren, um maximale fachliche Tiefe in der Geschäftsführung zu gewährleisten.   
+
+Es bestehen gezielte Schwerpunkte und Sonderförderungen für Projekte in den Domänen MedTech, GreenTech (inklusive Zugang zur "2030 Green Academy" mit potenziellen Preisgeldern von 25.000 EUR für grüne Innovationen) und Diversity.   
+
+Phase 3: tech2b Business2Excellence (b2e) und PIER4
+Wenn der Markteintritt erfolgt ist, adressiert das Programm Business2Excellence (b2e) die Lücke bis zur vollständigen Marktreife. Junge Unternehmen, die jünger als fünf Jahre sind, werden hier bei der Serienüberleitung, dem Aufbau des internationalen Vertriebs und der Einwerbung von Venture Capital (Folgefinanzierungen) betreut.   
+
+Die finanzielle Förderung erfolgt hier indirekt durch die Übernahme von Kosten für hochspezialisierte externe Fachexperten (z. B. für internationales Vertragsrecht, komplexes Online-Marketing, Grafik-Content), gepaart mit intensiven Betreuungsstunden durch tech2b-Mitarbeiter. Der Wert dieser Sachförderung, der als De-minimis-Beihilfe verbucht wird, skaliert je nach Programmvariante :   
+
+b2e Smart: 6 Monate, 1 Experte, 80 Std. tech2b-Support. De-minimis-Summe: 7.360 EUR.   
+
+b2e Intense: 12 Monate, 2 Experten, 130 Std. tech2b-Support. De-minimis-Summe: 13.460 EUR.   
+
+Für Start-ups, die bereits Risikokapital eingesammelt haben, gibt es die Varianten b2e Business Development (BD) Smart (12 Monate, De-minimis: 9.460 EUR) und b2e BD Intense (24 Monate, 200 Std. Support, De-minimis: 16.400 EUR).   
+
+Zusätzlich bietet tech2b mit dem Programm PIER4 eine Brücke zur oberösterreichischen Leitindustrie. Start-ups erhalten hier exklusiven Zugang zu etablierten Industrieunternehmen, um Open-Innovation-Projekte umzusetzen und erste große B2B-Kunden zu akquirieren.   
+
+Spezialinkubator: #tourismusinkubator
+Sollte das Klientenprojekt Berührungspunkte zur Freizeit- oder Hotelwirtschaft aufweisen, steht der spezialisierte Tourismus-Inkubator zur Verfügung. Dieser wird gemeinsam von tech2b, Business Upper Austria und dem Oberösterreich Tourismus getragen. Er unterstützt innovative Gründer mit einer Leidenschaft für den Tourismus über einen Zeitraum von 12 Monaten mit dem Ziel, nachhaltige und wachsende Start-ups in dieser spezifischen Branche zu etablieren.   
+
+OÖ. Gründerfonds: Echte stille Beteiligungen als Eigenkapitalersatz
+Einer der potentesten finanziellen Hebel im oberösterreichischen Ökosystem ist der OÖ. Gründerfonds, welcher aus Mitteln des Landes Oberösterreich dotiert ist. Die Abwicklung erfolgt über die Oberösterreichische Unternehmensbeteiligungsgesellschaft m.b.H. (UBG). Ziel dieses Fonds ist es, jungen Unternehmen in der Startphase durch Beteiligungen günstiges Eigenkapital zu verschaffen.   
+
+Zugangsberechtigt sind Unternehmen, die längstens seit 12 Monaten von tech2b im INCUBATE-Programm oder im Tourismus-Inkubator betreut werden. Die Förderung erfolgt in Form einer echten stillen Beteiligung mit handelsrechtlichen Eigenkapitaleigenschaften. Dies ist bilanziell von unschätzbarem Wert: Stille Beteiligungen erhöhen die Eigenkapitalquote des Start-ups, verbessern das Rating bei Hausbanken und erleichtern somit die Aufnahme von klassischem Fremdkapital oder aws-Garantien erheblich.   
+
+Gefördert werden weitreichende Kostenkategorien: Materielle und immaterielle Investitionen, Personalkosten, Umlaufvermögen, Anlaufkosten für maximal 18 Monate sowie Gesellschafterbezüge (bis zu einem Maximum von brutto 1.500 EUR pro Monat für mitarbeitende Vollzeit-Gesellschafter). Ein strategischer Meilenstein wird erreicht, wenn das Projekt vom INCUBATE-Vergabebeirat offiziell als "Green-Tech-Projekt" oder "Med-Tech-Projekt" eingestuft wird. In diesem Fall beträgt die Höchstbeteiligung des Landesförderungsprogramms sensationelle 100 % der förderbaren, projektbezogenen Gesamtkosten und wird mit einer absoluten Obergrenze von 150.000 EUR gedeckelt.   
+
+Start-up-Prämie für die Oö. Wirtschaft (SPW) und der aws erp-Kredit
+Den Abschluss der regionalen Förderkulisse bildet die Start-up-Prämie für die Oö. Wirtschaft (SPW), die für den Zeitraum vom 01.01.2024 bis zum 31.12.2026 aufgelegt wurde. Diese Prämie ist administrativ untrennbar mit dem Erhalt eines aws erp-Kredites verbunden.   
+
+Wenn das Klientenprojekt physische Investitionen tätigt (z.B. Maschinen, Anlagen, Serverinfrastruktur) und dafür einen aws erp-Kredit für den Sektor Industrie, Gewerbe und Dienstleistungen mit "Gründer-Sonderkonditionen" bewilligt bekommt, schießt das Land Oberösterreich einen nicht rückzahlbaren Zuschuss (Prämie) zu. Das Investitionsvorhaben muss dafür projektbezogene Gesamtkosten zwischen 20.000 EUR und 500.000 EUR aufweisen.   
+
+Die Prämie setzt sich aus zwei Tranchen zusammen:
+
+Basisförderung: Maximal 7,5 % der förderbaren Investitionskosten, absolut gedeckelt mit 10.000 EUR je Förderungswerber.   
+
+Nachhaltigkeitsbonus: Ein zusätzlicher Bonus von maximal 7,5 % (ebenfalls gedeckelt mit 10.000 EUR), der jedoch exklusiv für Kosten gewährt wird, die durch die Übernahme einer bestehenden Betriebsstätte (Asset Deal) entstehen.
+Für eine reguläre Neugründung bedeutet dies faktisch einen direkten Barmittelzuschuss von bis zu 10.000 EUR, der zusätzlich zu den extrem günstigen Zinskonditionen des erp-Kredits lukriert werden kann. Die Antragstellung erfolgt vollelektronisch über das Wirtschaftsportal Oberösterreich vor Projektbeginn.   
+
+tech2b & OÖ-Instrument	Typ der finanziellen / strukturellen Leistung	Obergrenze (Korrekturdaten)
+tech2b IDEATE	Mentoring, Netzwerzzugang, Flex-Desk	Sachleistung (De-minimis)
+tech2b ACTIVATE	Barzuschuss (nicht rückzahlbar)	5.000 EUR
+tech2b INCUBATE	Cash Advance / Darlehenspaket + Mentoren	Bis zu 25.000 EUR
+tech2b Business2Excellence	Expertenberatung (Recht, Marketing, Vertrieb)	7.360 EUR bis 16.400 EUR (De-minimis)
+OÖ. Gründerfonds	Echte Stille Beteiligung (Eigenkapital)	Max. 150.000 EUR (bei Green/Med-Tech)
+OÖ Start-up-Prämie (SPW)	Investitionszuschuss gekoppelt an aws erp-Kredit	Max. 10.000 EUR (Basis) + 10.000 EUR (Bonus)
+Masterplan "Volle Förderung": Synergetische Orchestrierung des Klientenprojekts
+Die isolierte Beantragung einzelner Fördertöpfe greift strategisch zu kurz und führt unweigerlich zu Liquiditätslücken. Um für das Klientenprojekt die in der Anfrage geforderte "volle Förderung" zu lukrieren, muss eine stringente, zeitlich gestaffelte Projektstrukturierung (Phasing) vorgenommen werden. Die größte juristische Gefahr bei der Kumulierung von staatlichen Mitteln ist die unbeabsichtigte Doppelförderung. Das europäische Beihilfenrecht verbietet es strikt, denselben Rechnungsbeleg oder dieselbe geleistete Personalstunde bei zwei unterschiedlichen Förderstellen (z.B. aws und FFG) zeitgleich zur Abrechnung einzureichen.   
+
+Eine rechtssichere Maximalausbeute erfordert die Definition von sauber abgegrenzten Arbeitspaketen, die technologisch, inhaltlich und zeitlich trennbar sind. Eine idealtypische Fördermittel-Architektur für ein technologieorientiertes Start-up in Oberösterreich stellt sich wie folgt dar:
+
+Phase 1 (Monate 1–6): Validierung und Vorgründung
+Das Team startet die Entrepreneurship Journey im tech2b IDEATE Programm, um kostenfrei Infrastruktur, Marktvalidierung und Netzwerk zu nutzen. In dieser Phase ist das Unternehmen rechtlich oft noch nicht gegründet. Parallel reicht das Team das Konzept für den FFG Innovationsscheck mit Selbstbehalt ein. Das Ziel: Die wissenschaftliche Machbarkeitsstudie oder einen hochkomplexen Algorithmus durch ein universitäres Institut evaluieren zu lassen. Die FFG schießt 10.000 EUR direkt an die Universität zu, das Team bringt 2.500 EUR Eigenmittel auf. Da diese Mittel extern abfließen, kollidieren sie nicht mit den eigenen Personalkosten. Gleichzeitig wird der formelle Antrag für den aws First Incubator (Modul A) vorbereitet.   
+
+Phase 2 (Monate 7–15): MVP-Entwicklung und formelle Gründung
+Basierend auf der positiven Evaluierung durch die Universität wird die GmbH gegründet. Das Team wird in das tech2b ACTIVATE Programm aufgenommen und sichert sich den sofortigen Barzuschuss von 5.000 EUR für den Bau des ersten Minimum Viable Products (MVP).   
+
+Zeitgleich startet das bewilligte Projekt im aws First Incubator (Modul B). Durch die kluge gesellschaftsrechtliche Strukturierung – eine Frau hält maßgeblich mehr als 25 % der Anteile und agiert in leitender Funktion – wird der Gender-Bonus aktiviert. Das aws finanziert nun über 12 Monate hinweg 100 % der Personalkosten der Gründer sowie erste externe Entwicklungskosten in einer Gesamthöhe von bis zu 55.000 EUR. Die Liquidität für die Lebenshaltungskosten ist somit vollständig gesichert.   
+
+Phase 3 (Monate 16–24): Experimentelle Entwicklung und Markteintritt
+Sobald die aws-Mittel ausfinanziert und die Arbeitspakete zum reinen Geschäftsmodellaufbau abgeschlossen sind, fokussiert sich das Unternehmen auf die tiefgehende technologische und prozessuale Reife. Das Start-up splittet seine Entwicklungsaktivitäten strikt in zwei Anträge:
+
+FFG Impact Innovation: Beantragt werden 75.000 EUR (bei 150.000 EUR Projektvolumen, 50 % Quote) zur Gestaltung der kunden- und prozessorientierten Innovation (z. B. Einbindung von Stakeholdern zur Lösung eines Prozessproblems).   
+
+FFG Basisprogramm Kleinprojekt: Die rein technologisch-experimentellen Hardcore-Entwicklungsrisiken des Produkts (z. B. Skalierung des Backends, Hardware-Prototyping) werden in ein separates Arbeitspaket ausgelagert und bei der FFG eingereicht. Bei 150.000 EUR Kostenobergrenze fließen bis zu 88.500 EUR an Zuschüssen zurück ins Unternehmen.   
+
+Diese rigorose buchhalterische Trennung zwischen Prozessinnovation (Impact) und experimenteller Technologieentwicklung (Kleinprojekt) verhindert rechtliche Überschneidungen und maximiert den Geldfluss in das Unternehmen. Begleitend steigt das Start-up in das hochkompetitive tech2b INCUBATE Programm auf, welches weitere 25.000 EUR an vorschüssiger Liquidität oder günstigen Darlehen sowie Senior-Mentoring für den bevorstehenden Markteintritt beisteuert.   
+
+Phase 4 (Monate 25–36): Skalierung, Industrie-Rollout und Kapitalisierung
+Das Produkt ist nun technologisch ausgereift und erzielt erste Umsätze. Um das extreme Skalierungswachstum bilanziell abzusichern und Produktionsanlagen zu finanzieren, beantragt das Start-up als klassifiziertes "Green-Tech"- oder "Med-Tech"-Projekt über die UBG eine massive Eigenkapitalstärkung durch den OÖ. Gründerfonds. Dies führt zu einer Zufuhr von bis zu 150.000 EUR in Form einer echten stillen Beteiligung.   
+
+Ausgestattet mit dieser enormen Eigenkapitalquote ist das Start-up für Banken hochgradig attraktiv. Es wird ein aws erp-Kredit mit Gründer-Sonderkonditionen für die Einrichtung der industriellen Serienfertigung oder IT-Infrastruktur abgeschlossen. Der Abschluss dieses Kredits triggert sofort die OÖ Start-up-Prämie (SPW), welche dem Unternehmen weitere 10.000 EUR als nicht rückzahlbaren Investitionszuschuss in die Kassen spült. Abschließend sichert das tech2b Business2Excellence (b2e BD Intense) Programm das Unternehmen mit Beratungsleistungen im Wert von über 16.400 EUR ab, um die internationale Vertriebsstruktur aufzubauen und institutionelle Venture-Capital-Geber an Bord zu holen.   
+
+Durch diese methodische Orchestrierung summieren sich die kumulierten, nicht rückzahlbaren Zuschüsse, vorteilhaften Darlehen und stillen Beteiligungen auf ein potenzielles Gesamtvolumen von weit über 400.000 EUR, ohne jemals mit dem Kumulierungsverbot in Konflikt zu geraten.
+
+Compliance, Beihilfenrecht und administrative Exzellenz
+Das Erreichen dieser Fördersummen bedingt eine administrative und juristische Präzision, die in der Praxis von Start-ups oft dramatisch unterschätzt wird. Die fehlerhafte Folie des Klienten ist ein Symptom für eine gefährliche Simplifizierung des Fördermittelmarktes.
+
+Ein zentrales Regulativ, das bei der skizzierten "Vollen Förderung" permanent überwacht werden muss, ist die europäische De-minimis-Verordnung. Diese besagt, dass ein Unternehmen innerhalb eines rollierenden Zeitraums von drei Steuerjahren maximal 300.000 EUR an staatlichen Beihilfen erhalten darf, die unter diese Verordnung fallen. Instrumente wie der Innovationsscheck , die OÖ Start-up-Prämie  und vor allem die stille Beteiligung aus dem OÖ. Gründerfonds  konsumieren diesen De-minimis-Rahmen massiv. Im Gegensatz dazu fallen die klassischen FFG-Forschungsförderungen (wie das Kleinprojekt oder das reguläre Basisprogramm) in der Regel unter die Allgemeine Gruppenfreistellungsverordnung (AGVO) und belasten den De-minimis-Rahmen nicht. Ein exaktes Monitoring dieses Kontos ist zwingend erforderlich, um bei späten Bewilligungen (z.B. durch den Gründerfonds) nicht aufgrund eines überschrittenen Rahmens disqualifiziert zu werden.   
+
+Darüber hinaus erfordert die Parallelität von Förderungen (insbesondere zwischen aws First und FFG) ein hochprofessionelles Kostenrechnungssystem. Arbeitsstunden müssen über lückenlose Timesheets exakt den bewilligten Arbeitspaketen des jeweiligen Fördergebers zugeordnet werden. Die Annahme, dass eine pauschale Rechnungslegung genüge, führt bei Vor-Ort-Prüfungen der FFG oder des aws zwangsläufig zu dramatischen Rückforderungen, die das gesamte Start-up in die Insolvenz treiben können.
+
+Zusammenfassend ist festzuhalten, dass die finanzielle Kraft des österreichischen Förderökosystems gewaltig ist, jedoch zwingend eine Abkehr von veralteten Heuristiken (wie auf der analysierten Präsentationsfolie) und den Übergang zu einer tagesaktuellen, rechtskonformen und strategisch orchestrierten Förderkaskade erfordert. Die in diesem Bericht detaillierten Quoten, Obergrenzen und Kombinationsmöglichkeiten für 2026 bilden hierfür das verbindliche Fundament.
+
+
+inspiralia.ch
+FFG Projekt.Start: Bis zu 60% Förderung erhalten! - Inspiralia
+Wird in einem neuen Fenster geöffnet
+
+ffg.at
+Projekt.Start 2025 | FFG
+Wird in einem neuen Fenster geöffnet
+
+ffg.at
+Innovationsscheck mit Selbstbehalt Factsheet - FFG
+Wird in einem neuen Fenster geöffnet
+
+ffg.at
+Basisprogramm Kleinprojekt 2026 | FFG
+Wird in einem neuen Fenster geöffnet
+
+ffg.at
+Impact Innovation - Die Initiative - FFG
+Wird in einem neuen Fenster geöffnet
+
+inspiralia.at
+FFG Innovationsscheck & Impact Innovation - Inspiralia
+Wird in einem neuen Fenster geöffnet
+
+ffg.at
+Impact Innovation – The Initiative | FFG
+Wird in einem neuen Fenster geöffnet
+
+ffg.at
+Impact Innovation 2026 | FFG
+Wird in einem neuen Fenster geöffnet
+
+wko.at
+Innovationsscheck mit Selbstbehalt 2026 - WKO
+Wird in einem neuen Fenster geöffnet
+
+ffg.at
+Impact Innovation 2026 | FFG
+Wird in einem neuen Fenster geöffnet
+
+zsi.at
+Evaluierung FFG-Förderprogramm Impact Innovation Ergebnisse der Ex-post-Evaluierung - ZSI
+Wird in einem neuen Fenster geöffnet
+
+ffg.at
+Basisprogramm Kleinprojekt 2025 - FFG
+Wird in einem neuen Fenster geöffnet
+
+ffg.at
+Basisprogramm 2026 - FFG
+Wird in einem neuen Fenster geöffnet
+
+kmuforschung.ac.at
+Bedeutung und Wirkung der FFG-Basisprogramme in der gewerblichen Wirtschaft - KMU Forschung Austria
+Wird in einem neuen Fenster geöffnet
+
+aws.at
+aws First Incubator – Call 1 2025 - Austria Wirtschaftsservice
+Wird in einem neuen Fenster geöffnet
+
+transparenzportal.gv.at
+First Incubator - Programm zur Förderung von Entrepreneurship - Transparenzportal
+Wird in einem neuen Fenster geöffnet
+
+aws.at
+aws First Incubator - Austria Wirtschaftsservice
+Wird in einem neuen Fenster geöffnet
+
+aws.at
+First Incubator Programm zur Förderung von Entrepreneurship 2024-2026 - AWS
+Wird in einem neuen Fenster geöffnet
+
+ftp.tugraz.at
+aws First Incubator
+Wird in einem neuen Fenster geöffnet
+
+aws.at
+aws First Incubator
+Wird in einem neuen Fenster geöffnet
+
+aws.at
+First Incubator, Förderung für Gründerinnen, Jungunternehmen ...
+Wird in einem neuen Fenster geöffnet
+
+trendingtopics.eu
+aws First Incubator 2026 Opens Applications for Early-Stage Startups - Trending Topics
+Wird in einem neuen Fenster geöffnet
+
+brutkasten.com
+Call for international innovators: Turn your business idea into reality with aws First Incubator
+Wird in einem neuen Fenster geöffnet
+
+ftp.tugraz.at
+aws First Incubator
+Wird in einem neuen Fenster geöffnet
+
+tech2b.at
+Startup Förderung bei tech2b
+Wird in einem neuen Fenster geöffnet
+
+tech2b.at
+tech2b - the Upper Austrian startup incubator by changemakers for changemakers
+Wird in einem neuen Fenster geöffnet
+
+tech2b.at
+ACTIVATE: From the idea to the minimal viable product - tech2b
+Wird in einem neuen Fenster geöffnet
+
+tech2b.at
+IDEATE: Because ideas change the world - tech2b
+Wird in einem neuen Fenster geöffnet
+
+tech2b.at
+ACTIVATE: Von der Idee zum Minimal Viable Product - tech2b
+Wird in einem neuen Fenster geöffnet
+
+tech2b.at
+Startup funding at tech2b
+Wird in einem neuen Fenster geöffnet
+
+tech2b.at
+Congratulations INCUBATE Startups! - tech2b
+Wird in einem neuen Fenster geöffnet
+
+tech2b.at
+INCUBATE: Scale your startup - tech2b
+Wird in einem neuen Fenster geöffnet
+
+tech2b.at
+INCUBATE: Skaliere dein Startup - tech2b
+Wird in einem neuen Fenster geöffnet
+
+www2.land-oberoesterreich.gv.at
+Projektbeschreibung Vorlage für Förderungsansuchen des Programms AplusB Scale-up - Land Oberösterreich
+Wird in einem neuen Fenster geöffnet
+
+tech2b.at
+Greentech Startup Förderung - tech2b
+Wird in einem neuen Fenster geöffnet
+
+brutkasten.com
+tech2b: Weitere fast 4 Mio Euro für Oberösterreichs Startup-Szene - brutkasten
+Wird in einem neuen Fenster geöffnet
+
+tech2b.at
+Business2excellence (b2e) - tech2b Förderung
+Wird in einem neuen Fenster geöffnet
+
+tech2b.at
+Tourismus Förderung & Inkubator - tech2b
+Wird in einem neuen Fenster geöffnet
+
+land-oberoesterreich.gv.at
+Richtlinien Oö. Gründerfonds an FTI-Gründungsvorhaben, an Tourismus-Gründungsvorhaben, - Land Oberösterreich
+Wird in einem neuen Fenster geöffnet
+
+transparenzportal.gv.at
+Oö. Gründerfonds mit den Programmlinien "FTI-Beteiligung" und "Tourismus-Beteiligung" - Transparenzportal
+Wird in einem neuen Fenster geöffnet
+
+land-oberoesterreich.gv.at
+Oö. Gründerfonds mit der Programmlinie „FTI-Beteiligung“ und der Programmlinie „Tourismus-Beteiligung“ für den Zeitraum 01.01.2026 – 31.12.2026 - Land Oberösterreich
+Wird in einem neuen Fenster geöffnet
+
+land-oberoesterreich.gv.at
+Richtlinie Oö. Gründerfonds - Land Oberösterreich
+Wird in einem neuen Fenster geöffnet
+
+land-oberoesterreich.gv.at
+Start-up-Prämie für die Oö. Wirtschaft - Land Oberösterreich
+Wird in einem neuen Fenster geöffnet
+
+transparenzportal.gv.at
+Start-up-Prämie für die Oö. Wirtschaft (SPW) - Transparenzportal
+Wird in einem neuen Fenster geöffnet
+Wird in einem neuen Fenster geöffnet
+Wird in einem neuen Fenster geöffnet
+Wird in einem neuen Fenster geöffnet
+Wird in einem neuen Fenster geöffnet
+Wird in einem neuen Fenster geöffnet
+Wird in einem neuen Fenster geöffnet
+Wird in einem neuen Fenster geöffnet
+Wird in einem neuen Fenster geöffnet

@@ -1,0 +1,26 @@
+Feature	Project Exodus	Apple Health	WHOOP	Superpower	Function Health	Guava Health	Heads Up Health	OneTwenty / Outlive.bio	Empirical Health	Don’t Die	Fitbit / Garmin
+Labordaten & Arztbriefe	✓ Gesamter Daten‑Vault (Labore, Arztbriefe, PDFs)
+exodus-demo.vercel.app
+	◐ Kann Gesundheitsakten in der Health App anzeigen, aber keine strukturierte Dokumentenablage	✗	◐ Bietet große Labortests, aber keine Arztbrief‑Ablage	◐ Viele Labortests, keine Arztbrief‑Ablage	✓ Speichert medizinische Akten und extrahiert Labordaten	✓ Aggregiert Labore und EHRs (B2B)	◐ Vierteljährliche Panel‑Tests, aber kein umfangreicher Daten‑Vault	◐ Verknüpft Labore & Bluttests; keine Arztbriefe	✗	✗
+Wearable‑Integration	✓ Unterstützt viele Geräte (Apple Health, Garmin, CGM u. a.)
+exodus-demo.vercel.app
+	✓ Integrates Apple Watch & Geräte	✓ Umfasst Wearable‑Daten (Schlaf, Strain)	✗	◐ Begrenzte Device‑Anbindung	✓ Verbindet diverse Geräte & Wearables	✓ Verbindet Labs, Wearables & EHR	✓ Integriert Apple Watch, Oura, WHOOP, Garmin	✓ Apple Watch, Blutdruck‑Geräte u. a.	✓ Apple Health, Oura, WHOOP, Garmin etc.	✓ Geräte liefern Fitness‑Daten
+KI‑Erklärungen (XAI)	✓ Erklärbare KI mit Einflussfaktoren & Handlungskarten
+exodus-demo.vercel.app
+	✗	✗	✗	✗	✗	✗	✗	✗	✗	✗
+Ärztliche Freigabe	✓ Jeder Plan wird von Ärzt*innen geprüft
+exodus-demo.vercel.app
+	✗	✗	✗	◐ Testergebnisse werden überprüft, aber Pläne nicht immer freigegeben	✗	✗	✗	✓ Protokolle werden von Ärzt*innen freigegeben	✗	✗
+Supplements integriert	✓ Personalisierte Supplements und In‑App‑Kauf
+exodus-demo.vercel.app
+	✗	✗	◐ Supplement‑Empfehlungen, Concierge‑Chat	◐ Supplement‑Protokolle vorhanden	✗	✗	◐ Supplement‑ & Medikamenten‑Services geplant	✗	✗	✗
+Trainingspläne & Fitness‑Coaching	✓ Komplett personalisierte Trainingspläne, abgestimmt auf Gesundheitsdaten (Intervall‑ und Kraft‑Workouts)	✗	✓ Weekly Plan & Strength Trainer bieten Workout‑Guidance	✗	◐ Protokolle enthalten allgemeine Fitness‑Empfehlungen	✗	✗	✗	◐ Protokolle „light“ können bewegungsbezogene Tipps beinhalten	◐ Gamifizierte Ziele, aber keine strukturierten Workouts	✓ Viele Modelle bieten Trainingspläne (z. B. Garmin Coach)
+Lokal‑first / Privacy	✓ Daten lokal verschlüsselt, Cloud‑Sync optional
+exodus-demo.vercel.app
+	◐ Daten sind lokal, aber iCloud kann synchronisieren	✗	✗	✗	✗	✗	✗	✗	✗	✗
+KI‑Wahl	✓ Freie Wahl des KI‑Modells (lokal, OpenAI etc.)
+exodus-demo.vercel.app
+	✗	✗	✗	✗	✗	✗	✗	✗	✗	✗
+EU‑DSGVO	✓ EU‑Server & native DSGVO‑Konformität
+exodus-demo.vercel.app
+	◐ Datenschutz orientiert sich am EU‑Recht	✗	✗	✗	✗	✗	✗	✗	✗	✗

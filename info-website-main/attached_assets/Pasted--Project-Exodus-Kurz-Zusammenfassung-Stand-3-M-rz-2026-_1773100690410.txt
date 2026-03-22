@@ -1,0 +1,93 @@
+## Project Exodus – Kurz-Zusammenfassung (Stand: 3. März 2026)
+
+Kurzbeschreibung: Strategische Leitlinien, Zielbild und Prioritäten für Project Exodus.
+
+<aside>
+🧾 Kurzfassung: Project Exodus – Kurz-Zusammenfassung (Stand: 3. März 2026)
+
+</aside>
+
+**Project Exodus** ist eine KI-gestützte **Longevity- und Gesundheitsplattform für Linz/Österreich**, die Gesundheitsdaten zentral sammelt, verständlich visualisiert und (schrittweise) in Richtung klinisch nutzbarer Entscheidungsunterstützung ausgebaut werden soll – mit einer **100‑Jahre‑Vision (2026–2126)**.
+
+### 1) Vision & Produktkern
+
+- Aufbau eines **“Health Vault / Data Wall”**: Import und Speicherung von **Laborbefunden, Arztbriefen, Trainings-/Wearable-Daten** inkl. Timeline/Visualisierung.
+- **KI-gestützte Analysen** und (später) **personalisierte Trainings-/Gesundheitspläne**, mit Fokus auf **“simpel wie Instagram”** (Voice-first) und **Zugänglichkeit für Ältere** (SMS/Anruf).
+- **Arzt-/HCP-Dashboard** für klinische Unterstützung und Plan-Zustellung.
+- **Supplement-Ökosystem** als zusätzlicher Umsatzkanal (eigene Produkte/Kooperationen).
+- Kern-USP: **Ganzheitliche Abdeckung** (Labordaten + Fitness + Supplements + ärztliche Betreuung) statt einzelner Teil-Apps.
+
+### 2) Team & Partnernetzwerk
+
+- **Kernteam:**
+    - *Martin Hausleitner* (KI/Tech, Multi-Agent, Gesamt-Stack)
+    - *Felix* (Physiotherapie-Student, klinisch-evidenzbasierte Perspektive)
+    - *Grausi* (technischer Partner, Discord)
+- **Geplante/angestrebte Partner:** FH Gesundheitsberufe OÖ, JKU Medizin (inkl. ZMF/Core Facilities), Kepler Uniklinikum (Pilot/Datennähe, u.a. Pneumologie/Long COVID), **Biogena** (LOI für Supplements), **BelegJaeger** (OCR/NLP Datenextraktion).
+- Kooperationslogik: **LOIs**, dokumentierte **Experteninterviews**, und für FFG **“wirksame Kooperation”** (mind. **10%** der förderbaren Kosten bei Forschungseinrichtungen → Kooperationsbonus).
+
+### 3) Tech-Ansatz
+
+- Entwicklung stark über **KI-/Vibe-Coding** und **Agent-Swarm (20–30 Agents parallel)**.
+- EU-/DSGVO-Setup: **EU-Hosting (Netcup/Hetzner)**, **kryptographische Datenspeicherung**, Audit-/Safety-/XAI-Ausrichtung.
+- Datenintegration über **Spike API**; Repo: **martin-hausleitner/med-matrix**.
+- Zielrichtung: **Explainable AI (XAI)**, Safety Layer, Kontraindikationschecks.
+
+### 4) Drei Produktpfade (FFG-Bewertung) – Favorit
+
+1. **Health Data Wall** (Wellness-first, kein MDR): Dokumente importieren, strukturieren, anzeigen.
+2. **Evidence-to-Plan (empfohlen)**: **Literatur-RAG + Clinician-in-the-loop** (Arzt kann freigeben/ändern/ablehnen), “Warum das?”‑Erklärkarten, Safety-/Kontraindikationslogik.
+3. **Sovereign Health AI Stack**: EU-/On‑Prem LLM, De‑Identification, Policy Engine, Audit-Logs.
+
+### 5) Regulatorische Strategie (MDR & AI Act)
+
+- Grundsatz: **“Intended Purpose”** entscheidet, ob Software als Medizinprodukt gilt.
+- **Roadmap mit Modultrennung**:
+    - **Phase 1 (ohne CE):** Informationssystem (Speichern/Anzeigen/Archivieren), keine KI, die patientenspezifisch Therapie/Plan vorschlägt.
+    - **Phase 2 (mit CE, MDR IIa):** KI-Entwürfe patientenspezifischer Pläne → klinische Evidenz, Risikomanagement, Studienpartner.
+    - **In-house** (Art. 5(5) MDR) als Sonderfall nur innerhalb Einrichtungen.
+- Praktische Abgrenzung: **Darstellen = ok**, **individuell bewerten = Graubereich**, **Diagnose/Therapie nahelegen = MDR-pflichtig**.
+
+### 6) Förderstrategie (Stufenplan)
+
+Empfohlene Reihenfolge:
+
+**FFG Projekt.Start → FFG Innovationsscheck → FFG Impact Innovation → AWS Preseed → FFG Kleinprojekt → FFG Basisprogramm → AWS Seed**
+
+Ergänzend: OÖ Start-up-Prämie, aws First Incubator (auch ohne Firma), Praktika-Förderung, Patent.Scheck, etc.
+
+- Wichtig für FFG: häufigster Ablehnungsgrund ist **zu wenig Entwicklungsrisiko** → Risiko/Ungewissheiten klar herausarbeiten.
+- Beispielbudget (18 Monate Basisprogramm) im Material: **~346,8k Kosten**, **~242,8k Förderung**, **~104,0k Eigenmittel**.
+
+### 7) Go-to-Market
+
+- **Phase 1:** Consumer App (Wellness/Vault) → schneller Start, kein MDR, Export/Kommunikation/“Arzt kontaktieren”.
+- **Phase 2:** HCP-Modul (Physios/Ärzte) → KI‑Planvorschläge nur mit Freigabe, klinische Evidenz.
+- **Phase 3:** Voll zertifiziertes MDR-Produkt → perspektivisch erstattungsfähig.
+- **Supplements** als paralleler Revenue-Stream (eigene Marke/Abfüllung + Partnerschaften, In‑App-Kauf).
+
+### 8) Wettbewerb & Differenzierung
+
+Genannte Wettbewerber: tandemhealth.ai, oasishealth.app, alphacaps.de, gaingetter.com, marillys.com sowie Oura/Apple Health/Whoop und viele Spezial-Apps.
+
+Differenzierung: **integrierte End-to-End Plattform** statt Insellösungen.
+
+### 9) Open-Data-Substanz (data.gv.at)
+
+- Nutzung öffentlicher Datensätze als **Bedarfs- und Impact-Beleg** (chronische Erkrankungen, muskuloskelettale Beschwerden, Diabetes-Trend, Präsentismus).
+- Geo-/Infrastrukturdaten (Sportstätten/Spielplätze, basemap.at) für Features.
+- Bezug zu **High Value Datasets**, ELGA-nahe Strukturen, Klima/Umwelt (z.B. Pollen) für kontextsensitives Coaching.
+
+### 10) Hauptrisiken & Gegenstrategie
+
+Risiken: MDR-/Benannte-Stellen-Komplexität, Datenzugang (KUK), Haftung, Finanzierungslücke, AI Act, Ethik, Adhärenz, Halluzinationen/Bias, Cybersecurity, Interoperabilität, GPU-Kosten, ärztliche Akzeptanz u.a.
+
+Gegenstrategie: **Wellness-first**, klare Zweckbestimmung, **Privacy-by-Design**, Physio/Clinician‑in‑the‑loop, XAI, Pilotstudien/LOIs, Patent-/IP-Plan, Gamification, Partnernetzwerk.
+
+### 11) Konkrete nächste Schritte (Timing aus dem Dokument)
+
+- **Sofort (März 2026):** FFG eCall, Projekt.Start einreichen, aws First Incubator Call #2 vorbereiten (Juni 2026), Innovationsscheck beantragen.
+- **März–Mai 2026:** 10–15 Experteninterviews, FH-Partnerschaft formalisieren, LOIs (KUK/Biogena/weitere), tech2b als Sparring.
+- **Juni/Juli 2026:** FFG Kleinprojekt erst **mit “voller Substanz”** einreichen (Feedback vorab einholen), sonst Risiko einer Zeitverlust-Ablehnung.
+
+Wenn du willst, kann ich dir daraus auch eine **1‑seitige Executive Summary** (FFG-/Pitch-tauglich) oder eine **Kurz-Präsentationsstruktur (10 Slides)** ableiten – aber die obige Zusammenfassung deckt die Kernaussagen schon vollständig ab.

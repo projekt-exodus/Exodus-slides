@@ -123,8 +123,21 @@ export default function Slide10() {
           </div>
         </div>
 
-        {/* Right: two QR codes + partner logos */}
+        {/* Right: logo + QR codes */}
         <div className="flex-shrink-0 flex flex-col items-center gap-8">
+
+          {/* Pulsing Exodus logo */}
+          <img
+            src="/exodus-logo-transparent.png"
+            alt="Exodus Logo"
+            style={{
+              width: 160,
+              height: 160,
+              objectFit: "contain",
+              animation: "pulse-beat 1.6s ease-in-out infinite",
+            }}
+          />
+
           {/* Two QR codes side by side */}
           <div className="flex gap-8">
             {qrCodes.map((qr) => (

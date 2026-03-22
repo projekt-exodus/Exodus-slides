@@ -1,4 +1,4 @@
-import { Lock, Bot, Smartphone, ShoppingCart, FileCheck, Monitor, Cloud, X } from "lucide-react";
+import { Lock, Bot, Smartphone, ShoppingCart, FileCheck, Monitor, Cloud, X, HardDrive, Shield, CheckCircle2 } from "lucide-react";
 
 export const notes =
   "Wir bauen keine neue Gesundheits-App. Wir bauen den Ort, an dem alle anderen zusammenkommen. USP 1: Alles an einem Ort. USP 2: Bring Your Own AI — du wählst, welche KI deine Daten analysiert. Standard ist immer lokal. USP 3: Persönlicher Gesundheits-Agent — OpenClaw arbeitet für dich, nicht für uns.";
@@ -31,34 +31,38 @@ export default function Slide03() {
       </p>
 
       <div className="grid grid-cols-3 gap-7 mb-7">
-        <div className="p-7 border-2 bg-card" style={{ borderColor: "var(--accent-blue)" }}>
+        <div className="p-7 border-2 bg-card flex flex-col" style={{ borderColor: "var(--accent-blue)" }}>
           <p className="text-xs font-mono uppercase tracking-widest mb-3" style={{ color: "var(--accent-blue)" }}>USP 1</p>
-          <h3 className="text-xl font-semibold mb-3">Alles an einem Ort</h3>
-          <div className="flex items-center gap-2 text-sm text-muted-foreground flex-wrap mb-4">
-            {["Import", "→", "Verstehen", "→", "Freigabe"].map((s, i) => (
-              <span key={i} className={s === "→" ? "text-muted-foreground/40" : "px-3 py-1 bg-[var(--diagram-bg)] border border-border"}>
-                {s}
-              </span>
-            ))}
+          <h3 className="text-xl font-semibold mb-1">Health Vault</h3>
+          <p className="text-sm text-muted-foreground mb-5">Deine Daten. Du wählst wo.</p>
+
+          {/* Storage option 1 — Gerät (selected) */}
+          <div className="flex items-center gap-3 px-3 py-3 mb-2 border-2 rounded-sm" style={{ borderColor: "var(--accent-blue)", backgroundColor: "color-mix(in srgb, var(--accent-blue) 6%, transparent)" }}>
+            <HardDrive className="w-5 h-5 shrink-0" style={{ color: "var(--accent-blue)" }} />
+            <div className="flex-1 min-w-0">
+              <p className="text-sm font-semibold leading-tight">Gerät</p>
+              <p className="text-xs text-muted-foreground">Nur auf deinem Handy</p>
+            </div>
+            <CheckCircle2 className="w-4 h-4 shrink-0" style={{ color: "var(--accent-blue)" }} />
           </div>
-          <p className="text-base text-muted-foreground leading-relaxed mb-3">
-            Labor · Schlaf · Arztbrief · Training — strukturierte Timeline, KI erklärt in normaler Sprache.
-          </p>
-          <div className="flex flex-wrap gap-2">
-            {[
-              { label: "Lokal gespeichert", dot: true },
-              { label: "Health Vault optional" },
-              { label: "KI optional" },
-            ].map((b, i) => (
-              <span
-                key={i}
-                className="flex items-center gap-1.5 text-xs font-mono px-2.5 py-1 rounded-full border"
-                style={{ color: "var(--accent-green)", borderColor: "color-mix(in srgb, var(--accent-green) 35%, transparent)", backgroundColor: "color-mix(in srgb, var(--accent-green) 8%, transparent)" }}
-              >
-                {b.dot && <span className="w-1.5 h-1.5 rounded-full shrink-0" style={{ backgroundColor: "var(--accent-green)" }} />}
-                {b.label}
-              </span>
-            ))}
+
+          {/* Storage option 2 — Exodus Cloud */}
+          <div className="flex items-center gap-3 px-3 py-3 mb-2 border border-border/60 rounded-sm bg-[var(--diagram-bg)]">
+            <Shield className="w-5 h-5 shrink-0" style={{ color: "var(--accent-green)" }} />
+            <div className="flex-1 min-w-0">
+              <p className="text-sm font-semibold leading-tight">Exodus Cloud</p>
+              <p className="text-xs text-muted-foreground">DSGVO-konform · EU-Server</p>
+            </div>
+            <span className="text-xs font-mono px-1.5 py-0.5 rounded" style={{ color: "var(--accent-green)", backgroundColor: "color-mix(in srgb, var(--accent-green) 12%, transparent)" }}>EU</span>
+          </div>
+
+          {/* Storage option 3 — Eigene Cloud */}
+          <div className="flex items-center gap-3 px-3 py-3 border border-border/60 rounded-sm bg-[var(--diagram-bg)]">
+            <Cloud className="w-5 h-5 shrink-0 text-muted-foreground/60" />
+            <div className="flex-1 min-w-0">
+              <p className="text-sm font-semibold leading-tight">Eigene Cloud</p>
+              <p className="text-xs text-muted-foreground">iCloud · OneDrive · Dropbox</p>
+            </div>
           </div>
         </div>
 

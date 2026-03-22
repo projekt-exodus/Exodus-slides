@@ -65,7 +65,7 @@ function PartnerLogo({ name, logo }: { name: string; logo: string }) {
 export default function Slide10() {
   return (
     <div
-      className="fixed inset-0 flex flex-col justify-center px-14 py-10"
+      className="fixed inset-0 flex flex-col justify-center px-28 py-16"
       style={{ width: "100%", height: "100%" }}
     >
       <p className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground/40 mb-6">

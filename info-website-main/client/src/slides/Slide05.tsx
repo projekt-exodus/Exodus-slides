@@ -4,10 +4,10 @@ export const notes =
 export default function Slide05() {
   return (
     <div
-      className="fixed inset-0 flex items-center px-16 py-10"
+      className="fixed inset-0 flex items-center px-20 py-12"
       style={{ width: "100%", height: "100%" }}
     >
-      <div className="flex items-stretch gap-10 w-full h-full">
+      <div className="flex items-center gap-12 w-full h-full">
         <div className="flex-1 min-w-0 flex flex-col justify-center">
           <p className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground/40 mb-6">
             05 — Demo · Live
@@ -50,21 +50,87 @@ export default function Slide05() {
           </a>
         </div>
 
-        <div
-          className="flex-shrink-0 rounded-sm overflow-hidden shadow-2xl border border-border"
-          style={{ width: "48%", height: "100%" }}
-        >
-          <iframe
-            src="https://exodus-demo-app.vercel.app"
-            title="Exodus App Demo"
-            className="border-0"
+        {/* Phone mockup */}
+        <div className="flex-shrink-0 flex items-center justify-center h-full py-4">
+          <div
             style={{
-              width: "100%",
+              aspectRatio: "9/19.5",
               height: "100%",
-              display: "block",
+              maxHeight: "100%",
+              background: "#0a0a0a",
+              borderRadius: "44px",
+              padding: "10px",
+              boxShadow: "0 0 0 1px #333, 0 0 0 2px #111, 0 30px 80px rgba(0,0,0,0.6), inset 0 0 0 1px #222",
+              display: "flex",
+              flexDirection: "column",
+              position: "relative",
             }}
-            allow="accelerometer; gyroscope"
-          />
+          >
+            {/* Top bar with notch */}
+            <div
+              style={{
+                height: "36px",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                flexShrink: 0,
+                position: "relative",
+              }}
+            >
+              {/* Dynamic island */}
+              <div
+                style={{
+                  width: "90px",
+                  height: "22px",
+                  background: "#000",
+                  borderRadius: "20px",
+                }}
+              />
+            </div>
+
+            {/* Screen */}
+            <div
+              style={{
+                flex: 1,
+                borderRadius: "30px",
+                overflow: "hidden",
+                background: "#fff",
+                position: "relative",
+              }}
+            >
+              <iframe
+                src="https://exodus-demo-app.vercel.app"
+                title="Exodus App Demo"
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  border: "none",
+                  display: "block",
+                }}
+                allow="accelerometer; gyroscope"
+              />
+            </div>
+
+            {/* Home indicator */}
+            <div
+              style={{
+                height: "28px",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                flexShrink: 0,
+              }}
+            >
+              <div
+                style={{
+                  width: "100px",
+                  height: "4px",
+                  background: "#444",
+                  borderRadius: "4px",
+                }}
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>

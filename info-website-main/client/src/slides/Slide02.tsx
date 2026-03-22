@@ -15,6 +15,8 @@ const vault = [
   { label: "Blutdruck-Verlauf", sub: "140/90 → 128/82 mmHg", color: "var(--accent-blue)" },
   { label: "Arztbrief: Endokrinologie", sub: "TSH 2.4 mU/L — erklärt", color: "var(--accent-violet)" },
   { label: "Endometriose", sub: "Schmerztagebuch · Zyklus-Korrelation", color: "var(--accent-rose, #f43f5e)" },
+  { label: "Trainingsplan", sub: "KI-angepasst · Fortschritt verfolgt", color: "var(--accent-amber)" },
+  { label: "Supplementenplan", sub: "Omega-3 · Magnesium · Vitamin D", color: "var(--accent-green)" },
 ];
 
 const stats = [

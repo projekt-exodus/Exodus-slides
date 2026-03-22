@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import ShaderBackground from "./ShaderBackground";
 
 export const notes =
@@ -6,6 +6,7 @@ export const notes =
 
 export default function Slide00() {
   const rootRef = useRef<HTMLDivElement>(null);
+  const logoRef = useRef<HTMLImageElement>(null);
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
@@ -20,6 +21,13 @@ export default function Slide00() {
       clearTimeout(timer);
       if (section) section.removeAttribute("data-background-color");
     };
+  }, []);
+
+  // Sync heart scale directly from ShaderBackground's RAF — same timer, zero drift
+  const onScale = useCallback((scale: number) => {
+    if (logoRef.current) {
+      logoRef.current.style.transform = `scale(${scale})`;
+    }
   }, []);
 
   return (
@@ -38,8 +46,9 @@ export default function Slide00() {
         background: "#ffffff",
       }}
     >
-      <ShaderBackground />
+      <ShaderBackground onScale={onScale} />
       <img
+        ref={logoRef}
         src="/exodus-logo-transparent.png"
         alt="Exodus Logo"
         style={{
@@ -49,9 +58,9 @@ export default function Slide00() {
           position: "relative",
           zIndex: 1,
           marginBottom: "1rem",
-          animation: "pulse-beat 1.6s ease-in-out infinite",
           opacity: visible ? 1 : 0,
           transition: "opacity 0.8s ease-out",
+          willChange: "transform",
         }}
       />
       <h1

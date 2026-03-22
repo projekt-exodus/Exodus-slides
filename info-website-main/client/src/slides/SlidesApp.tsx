@@ -51,10 +51,10 @@ export default function SlidesApp() {
         slideNumber: "c/t",
         showSlideNumber: "all",
         embedded: false,
-        width: "100%",
-        height: "100%",
+        width: 1920,
+        height: 1080,
         margin: 0,
-        minScale: 0.5,
+        minScale: 0.2,
         maxScale: 2.0,
       });
 

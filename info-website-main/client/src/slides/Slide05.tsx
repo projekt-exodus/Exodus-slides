@@ -10,23 +10,23 @@ export default function Slide05() {
       <div className="flex items-center justify-center gap-16 w-full h-full">
 
         {/* Left: text + QR */}
-        <div className="flex flex-col justify-center" style={{ width: "320px", flexShrink: 0 }}>
-          <p className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground/40 mb-6">
+        <div className="flex flex-col justify-center" style={{ width: "420px", flexShrink: 0 }}>
+          <p className="text-sm font-mono uppercase tracking-widest text-muted-foreground/40 mb-6">
             05 — Demo · Live
           </p>
-          <h2 className="text-4xl font-bold tracking-tight mb-3 leading-tight">
+          <h2 className="text-6xl font-bold tracking-tight mb-4 leading-tight">
             Exodus.<br />
             <span className="text-muted-foreground font-medium">Live.</span>
           </h2>
-          <p className="text-sm text-muted-foreground leading-relaxed mb-5">
+          <p className="text-xl text-muted-foreground leading-relaxed mb-7">
             Alle Gesundheitsdaten auf einen Blick — Laborwerte, Arztbriefe,
             Wearable-Daten. Strukturiert. Verständlich. Unter deiner Kontrolle.
           </p>
-          <div className="flex flex-wrap gap-2 mb-6">
+          <div className="flex flex-wrap gap-3 mb-8">
             {["Labor", "Fitness", "Arztbriefe", "Wearables"].map((tag) => (
               <span
                 key={tag}
-                className="text-[10px] font-mono px-2.5 py-1 border border-border bg-card text-muted-foreground"
+                className="text-sm font-mono px-3 py-1.5 border border-border bg-card text-muted-foreground"
               >
                 {tag}
               </span>
@@ -37,16 +37,16 @@ export default function Slide05() {
             href="https://exodus-demo-app.vercel.app"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex flex-col items-start gap-2 group"
+            className="flex flex-col items-start gap-3 group"
           >
             <img
-              src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=https%3A%2F%2Fexodus-demo-app.vercel.app&bgcolor=ffffff&color=000000&margin=4"
+              src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https%3A%2F%2Fexodus-demo-app.vercel.app&bgcolor=ffffff&color=000000&margin=4"
               alt="QR Code: exodus-demo-app.vercel.app"
-              width={160}
-              height={160}
+              width={200}
+              height={200}
               className="border border-border shrink-0"
             />
-            <p className="text-[10px] font-mono text-muted-foreground/60 group-hover:text-muted-foreground transition-colors">
+            <p className="text-sm font-mono text-muted-foreground/60 group-hover:text-muted-foreground transition-colors">
               exodus-demo-app.vercel.app
             </p>
           </a>

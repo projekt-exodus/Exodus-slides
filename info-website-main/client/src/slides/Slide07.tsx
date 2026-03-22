@@ -97,15 +97,15 @@ const highlightedNames = ["Felix Ratzenböck", "Martin Hausleitner"];
 function FHLogo() {
   const [failed, setFailed] = useState(false);
   return failed ? (
-    <span className="text-[9px] font-mono border border-border px-2 py-1 text-muted-foreground bg-card">
+    <span className="text-sm font-mono border border-border px-3 py-1.5 text-muted-foreground bg-card">
       FH Gesundheitsberufe OÖ
     </span>
   ) : (
     <img
       src="https://www.fhgooe.ac.at/fileadmin/fh_gooe/Logo/FHG_Logo_RGB_farbe.png"
       alt="FH Gesundheitsberufe OÖ"
-      height={28}
-      className="h-7 object-contain grayscale opacity-60"
+      height={40}
+      className="h-10 object-contain grayscale opacity-60"
       onError={() => setFailed(true)}
     />
   );
@@ -117,19 +117,19 @@ export default function Slide07() {
       className="fixed inset-0 flex flex-col justify-center px-20 py-10 overflow-hidden"
       style={{ width: "100%", height: "100%" }}
     >
-      <p className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground/40 mb-2">
+      <p className="text-sm font-mono uppercase tracking-widest text-muted-foreground/40 mb-3">
         07 — Team · Felix
       </p>
 
-      <h2 className="text-3xl font-bold tracking-tight mb-1 leading-tight">
+      <h2 className="text-5xl font-bold tracking-tight mb-2 leading-tight">
         Vier aus Linz. Alle aus Überzeugung.
       </h2>
-      <p className="text-sm text-muted-foreground mb-6 max-w-2xl">
+      <p className="text-xl text-muted-foreground mb-7">
         Wir kommen alle aus OÖ. Wir studieren alle an Institutionen aus Linz.
         Und wir nutzen alle das Produkt selbst — weil es unser Problem ist.
       </p>
 
-      <div className="grid grid-cols-4 gap-3 mb-3 flex-shrink-0">
+      <div className="grid grid-cols-4 gap-4 mb-4 flex-shrink-0">
         {team.map((member, i) => {
           const isHighlighted = highlightedNames.includes(member.name);
           const accentColor = accentColorMap[member.color] ?? "var(--accent-blue)";
@@ -151,20 +151,20 @@ export default function Slide07() {
         })}
       </div>
 
-      <div className="grid grid-cols-2 gap-3 flex-shrink-0">
+      <div className="grid grid-cols-2 gap-4 flex-shrink-0">
         <MemberCard member={advisor} i={team.length} inView={true} />
-        <div className="p-3 border border-border/50 bg-[var(--diagram-bg)] flex flex-col justify-center gap-3">
-          <p className="text-xs font-mono uppercase tracking-widest text-muted-foreground/50">Kooperationen (LOIs)</p>
-          <div className="flex flex-col gap-4">
+        <div className="p-4 border border-border/50 bg-[var(--diagram-bg)] flex flex-col justify-center gap-4">
+          <p className="text-sm font-mono uppercase tracking-widest text-muted-foreground/50">Kooperationen (LOIs)</p>
+          <div className="flex flex-col gap-5">
             <img
               src="/logos/fh-gesundheitsberufe.png"
               alt="FH Gesundheitsberufe OÖ"
-              className="h-16 object-contain object-left"
+              className="h-20 object-contain object-left"
             />
             <img
               src="/logos/jku.png"
               alt="JKU Linz"
-              className="h-16 object-contain object-left"
+              className="h-20 object-contain object-left"
             />
           </div>
         </div>

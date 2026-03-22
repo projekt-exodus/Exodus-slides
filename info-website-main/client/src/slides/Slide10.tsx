@@ -41,21 +41,21 @@ function PartnerLogo({ name, logo }: { name: string; logo: string }) {
   const [failed, setFailed] = useState(false);
 
   return (
-    <div className="flex flex-col items-center gap-1.5">
+    <div className="flex flex-col items-center gap-2">
       {failed ? (
-        <span className="text-[9px] font-mono border border-border px-2 py-1 text-muted-foreground bg-card">
+        <span className="text-sm font-mono border border-border px-3 py-1.5 text-muted-foreground bg-card">
           {name}
         </span>
       ) : (
         <img
           src={logo}
           alt={name}
-          height={28}
-          className="h-7 object-contain grayscale opacity-60"
+          height={36}
+          className="h-9 object-contain grayscale opacity-60"
           onError={() => setFailed(true)}
         />
       )}
-      <p className="text-[9px] font-mono text-muted-foreground/50 text-center max-w-[90px] leading-tight">
+      <p className="text-xs font-mono text-muted-foreground/50 text-center max-w-[120px] leading-tight">
         {name}
       </p>
     </div>
@@ -65,48 +65,48 @@ function PartnerLogo({ name, logo }: { name: string; logo: string }) {
 export default function Slide10() {
   return (
     <div
-      className="fixed inset-0 flex flex-col justify-center px-40 py-16"
+      className="fixed inset-0 flex flex-col justify-center px-20 py-12"
       style={{ width: "100%", height: "100%" }}
     >
-      <p className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground/40 mb-6">
+      <p className="text-sm font-mono uppercase tracking-widest text-muted-foreground/40 mb-6">
         10 — Closing · Felix
       </p>
 
-      <div className="flex items-start gap-14 w-full">
+      <div className="flex items-start gap-16 w-full">
         {/* Left: headline + timeline + contact */}
         <div className="flex-1 min-w-0">
-          <h2 className="text-5xl font-bold tracking-tight mb-5 leading-tight">
+          <h2 className="text-6xl font-bold tracking-tight mb-3 leading-tight">
             Wir möchten die Gesundheit<br />revolutionieren.
           </h2>
-          <p className="text-2xl font-medium text-muted-foreground mb-16 leading-tight">
+          <p className="text-3xl font-medium text-muted-foreground mb-8 leading-tight">
             Wir möchten die Linzer und Europäer gesünder machen.
           </p>
 
           {/* Vertical timeline roadmap */}
-          <div className="mb-16">
-            <p className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground/50 mb-5">
+          <div className="mb-8">
+            <p className="text-sm font-mono uppercase tracking-widest text-muted-foreground/50 mb-4">
               Roadmap
             </p>
-            <div className="relative pl-5">
+            <div className="relative pl-6">
               <div
-                className="absolute left-[7px] top-2 bottom-2 w-px"
+                className="absolute left-[9px] top-2 bottom-2 w-px"
                 style={{ backgroundColor: "var(--border)" }}
               />
               <div className="flex flex-col gap-5">
                 {roadmapItems.map((item, i) => (
-                  <div key={i} className="flex items-start gap-3 relative">
+                  <div key={i} className="flex items-start gap-4 relative">
                     <div
-                      className="w-3 h-3 rounded-full shrink-0 mt-0.5 ring-2 ring-background"
+                      className="w-4 h-4 rounded-full shrink-0 mt-0.5 ring-2 ring-background"
                       style={{ backgroundColor: item.color }}
                     />
-                    <div className="flex items-baseline gap-2">
+                    <div className="flex items-baseline gap-3">
                       <span
-                        className="text-xs font-mono font-semibold"
+                        className="text-base font-mono font-semibold"
                         style={{ color: item.color }}
                       >
                         {item.label}
                       </span>
-                      <span className="text-sm text-foreground">{item.desc}</span>
+                      <span className="text-xl text-foreground">{item.desc}</span>
                     </div>
                   </div>
                 ))}
@@ -115,8 +115,8 @@ export default function Slide10() {
           </div>
 
           {/* Contact */}
-          <div className="flex items-center gap-3 text-sm text-muted-foreground">
-            <Mail className="w-4 h-4 shrink-0" style={{ color: "var(--accent-violet)" }} />
+          <div className="flex items-center gap-4 text-xl text-muted-foreground">
+            <Mail className="w-6 h-6 shrink-0" style={{ color: "var(--accent-violet)" }} />
             <a href="mailto:exodus@servas.ai" className="font-mono hover:text-foreground transition-colors">
               exodus@servas.ai
             </a>
@@ -126,29 +126,29 @@ export default function Slide10() {
         {/* Right: two QR codes + partner logos */}
         <div className="flex-shrink-0 flex flex-col items-center gap-8">
           {/* Two QR codes side by side */}
-          <div className="flex gap-6">
+          <div className="flex gap-8">
             {qrCodes.map((qr) => (
               <a
                 key={qr.url}
                 href={qr.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex flex-col items-center gap-3 p-5 border border-border hover:border-foreground/30 transition-colors"
+                className="flex flex-col items-center gap-3 p-6 border border-border hover:border-foreground/30 transition-colors"
               >
                 <p
-                  className="text-[10px] font-mono uppercase tracking-widest"
+                  className="text-sm font-mono uppercase tracking-widest"
                   style={{ color: "var(--accent-blue)" }}
                 >
                   {qr.title}
                 </p>
                 <img
-                  src={`https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=${qr.encoded}&bgcolor=ffffff&color=000000&margin=6`}
+                  src={`https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${qr.encoded}&bgcolor=ffffff&color=000000&margin=6`}
                   alt={`QR Code: ${qr.label}`}
-                  width={180}
-                  height={180}
+                  width={200}
+                  height={200}
                   className="border border-border/40"
                 />
-                <p className="text-[9px] font-mono text-muted-foreground/60 text-center">
+                <p className="text-sm font-mono text-muted-foreground/60 text-center">
                   {qr.label}
                 </p>
               </a>

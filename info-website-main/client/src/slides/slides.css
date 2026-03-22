@@ -8,7 +8,7 @@
   --r-background-color: hsl(var(--background));
   --r-main-color: hsl(var(--foreground));
   --r-main-font: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
-  --r-main-font-size: 16px;
+  --r-main-font-size: 24px;
   --r-heading-color: hsl(var(--foreground));
   --r-heading-font: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
   --r-heading-font-weight: 700;

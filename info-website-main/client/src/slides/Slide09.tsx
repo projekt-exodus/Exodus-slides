@@ -4,12 +4,12 @@ import { BadgeCheck, Clock } from "lucide-react";
 function JKULogo() {
   const [failed, setFailed] = useState(false);
   return failed ? (
-    <span className="text-sm font-semibold tracking-tight" style={{ color: "var(--accent-blue)" }}>JKU Linz</span>
+    <span className="text-xl font-semibold tracking-tight" style={{ color: "var(--accent-blue)" }}>JKU Linz</span>
   ) : (
     <img
       src="/logos/jku.png"
       alt="JKU Linz"
-      className="h-12 object-contain"
+      className="h-16 object-contain"
       onError={() => setFailed(true)}
     />
   );
@@ -36,12 +36,12 @@ const timeline = [
 function FHLogo() {
   const [failed, setFailed] = useState(false);
   return failed ? (
-    <span className="text-sm font-semibold tracking-tight" style={{ color: "var(--accent-green)" }}>FH Gesundheitsberufe OÖ</span>
+    <span className="text-xl font-semibold tracking-tight" style={{ color: "var(--accent-green)" }}>FH Gesundheitsberufe OÖ</span>
   ) : (
     <img
       src="/logos/fh-gesundheitsberufe.png"
       alt="FH Gesundheitsberufe OÖ"
-      className="h-12 object-contain"
+      className="h-16 object-contain"
       onError={() => setFailed(true)}
     />
   );
@@ -49,36 +49,53 @@ function FHLogo() {
 
 export default function Slide09() {
   return (
-    <div className="min-h-screen flex flex-col justify-center px-16 py-16 max-w-6xl mx-auto">
-      <p className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground/40 mb-4">
+    <div
+      style={{
+        position: "absolute",
+        inset: 0,
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        padding: "60px 100px",
+        width: "100%",
+        height: "100%",
+        boxSizing: "border-box",
+        overflow: "hidden",
+      }}
+    >
+      <p className="text-sm font-mono uppercase tracking-widest text-muted-foreground/40 mb-4">
         09 — Traction & Förderungen · Martin
       </p>
 
-      <h2 className="text-4xl font-bold tracking-tight mb-2 max-w-3xl leading-tight">
+      <h2 className="text-6xl font-bold tracking-tight mb-3 leading-tight">
         Wir stehen nicht am Anfang.
       </h2>
+      <p className="text-2xl text-muted-foreground mb-2">
+        aws eingereicht ✅ · FFG läuft ✅ · über 400.000 € Potenzial · 10. Mai Deadline · tech2b Linz
+      </p>
+      <p className="text-base font-mono text-muted-foreground/50 mb-7">Schritt für Schritt.</p>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <div className="grid grid-cols-2 gap-10">
         <div>
-          <p className="text-xs font-mono uppercase tracking-widest text-muted-foreground/50 mb-3">Förderungen</p>
+          <p className="text-sm font-mono uppercase tracking-widest text-muted-foreground/50 mb-3">Förderungen</p>
           <div className="border border-border/70 overflow-hidden bg-card">
-            <table className="w-full text-xs">
+            <table className="w-full text-base">
               <thead>
                 <tr className="bg-[var(--diagram-bg)] border-b border-border">
-                  <th className="text-left p-3 font-mono text-[10px] uppercase tracking-wider text-muted-foreground/60">Programm</th>
-                  <th className="text-right p-3 font-mono text-[10px] uppercase tracking-wider text-muted-foreground/60">Betrag</th>
-                  <th className="text-right p-3 font-mono text-[10px] uppercase tracking-wider text-muted-foreground/60">Rate</th>
-                  <th className="p-3 font-mono text-[10px] uppercase tracking-wider text-muted-foreground/60">Status</th>
+                  <th className="text-left p-4 font-mono text-sm uppercase tracking-wider text-muted-foreground/60">Programm</th>
+                  <th className="text-right p-4 font-mono text-sm uppercase tracking-wider text-muted-foreground/60">Betrag</th>
+                  <th className="text-right p-4 font-mono text-sm uppercase tracking-wider text-muted-foreground/60">Rate</th>
+                  <th className="p-4 font-mono text-sm uppercase tracking-wider text-muted-foreground/60">Status</th>
                 </tr>
               </thead>
               <tbody>
                 {funding.map((row, i) => (
                   <tr key={i} className="border-b border-border/50 last:border-0">
-                    <td className="p-3 font-medium text-foreground">{row.program}</td>
-                    <td className="p-3 text-right font-mono" style={{ color: "var(--accent-green)" }}>{row.amount}</td>
-                    <td className="p-3 text-right font-mono text-muted-foreground">{row.rate}</td>
-                    <td className="p-3">
-                      <span className="text-[10px] font-mono px-2 py-0.5 whitespace-nowrap" style={{ color: row.statusColor, backgroundColor: `${row.statusColor}15` }}>
+                    <td className="p-4 font-medium text-foreground">{row.program}</td>
+                    <td className="p-4 text-right font-mono" style={{ color: "var(--accent-green)" }}>{row.amount}</td>
+                    <td className="p-4 text-right font-mono text-muted-foreground">{row.rate}</td>
+                    <td className="p-4">
+                      <span className="text-sm font-mono px-2.5 py-1 whitespace-nowrap" style={{ color: row.statusColor, backgroundColor: `${row.statusColor}15` }}>
                         {row.status}
                       </span>
                     </td>
@@ -89,20 +106,20 @@ export default function Slide09() {
           </div>
         </div>
 
-        <div className="flex flex-col gap-5">
+        <div className="flex flex-col gap-6">
           <div>
-            <p className="text-xs font-mono uppercase tracking-widest text-muted-foreground/50 mb-3">Status-Timeline</p>
-            <div className="space-y-2">
+            <p className="text-sm font-mono uppercase tracking-widest text-muted-foreground/50 mb-3">Status-Timeline</p>
+            <div className="space-y-3">
               {timeline.map((m, i) => (
-                <div key={i} className="flex items-center gap-3">
+                <div key={i} className="flex items-center gap-4">
                   {m.done ? (
-                    <BadgeCheck className="w-4 h-4 shrink-0" style={{ color: "var(--accent-green)" }} />
+                    <BadgeCheck className="w-6 h-6 shrink-0" style={{ color: "var(--accent-green)" }} />
                   ) : (
-                    <Clock className="w-4 h-4 shrink-0" style={{ color: "var(--accent-amber)" }} />
+                    <Clock className="w-6 h-6 shrink-0" style={{ color: "var(--accent-amber)" }} />
                   )}
-                  <div className="flex items-center justify-between flex-1 gap-4 border border-border/50 bg-card px-4 py-2.5">
-                    <p className={`text-sm ${m.done ? "text-foreground" : "text-muted-foreground"}`}>{m.label}</p>
-                    <span className="text-[10px] font-mono" style={{ color: m.done ? "var(--accent-green)" : "var(--accent-amber)" }}>
+                  <div className="flex items-center justify-between flex-1 gap-4 border border-border/50 bg-card px-5 py-3">
+                    <p className={`text-lg ${m.done ? "text-foreground" : "text-muted-foreground"}`}>{m.label}</p>
+                    <span className="text-sm font-mono" style={{ color: m.done ? "var(--accent-green)" : "var(--accent-amber)" }}>
                       {m.done ? "✅" : "🔜"}
                     </span>
                   </div>
@@ -112,12 +129,12 @@ export default function Slide09() {
           </div>
 
           <div>
-            <p className="text-xs font-mono uppercase tracking-widest text-muted-foreground/50 mb-3">Kooperationen</p>
-            <div className="flex flex-col gap-3">
-              <div className="px-4 py-4 border border-border/60 bg-card flex items-center justify-center min-h-[64px]">
+            <p className="text-sm font-mono uppercase tracking-widest text-muted-foreground/50 mb-3">Kooperationen</p>
+            <div className="flex flex-col gap-4">
+              <div className="px-5 py-5 border border-border/60 bg-card flex items-center justify-center min-h-[80px]">
                 <FHLogo />
               </div>
-              <div className="px-4 py-4 border border-border/60 bg-card flex items-center justify-center min-h-[64px]">
+              <div className="px-5 py-5 border border-border/60 bg-card flex items-center justify-center min-h-[80px]">
                 <JKULogo />
               </div>
             </div>

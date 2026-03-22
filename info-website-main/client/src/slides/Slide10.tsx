@@ -78,7 +78,7 @@ export default function Slide10() {
           <h2 className="text-6xl font-bold tracking-tight mb-3 leading-tight">
             Wir möchten die Gesundheit<br />revolutionieren.
           </h2>
-          <p className="text-3xl font-medium text-muted-foreground mb-16 leading-tight">
+          <p className="text-3xl font-medium text-muted-foreground mb-20 leading-tight">
             Wir möchten die Linzer und Europäer gesünder machen.
           </p>
 

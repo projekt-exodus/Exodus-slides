@@ -45,7 +45,7 @@ export default function Slide02() {
         02 — Problem · Felix
       </p>
       <h2 className="text-5xl font-bold tracking-tight mb-2 leading-tight">Das Problem.</h2>
-      <p className="text-xl font-medium text-muted-foreground mb-6">
+      <p className="text-xl font-medium text-muted-foreground mb-10">
         Das Problem ist, dass sie nicht reden.
       </p>
 

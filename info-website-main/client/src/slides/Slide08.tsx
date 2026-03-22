@@ -26,7 +26,7 @@ export default function Slide08() {
       <h2 className="text-6xl font-bold tracking-tight mb-2 leading-tight">
         Wir verkaufen keine App.
       </h2>
-      <p className="text-3xl font-medium text-muted-foreground mb-16">
+      <p className="text-3xl font-medium text-muted-foreground mb-20">
         Wir verkaufen Connections.
       </p>
 

@@ -26,7 +26,7 @@ export default function Slide03() {
       <h2 className="text-6xl font-bold tracking-tight mb-3 leading-tight">
         Eine Plattform. Alle Daten. Deine KI.
       </h2>
-      <p className="text-2xl text-muted-foreground mb-16">
+      <p className="text-2xl text-muted-foreground mb-20">
         Wir bauen keine neue Gesundheits-App. Wir bauen den Ort, an dem alle anderen zusammenkommen.
       </p>
 

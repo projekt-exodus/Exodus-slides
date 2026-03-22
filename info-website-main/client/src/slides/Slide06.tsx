@@ -46,7 +46,7 @@ export default function Slide06() {
       <h2 className="text-6xl font-bold tracking-tight mb-3 leading-tight">
         Das gibt es so kein zweites Mal.
       </h2>
-      <p className="text-2xl text-muted-foreground mb-16">
+      <p className="text-2xl text-muted-foreground mb-20">
         Kein anderer Anbieter weltweit kombiniert lokale KI by default, offenen Agentic Layer,
         EU-DSGVO als Architektur und den Supplement-Kanal in einer Plattform.
       </p>

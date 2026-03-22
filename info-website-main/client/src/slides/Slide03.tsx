@@ -1,4 +1,4 @@
-import { Lock, Bot, Smartphone, ShoppingCart, FileCheck, Monitor, Cloud, X, HardDrive, Shield, CheckCircle2 } from "lucide-react";
+import { Lock, Bot, Smartphone, ShoppingCart, FileCheck, Monitor, Cloud, X, HardDrive, Shield, CheckCircle2, Code2 } from "lucide-react";
 
 export const notes =
   "Wir bauen keine neue Gesundheits-App. Wir bauen den Ort, an dem alle anderen zusammenkommen. USP 1: Alles an einem Ort. USP 2: Bring Your Own AI — du wählst, welche KI deine Daten analysiert. Standard ist immer lokal. USP 3: Persönlicher Gesundheits-Agent — OpenClaw arbeitet für dich, nicht für uns.";
@@ -57,12 +57,22 @@ export default function Slide03() {
           </div>
 
           {/* Storage option 3 — Eigene Cloud */}
-          <div className="flex items-center gap-3 px-3 py-3 border border-border/60 rounded-sm bg-[var(--diagram-bg)]">
+          <div className="flex items-center gap-3 px-3 py-3 mb-2 border border-border/60 rounded-sm bg-[var(--diagram-bg)]">
             <Cloud className="w-5 h-5 shrink-0 text-muted-foreground/60" />
             <div className="flex-1 min-w-0">
               <p className="text-sm font-semibold leading-tight">Eigene Cloud</p>
               <p className="text-xs text-muted-foreground">iCloud · OneDrive · Dropbox</p>
             </div>
+          </div>
+
+          {/* Storage option 4 — Open Source */}
+          <div className="flex items-center gap-3 px-3 py-3 border border-border/60 rounded-sm bg-[var(--diagram-bg)]">
+            <Code2 className="w-5 h-5 shrink-0" style={{ color: "var(--accent-amber)" }} />
+            <div className="flex-1 min-w-0">
+              <p className="text-sm font-semibold leading-tight">Open Source</p>
+              <p className="text-xs text-muted-foreground">Self-hosted · Vollständig prüfbar</p>
+            </div>
+            <span className="text-xs font-mono px-1.5 py-0.5 rounded" style={{ color: "var(--accent-amber)", backgroundColor: "color-mix(in srgb, var(--accent-amber) 12%, transparent)" }}>OSS</span>
           </div>
         </div>
 

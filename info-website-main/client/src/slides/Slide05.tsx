@@ -2,20 +2,13 @@ export const notes =
   "Live durch die App führen — exodus-demo-app.vercel.app ist auf dem Bildschirm. WHOOP-Daten, Blutbild als PDF, KI-Auswertung zeigen. Stell die Supplementröhrchen auf den Tisch.";
 
 export default function Slide05() {
-  const border = 12;
-  const phoneHeight = 590;
-  const innerHeight = phoneHeight - 2 * border;
-  const scale = innerHeight / 844;
-  const innerWidth = Math.floor(scale * 390);
-  const phoneWidth = innerWidth + 2 * border;
-
   return (
     <div
-      className="fixed inset-0 flex items-center justify-center px-16 py-10"
+      className="fixed inset-0 flex items-center px-16 py-10"
       style={{ width: "100%", height: "100%" }}
     >
-      <div className="flex items-center gap-10 w-full max-w-5xl">
-        <div className="flex-1 min-w-0">
+      <div className="flex items-stretch gap-10 w-full h-full">
+        <div className="flex-1 min-w-0 flex flex-col justify-center">
           <p className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground/40 mb-6">
             05 — Demo · Live
           </p>
@@ -57,37 +50,21 @@ export default function Slide05() {
           </a>
         </div>
 
-        <div className="flex-shrink-0">
-          <div
-            className="relative mx-auto border-foreground rounded-[40px] bg-foreground shadow-2xl"
+        <div
+          className="flex-shrink-0 rounded-sm overflow-hidden shadow-2xl border border-border"
+          style={{ width: "48%", height: "100%" }}
+        >
+          <iframe
+            src="https://exodus-demo-app.vercel.app"
+            title="Exodus App Demo"
+            className="border-0"
             style={{
-              width: `${phoneWidth}px`,
-              height: `${phoneHeight}px`,
-              borderWidth: `${border}px`,
-              borderStyle: "solid",
+              width: "100%",
+              height: "100%",
+              display: "block",
             }}
-          >
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-20 h-[20px] bg-foreground rounded-b-2xl z-10" />
-            <div
-              className="w-full h-full rounded-[30px] overflow-hidden bg-white relative"
-            >
-              <iframe
-                src="https://exodus-demo-app.vercel.app"
-                title="Exodus App Demo"
-                className="border-0"
-                style={{
-                  width: "390px",
-                  height: "844px",
-                  transform: `scale(${scale})`,
-                  transformOrigin: "top left",
-                  pointerEvents: "auto",
-                  display: "block",
-                }}
-                allow="accelerometer; gyroscope"
-              />
-            </div>
-            <div className="absolute bottom-[8px] left-1/2 -translate-x-1/2 w-12 h-1 bg-white/30 rounded-full" />
-          </div>
+            allow="accelerometer; gyroscope"
+          />
         </div>
       </div>
     </div>

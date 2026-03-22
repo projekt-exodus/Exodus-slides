@@ -155,17 +155,6 @@ export default function Slide10() {
             ))}
           </div>
 
-          {/* Partner logos — centered */}
-          <div className="flex flex-col items-center gap-3 w-full">
-            <p className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground/40">
-              Kooperationen
-            </p>
-            <div className="flex gap-8 items-center justify-center">
-              {partners.map((p) => (
-                <PartnerLogo key={p.name} name={p.name} logo={p.logo} />
-              ))}
-            </div>
-          </div>
         </div>
       </div>
     </div>

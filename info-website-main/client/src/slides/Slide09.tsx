@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { BadgeCheck, Clock } from "lucide-react";
 
 export const notes =
@@ -18,7 +19,28 @@ const timeline = [
   { label: "Firmengründung", done: false },
 ];
 
-const partners = ["JKU Linz", "Kepler Uniklinikum", "FH Gesundheitsberufe OÖ", "tech2b"];
+const partnersText = ["JKU Linz", "Kepler Uniklinikum", "tech2b"];
+
+function FHLogo() {
+  const [failed, setFailed] = useState(false);
+  return (
+    <div className="flex flex-col items-start gap-1">
+      {failed ? (
+        <span className="text-[9px] font-mono border border-border px-2 py-1 text-muted-foreground bg-card">
+          FH Gesundheitsberufe OÖ
+        </span>
+      ) : (
+        <img
+          src="https://www.fhgooe.ac.at/fileadmin/fh_gooe/Logo/FHG_Logo_RGB_farbe.png"
+          alt="FH Gesundheitsberufe OÖ"
+          height={28}
+          className="h-7 object-contain grayscale opacity-60"
+          onError={() => setFailed(true)}
+        />
+      )}
+    </div>
+  );
+}
 
 export default function Slide09() {
   return (
@@ -90,12 +112,15 @@ export default function Slide09() {
 
           <div>
             <p className="text-xs font-mono uppercase tracking-widest text-muted-foreground/50 mb-3">Kooperations-Logos</p>
-            <div className="flex flex-wrap gap-2">
-              {partners.map((p) => (
+            <div className="flex flex-wrap gap-2 items-center">
+              {partnersText.map((p) => (
                 <div key={p} className="px-4 py-2 border border-border/60 bg-card">
                   <span className="text-xs font-mono text-muted-foreground">{p}</span>
                 </div>
               ))}
+              <div className="px-3 py-2 border border-border/60 bg-card flex flex-col items-start gap-1">
+                <FHLogo />
+              </div>
             </div>
             <p className="text-[10px] text-muted-foreground/60 mt-3 leading-relaxed">
               Für FFG: "wirksame Kooperation" — mind. 10 % der förderbaren Kosten bei Forschungseinrichtungen,

@@ -42,13 +42,13 @@ export default function Slide05() {
             href="https://exodus-demo-app.vercel.app"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-3 group"
+            className="flex flex-col items-start gap-2 group"
           >
             <img
-              src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data=https%3A%2F%2Fexodus-demo-app.vercel.app&bgcolor=ffffff&color=000000&margin=4"
+              src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=https%3A%2F%2Fexodus-demo-app.vercel.app&bgcolor=ffffff&color=000000&margin=4"
               alt="QR Code: exodus-demo-app.vercel.app"
-              width={80}
-              height={80}
+              width={160}
+              height={160}
               className="border border-border shrink-0"
             />
             <p className="text-[10px] font-mono text-muted-foreground/60 group-hover:text-muted-foreground transition-colors">

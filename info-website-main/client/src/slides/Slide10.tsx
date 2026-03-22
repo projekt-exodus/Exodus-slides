@@ -128,16 +128,16 @@ export default function Slide10() {
         </div>
 
         {/* Right: two QR codes + partner logos */}
-        <div className="flex-shrink-0 flex flex-col items-center gap-5">
+        <div className="flex-shrink-0 flex flex-col items-center gap-8">
           {/* Two QR codes side by side */}
-          <div className="flex gap-4">
+          <div className="flex gap-6">
             {qrCodes.map((qr) => (
               <a
                 key={qr.url}
                 href={qr.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex flex-col items-center gap-2 p-4 border border-border hover:border-foreground/30 transition-colors"
+                className="flex flex-col items-center gap-3 p-5 border border-border hover:border-foreground/30 transition-colors"
               >
                 <p
                   className="text-[10px] font-mono uppercase tracking-widest"
@@ -146,10 +146,10 @@ export default function Slide10() {
                   {qr.title}
                 </p>
                 <img
-                  src={`https://api.qrserver.com/v1/create-qr-code/?size=130x130&data=${qr.encoded}&bgcolor=ffffff&color=000000&margin=6`}
+                  src={`https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=${qr.encoded}&bgcolor=ffffff&color=000000&margin=6`}
                   alt={`QR Code: ${qr.label}`}
-                  width={130}
-                  height={130}
+                  width={180}
+                  height={180}
                   className="border border-border/40"
                 />
                 <p className="text-[9px] font-mono text-muted-foreground/60 text-center">
@@ -160,11 +160,11 @@ export default function Slide10() {
           </div>
 
           {/* Partner logos — centered */}
-          <div className="flex flex-col items-center gap-2 w-full">
+          <div className="flex flex-col items-center gap-3 w-full">
             <p className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground/40">
               Kooperationen
             </p>
-            <div className="flex gap-6 items-center justify-center">
+            <div className="flex gap-8 items-center justify-center">
               {partners.map((p) => (
                 <PartnerLogo key={p.name} name={p.name} logo={p.logo} />
               ))}

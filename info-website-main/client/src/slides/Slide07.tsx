@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { MemberCard, TeamMember } from "@/components/sections/SectionTeam";
 
 export const notes =
@@ -85,10 +86,27 @@ const accentColorMap: Record<string, string> = {
 
 const highlightedNames = ["Felix Ratzenböck", "Martin Hausleitner"];
 
+function FHLogo() {
+  const [failed, setFailed] = useState(false);
+  return failed ? (
+    <span className="text-[9px] font-mono border border-border px-2 py-1 text-muted-foreground bg-card">
+      FH Gesundheitsberufe OÖ
+    </span>
+  ) : (
+    <img
+      src="https://www.fhgooe.ac.at/fileadmin/fh_gooe/Logo/FHG_Logo_RGB_farbe.png"
+      alt="FH Gesundheitsberufe OÖ"
+      height={28}
+      className="h-7 object-contain grayscale opacity-60"
+      onError={() => setFailed(true)}
+    />
+  );
+}
+
 export default function Slide07() {
   return (
     <div
-      className="fixed inset-0 flex flex-col px-12 py-6 overflow-hidden"
+      className="fixed inset-0 flex flex-col justify-center px-12 py-6 overflow-hidden"
       style={{ width: "100%", height: "100%" }}
     >
       <p className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground/40 mb-2">
@@ -129,9 +147,13 @@ export default function Slide07() {
         <MemberCard member={advisor} i={team.length} inView={true} />
         <div className="p-3 border border-border/50 bg-[var(--diagram-bg)] flex flex-col justify-center gap-2">
           <p className="text-xs font-mono uppercase tracking-widest text-muted-foreground/50">Kooperationen (LOIs)</p>
-          {["JKU Medizin", "Kepler Uniklinikum", "FH Gesundheitsberufe OÖ", "tech2b"].map((partner) => (
+          {["JKU Medizin", "Kepler Uniklinikum", "tech2b"].map((partner) => (
             <span key={partner} className="text-[10px] font-mono px-2 py-0.5 border border-border text-muted-foreground bg-card self-start">{partner}</span>
           ))}
+          <div className="flex flex-col gap-1">
+            <FHLogo />
+            <span className="text-[9px] font-mono text-muted-foreground/50">FH Gesundheitsberufe OÖ</span>
+          </div>
         </div>
       </div>
     </div>

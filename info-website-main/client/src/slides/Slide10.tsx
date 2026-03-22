@@ -76,14 +76,10 @@ export default function Slide10() {
         {/* Left: headline + timeline + contact */}
         <div className="flex-1 min-w-0">
           <h2 className="text-5xl font-bold tracking-tight mb-2 leading-tight">
-            Wir sind bereit.
+            Wir möchten die Linzer<br />und Europäer gesünder machen.
           </h2>
-          <p className="text-3xl font-medium text-muted-foreground mb-6 leading-tight">
-            Bist du dabei?
-          </p>
-
-          <p className="text-sm text-muted-foreground max-w-md leading-relaxed mb-6">
-            Wir möchten die Linzer und Europäer gesünder machen.
+          <p className="text-2xl font-medium text-muted-foreground mb-6 leading-tight">
+            Wir sind bereit. Bist du dabei?
           </p>
 
           {/* Vertical timeline roadmap */}

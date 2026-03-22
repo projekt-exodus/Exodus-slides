@@ -71,7 +71,7 @@ export default function Slide02() {
         <div className="flex flex-col gap-4">
           <div className="flex items-center gap-3 mb-2">
             <ArrowRight className="w-6 h-6" style={{ color: "var(--accent-blue)" }} />
-            <span className="text-sm font-medium" style={{ color: "var(--accent-blue)" }}>Exodus löst das</span>
+            <span className="text-sm font-medium" style={{ color: "var(--accent-blue)" }}>Exodus vereint alle Gesundheitsdaten</span>
           </div>
           <div className="p-6 border-2 bg-card" style={{ borderColor: "var(--accent-blue)" }}>
             <p className="text-xs font-mono uppercase tracking-widest mb-4" style={{ color: "var(--accent-blue)" }}>

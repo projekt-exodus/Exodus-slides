@@ -2,17 +2,19 @@ export const notes =
   "Live durch die App führen — exodus-demo-app.vercel.app ist auf dem Bildschirm. WHOOP-Daten, Blutbild als PDF, KI-Auswertung zeigen. Stell die Supplementröhrchen auf den Tisch.";
 
 export default function Slide05() {
-  const phoneWidth = 270;
-  const phoneHeight = 580;
-  const innerWidth = phoneWidth - 14;
+  const border = 3;
+  const padding = 7;
+  const phoneWidth = 260;
+  const innerWidth = phoneWidth - 2 * (border + padding);
   const scale = innerWidth / 390;
+  const phoneHeight = Math.ceil(844 * scale + 2 * (border + padding));
 
   return (
     <div
       className="fixed inset-0 flex items-center justify-center px-16 py-10"
       style={{ width: "100%", height: "100%" }}
     >
-      <div className="flex items-center gap-20 w-full max-w-5xl">
+      <div className="flex items-center gap-10 w-full max-w-5xl">
         <div className="flex-1 min-w-0">
           <p className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground/40 mb-8">
             05 — Demo · Live
@@ -57,8 +59,8 @@ export default function Slide05() {
 
         <div className="flex-shrink-0">
           <div
-            className="relative mx-auto border-[3px] border-foreground rounded-[40px] p-[7px] bg-foreground shadow-2xl"
-            style={{ width: `${phoneWidth}px`, height: `${phoneHeight}px` }}
+            className="relative mx-auto border-foreground rounded-[40px] bg-foreground shadow-2xl"
+            style={{ width: `${phoneWidth}px`, height: `${phoneHeight}px`, borderWidth: `${border}px`, borderStyle: 'solid', padding: `${padding}px` }}
           >
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-20 h-[20px] bg-foreground rounded-b-2xl z-10" />
             <div className="w-full h-full rounded-[33px] overflow-hidden bg-white relative">

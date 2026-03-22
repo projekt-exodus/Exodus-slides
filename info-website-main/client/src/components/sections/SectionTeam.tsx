@@ -146,7 +146,7 @@ function MemberAvatar({ member }: { member: TeamMember }) {
   if (!member.photo || failed) {
     return (
       <div
-        className="w-20 h-20 rounded-full flex items-center justify-center text-base font-mono font-semibold shrink-0"
+        className="w-28 h-28 rounded-full flex items-center justify-center text-lg font-mono font-semibold shrink-0"
         style={{ backgroundColor: `var(--accent-${member.color})20`, color: `var(--accent-${member.color})`, border: `2px solid var(--accent-${member.color})40` }}
       >
         {initials}

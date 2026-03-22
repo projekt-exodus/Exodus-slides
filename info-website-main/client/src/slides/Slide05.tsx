@@ -10,7 +10,7 @@ export default function Slide05() {
       <div className="flex items-center justify-center gap-16 w-full h-full">
 
         {/* Left: text + QR */}
-        <div className="flex flex-col justify-center" style={{ width: "360px", flexShrink: 0 }}>
+        <div className="flex flex-col justify-center" style={{ width: "340px", flexShrink: 0 }}>
           <p className="text-sm font-mono uppercase tracking-widest text-muted-foreground/40 mb-6">
             05 — Demo · Live
           </p>

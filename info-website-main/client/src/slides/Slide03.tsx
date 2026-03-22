@@ -32,7 +32,12 @@ export default function Slide03() {
 
       <div className="grid grid-cols-3 gap-7 mb-7">
         <div className="p-7 border-2 bg-card flex flex-col" style={{ borderColor: "var(--accent-blue)" }}>
-          <p className="text-xs font-mono uppercase tracking-widest mb-3" style={{ color: "var(--accent-blue)" }}>USP 1</p>
+          <div className="flex items-center justify-between mb-3">
+            <p className="text-xs font-mono uppercase tracking-widest" style={{ color: "var(--accent-blue)" }}>USP 1</p>
+            <span className="flex items-center gap-1 text-xs font-mono px-2 py-0.5 rounded" style={{ color: "var(--accent-amber)", backgroundColor: "color-mix(in srgb, var(--accent-amber) 12%, transparent)" }}>
+              <Code2 className="w-3 h-3" /> Open Source
+            </span>
+          </div>
           <h3 className="text-xl font-semibold mb-1">Health Vault</h3>
           <p className="text-sm text-muted-foreground mb-5">Deine Daten. Du wählst wo.</p>
 
@@ -65,15 +70,6 @@ export default function Slide03() {
             </div>
           </div>
 
-          {/* Storage option 4 — Open Source */}
-          <div className="flex items-center gap-3 px-3 py-3 border border-border/60 rounded-sm bg-[var(--diagram-bg)]">
-            <Code2 className="w-5 h-5 shrink-0" style={{ color: "var(--accent-amber)" }} />
-            <div className="flex-1 min-w-0">
-              <p className="text-sm font-semibold leading-tight">Open Source</p>
-              <p className="text-xs text-muted-foreground">Self-hosted · Vollständig prüfbar</p>
-            </div>
-            <span className="text-xs font-mono px-1.5 py-0.5 rounded" style={{ color: "var(--accent-amber)", backgroundColor: "color-mix(in srgb, var(--accent-amber) 12%, transparent)" }}>OSS</span>
-          </div>
         </div>
 
         <div className="p-7 border-2 bg-card" style={{ borderColor: "var(--accent-violet)" }}>

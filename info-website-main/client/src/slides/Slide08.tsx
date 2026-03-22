@@ -102,12 +102,12 @@ export default function Slide08() {
             </div>
           </div>
           <p className="text-base text-muted-foreground leading-relaxed mb-4">
-            Personalisiert auf Gesundheitsprofil. Biogena · Custom-Abfüllung · In-App oder via Agent.
+            Personalisiert auf Gesundheitsprofil. Supplement-Hersteller · Custom-Abfüllung · In-App oder via Agent.
           </p>
           <div className="space-y-2.5">
             {[
               { icon: <Pill className="w-5 h-5" />, label: "Eigene Produkte", desc: "Custom-Abfüllung" },
-              { icon: <TrendingUp className="w-5 h-5" />, label: "Kooperationen", desc: "z.B. Biogena" },
+              { icon: <TrendingUp className="w-5 h-5" />, label: "Kooperationen", desc: "Supplement-Hersteller" },
               { icon: <Repeat className="w-5 h-5" />, label: "In-App-Kauf", desc: "KI empfiehlt → Agent bestellt → du bestätigst" },
             ].map((item, i) => (
               <div key={i} className="flex items-start gap-3 p-3 bg-[var(--diagram-bg)] border border-border">

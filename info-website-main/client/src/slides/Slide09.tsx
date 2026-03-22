@@ -117,18 +117,12 @@ export default function Slide09() {
 
           <div>
             <p className="text-xs font-mono uppercase tracking-widest text-muted-foreground/50 mb-3">Kooperationen</p>
-            <div className="grid grid-cols-2 gap-3">
+            <div className="flex flex-col gap-3">
               <div className="px-4 py-4 border border-border/60 bg-card flex items-center justify-center min-h-[64px]">
                 <FHLogo />
               </div>
               <div className="px-4 py-4 border border-border/60 bg-card flex items-center justify-center min-h-[64px]">
                 <JKULogo />
-              </div>
-              <div className="px-4 py-4 border border-border/60 bg-card flex items-center justify-center min-h-[64px]">
-                <span className="text-base font-bold tracking-tight" style={{ color: "var(--accent-amber)" }}>tech2b</span>
-              </div>
-              <div className="px-4 py-4 border border-border/60 bg-card flex items-center justify-center min-h-[64px]">
-                <span className="text-sm font-semibold tracking-tight text-center leading-snug" style={{ color: "var(--accent-blue)" }}>Kepler Uniklinikum</span>
               </div>
             </div>
           </div>

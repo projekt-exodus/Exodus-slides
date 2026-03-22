@@ -1,4 +1,4 @@
-import { FileText, Heart, Watch, Stethoscope, Unlink, ShieldCheck, Activity, Pill, Dumbbell, ChevronRight, Users, BarChart3, Globe, TrendingUp } from "lucide-react";
+import { FileText, Heart, Watch, Stethoscope, Unlink, ShieldCheck, Activity, Pill, Dumbbell, ChevronRight, Users, BarChart3, Globe, TrendingUp, Brain } from "lucide-react";
 
 export const notes =
   "Arztbrief vom Kepler Uniklinikum: PDF irgendwo. Laborwerte: ausgedruckt in einem Ordner. Schlafdaten: in einer US-Cloud, der ich nie zugestimmt habe. Beim nächsten Arzttermin — fangen wir wieder von vorne an. Fünf Millionen Menschen in Österreich haben chronische Erkrankungen. Nicht weil es zu wenig Daten gibt — sondern weil die Daten nirgendwo zusammenarbeiten. Martin, was haben wir gebaut?";
@@ -17,6 +17,7 @@ const vault = [
   { icon: <Activity className="w-3.5 h-3.5" />, label: "Endometriose", sub: "Schmerztagebuch · Zyklus", tag: "Chronisch", color: "#f43f5e" },
   { icon: <Dumbbell className="w-3.5 h-3.5" />, label: "Trainingsplan", sub: "KI-angepasst · laufend", tag: "Fitness", color: "var(--accent-amber)" },
   { icon: <Pill className="w-3.5 h-3.5" />, label: "Supplementenplan", sub: "Omega-3 · Mg · Vit D", tag: "Supplemente", color: "var(--accent-green)" },
+  { icon: <Brain className="w-3.5 h-3.5" />, label: "Mental Health Tagebuch", sub: "Stimmung · Schlaf · Stress — täglich", tag: "Mental Health", color: "var(--accent-rose)" },
 ];
 
 const stats = [

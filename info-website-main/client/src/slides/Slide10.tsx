@@ -87,16 +87,16 @@ export default function Slide10() {
             <p className="text-sm font-mono uppercase tracking-widest text-muted-foreground/50 mb-4">
               Roadmap
             </p>
-            <div className="relative pl-6">
+            <div className="relative">
               <div
-                className="absolute left-[9px] top-2 bottom-2 w-px"
+                className="absolute left-[7px] top-2 bottom-2 w-0.5"
                 style={{ backgroundColor: "var(--border)" }}
               />
               <div className="flex flex-col gap-5">
                 {roadmapItems.map((item, i) => (
-                  <div key={i} className="flex items-start gap-4 relative">
+                  <div key={i} className="flex items-center gap-4 relative">
                     <div
-                      className="w-4 h-4 rounded-full shrink-0 mt-0.5 ring-2 ring-background"
+                      className="w-4 h-4 rounded-full shrink-0 ring-2 ring-background relative z-10"
                       style={{ backgroundColor: item.color }}
                     />
                     <div className="flex items-baseline gap-3">

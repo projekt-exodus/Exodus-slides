@@ -4,11 +4,10 @@ export const notes =
   "Wir bauen nicht die nächste App. Wir bauen die Infrastruktur, auf der KI-Agenten für dich arbeiten können — mit deinen Daten, unter deiner Kontrolle. FH Gesundheitsberufe, Kepler, JKU, tech2b — alles hier. Prototype läuft. Förderungen laufen. Team steht. Supplements liegen auf dem Tisch. Scannt den QR-Code. Schreibt uns.";
 
 const roadmapItems = [
-  { label: "Linz hACkT Pitch", date: "März 2026", done: true, color: "var(--accent-green)" },
-  { label: "FFG Kleinprojekt", date: "Mai 2026", done: false, color: "var(--accent-amber)" },
-  { label: "tech2b Accelerator", date: "Sommer 2026", done: false, color: "var(--accent-blue)" },
-  { label: "Geschlossene Beta", date: "Q3 2026", done: false, color: "var(--accent-violet)" },
-  { label: "Public Launch", date: "2027", done: false, color: "var(--accent-rose)" },
+  { label: "Q3 2026 — Vault", desc: "Health Data Vault live, erste Beta-Nutzer", done: false, color: "var(--accent-blue)" },
+  { label: "Q4 2026 — Pilot", desc: "Pilot mit Klinik-Partner, Arzt-Beratung", done: false, color: "var(--accent-violet)" },
+  { label: "2027 — OpenClaw live", desc: "Agentic Layer öffentlich, Supplement-Shop", done: false, color: "var(--accent-green)" },
+  { label: "2029 — Longevity-Zentren", desc: "Stationäre Kooperationen, EU-Expansion", done: false, color: "var(--accent-amber)" },
 ];
 
 export default function Slide10() {
@@ -32,14 +31,19 @@ export default function Slide10() {
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
         <div className="flex flex-col gap-4">
-          <p className="text-xs font-mono uppercase tracking-widest text-muted-foreground/50">Roadmap</p>
+          <p className="text-xs font-mono uppercase tracking-widest text-muted-foreground/50">
+            Roadmap: Q3 2026 → Q4 2026 → 2027 → 2029
+          </p>
           <div className="space-y-2">
             {roadmapItems.map((item, i) => (
-              <div key={i} className="flex items-center gap-3">
-                <div className="w-2 h-2 rounded-full shrink-0" style={{ backgroundColor: item.color }} />
-                <div className="flex items-center justify-between flex-1 gap-4 border border-border/50 bg-card px-4 py-2.5">
-                  <p className={`text-sm ${item.done ? "text-foreground" : "text-muted-foreground"}`}>{item.label}</p>
-                  <span className="text-[10px] font-mono text-muted-foreground/60 whitespace-nowrap">{item.date}</span>
+              <div key={i} className="flex items-start gap-3">
+                <div className="w-2 h-2 rounded-full shrink-0 mt-2" style={{ backgroundColor: item.color }} />
+                <div className="flex flex-col flex-1 border border-border/50 bg-card px-4 py-3">
+                  <div className="flex items-center justify-between gap-4">
+                    <p className="text-sm text-muted-foreground font-medium">{item.label}</p>
+                    <span className="text-[10px] font-mono text-muted-foreground/50">🔜</span>
+                  </div>
+                  <p className="text-xs text-muted-foreground/60 mt-0.5">{item.desc}</p>
                 </div>
               </div>
             ))}

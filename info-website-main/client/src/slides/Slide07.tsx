@@ -1,46 +1,79 @@
-import { ExternalLink } from "lucide-react";
+import { MemberCard, TeamMember } from "@/components/sections/SectionTeam";
 
 export const notes =
   "Wir kommen alle aus OÖ. Wir studieren alle an Institutionen aus Linz. Und wir nutzen alle das Produkt selbst — weil es unser Problem ist. Hannah: CEO & Operations. Paula: Sales & Medizintechnik. Felix: COO & Sales. Martin: CTO. Plus David Kraus für Cybersecurity. LOIs in Vorbereitung: JKU, Kepler, FH Gesundheitsberufe OÖ.";
 
-const team = [
+const team: TeamMember[] = [
   {
     name: "Hannah Haslhofer",
-    role: "CEO · Operations",
+    role: "CEO · Sales",
     location: "Linz, OÖ",
-    desc: "FH Gesundheitsberufe OÖ, Physiotherapie. Klinisches Gespür und operative Stärke.",
-    color: "amber",
+    desc: "Physiotherapie-Studentin an der FH Gesundheitsberufe OÖ. Klinisches Gespür, operative Stärke, koordiniert alles im Hintergrund.",
+    timeline: [
+      { label: "BAfEP Bischofshofen", sub: "Elementarpädagogik · Matura" },
+      { label: "FH Gesundheitsberufe OÖ", sub: "Physiotherapie (BSc) · laufend", current: true },
+    ],
     skills: ["Physiotherapie", "Operatives", "Teamkoordination"],
     linkedin: null,
+    color: "amber",
   },
   {
     name: "Paula Mittermayr",
     role: "Sales · Medizintechnik",
     location: "Puchenau, OÖ",
-    desc: "JKU Linz, Medical Engineering. SANTESIS GmbH. Kepler Uniklinikum-Praktika.",
-    color: "rose",
+    desc: "JKU Linz, Medical Engineering. SANTESIS GmbH. Kepler Uniklinikum-Praktika. Forschungsprojekt zu intelligenter Hautsensorik.",
+    timeline: [
+      { label: "HTBLA Leonding", sub: "Medizintechnik · Matura mit Auszeichnung" },
+      { label: "SANTESIS GmbH", sub: "Medizintechnikerin (Teilzeit)" },
+      { label: "JKU Linz", sub: "Medical Engineering (BSc) · laufend", current: true },
+    ],
     skills: ["C · C# · Python", "Medizintechnik", "Sensorik"],
     linkedin: "https://www.linkedin.com/in/paula-mittermayr-a36064328",
+    color: "rose",
   },
   {
     name: "Felix Ratzenböck",
     role: "COO · Sales",
     location: "Linz, OÖ",
-    desc: "FH Gesundheitsberufe OÖ, Physiotherapie. LASK-Akademie. Rettungssanitäter.",
-    color: "green",
+    desc: "LASK-Akademie. Rettungssanitäter. Physiotherapie-Studium. Jahrelanger Hochleistungssport — er kennt den Körper von innen.",
+    timeline: [
+      { label: "LASK-Akademie", sub: "U14 bis Kampfmannschaft" },
+      { label: "Rettungssanitäter", sub: "Ausbildung Hörsching · Bundesheer" },
+      { label: "FH Gesundheitsberufe OÖ", sub: "Physiotherapie (BSc) · laufend", current: true },
+    ],
     skills: ["Sport & Leistungsmedizin", "Physiotherapie", "Sales"],
     linkedin: null,
+    color: "green",
   },
   {
     name: "Martin Hausleitner",
     role: "CTO",
     location: "Linz, OÖ",
-    desc: "JKU Linz, Artificial Intelligence. CEO von servas.ai (KI-Agentur, seit Apr 2024).",
-    color: "blue",
-    skills: ["App-Entwicklung", "KI-Agenten", "Full Stack"],
+    desc: "JKU Linz, Artificial Intelligence. CEO von servas.ai (KI-Agentur, seit April 2024). Architekt hinter der Exodus-Plattform.",
+    timeline: [
+      { label: "HTL Leonding", sub: "Informatik · Matura" },
+      { label: "JKU Linz", sub: "Artificial Intelligence" },
+      { label: "servas.ai", sub: "CEO & Founder · KI-Agentur (seit Apr 2024)", current: true },
+    ],
+    skills: ["App-Entwicklung", "KI-Agenten", "Full Stack Development"],
     linkedin: "https://www.linkedin.com/in/martin-hausleitner",
+    color: "blue",
   },
 ];
+
+const advisor: TeamMember = {
+  name: "David Kraus",
+  role: "Beratung · Cybersecurity",
+  location: "Oberösterreich",
+  desc: "Unterstützt Exodus in Datensicherheit, Datenschutz und Cybersecurity. Essentielle Expertise für eine DSGVO-konforme Gesundheitsplattform.",
+  timeline: [
+    { label: "Datenschutz & IT-Security", sub: "Beratende Funktion", current: true },
+  ],
+  skills: ["Datensicherheit", "Datenschutz", "Cybersecurity"],
+  linkedin: null,
+  color: "violet",
+  advisor: true,
+};
 
 export default function Slide07() {
   return (
@@ -57,52 +90,18 @@ export default function Slide07() {
         Und wir nutzen alle das Produkt selbst — weil es unser Problem ist.
       </p>
 
-      <div className="grid grid-cols-2 gap-4 mb-6">
+      <div className="grid grid-cols-2 gap-4 mb-5">
         {team.map((member, i) => (
-          <div key={i} className="p-5 border border-border/70 bg-card">
-            <div className="flex items-start justify-between gap-2 mb-0.5">
-              <h4 className="text-sm font-normal">{member.name}</h4>
-              {member.linkedin && (
-                <a
-                  href={member.linkedin}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-muted-foreground hover:text-foreground transition-colors shrink-0"
-                >
-                  <ExternalLink className="w-3.5 h-3.5" />
-                </a>
-              )}
-            </div>
-            <p className="text-xs font-mono uppercase tracking-wider mb-0.5" style={{ color: `var(--accent-${member.color})` }}>
-              {member.role}
-            </p>
-            <p className="text-[10px] font-mono text-muted-foreground/60 tracking-wide mb-3">{member.location}</p>
-            <p className="text-xs text-muted-foreground leading-relaxed mb-3">{member.desc}</p>
-            <div className="flex flex-wrap gap-1.5 pt-2 border-t border-border/50">
-              {member.skills.map((skill, j) => (
-                <span key={j} className="text-[9px] font-mono uppercase tracking-wider px-2 py-0.5 border border-border/60 text-muted-foreground">
-                  {skill}
-                </span>
-              ))}
-            </div>
-          </div>
+          <MemberCard key={i} member={member} i={i} inView={true} />
         ))}
       </div>
 
-      <div className="flex items-center gap-6 flex-wrap">
-        <div className="flex items-center gap-2 px-4 py-2 border border-border/70 bg-card">
-          <div className="w-2 h-2 rounded-full" style={{ backgroundColor: "var(--accent-violet)" }} />
-          <div>
-            <p className="text-xs font-normal">David Kraus</p>
-            <p className="text-[10px] font-mono uppercase tracking-wider text-muted-foreground" style={{ color: "var(--accent-violet)" }}>
-              Beratung · Cybersecurity
-            </p>
-          </div>
-        </div>
-        <div className="flex flex-wrap gap-2">
-          <span className="text-[10px] font-mono text-muted-foreground/50 uppercase tracking-wider">LOIs:</span>
+      <div className="grid grid-cols-2 gap-4 mb-4">
+        <MemberCard member={advisor} i={team.length} inView={true} />
+        <div className="p-4 border border-border/50 bg-[var(--diagram-bg)] flex flex-col justify-center gap-2">
+          <p className="text-xs font-mono uppercase tracking-widest text-muted-foreground/50">Kooperationen (LOIs)</p>
           {["JKU Medizin", "Kepler Uniklinikum", "FH Gesundheitsberufe OÖ", "tech2b"].map((partner) => (
-            <span key={partner} className="text-[10px] font-mono px-2 py-0.5 border border-border text-muted-foreground bg-card">{partner}</span>
+            <span key={partner} className="text-[10px] font-mono px-2 py-0.5 border border-border text-muted-foreground bg-card self-start">{partner}</span>
           ))}
         </div>
       </div>

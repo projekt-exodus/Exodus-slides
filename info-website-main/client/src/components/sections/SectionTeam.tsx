@@ -3,13 +3,13 @@ import { ExternalLink } from "lucide-react";
 import { useRef } from "react";
 import { SectionLabel } from "./helpers";
 
-interface TimelineEntry {
+export interface TimelineEntry {
   label: string;
   sub?: string;
   current?: boolean;
 }
 
-interface TeamMember {
+export interface TeamMember {
   name: string;
   role: string;
   location: string;
@@ -138,7 +138,7 @@ export default function SectionTeam() {
   );
 }
 
-function MemberCard({ member, i, inView }: { member: TeamMember; i: number; inView: boolean }) {
+export function MemberCard({ member, i, inView }: { member: TeamMember; i: number; inView: boolean }) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 12 }}

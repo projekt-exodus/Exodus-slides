@@ -65,10 +65,7 @@ export default function SlidesApp() {
 
     return () => {
       if (deckInstance.current) {
-        try {
-          deckInstance.current.destroy();
-        } catch {
-        }
+        deckInstance.current.destroy();
         deckInstance.current = null;
       }
     };

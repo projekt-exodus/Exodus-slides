@@ -75,16 +75,16 @@ export default function Slide10() {
       <div className="flex items-start gap-14 w-full">
         {/* Left: headline + timeline + contact */}
         <div className="flex-1 min-w-0">
-          <h2 className="text-5xl font-bold tracking-tight mb-2 leading-tight">
+          <h2 className="text-5xl font-bold tracking-tight mb-5 leading-tight">
             Wir möchten die Gesundheit<br />revolutionieren.
           </h2>
-          <p className="text-2xl font-medium text-muted-foreground mb-6 leading-tight">
+          <p className="text-2xl font-medium text-muted-foreground mb-10 leading-tight">
             Wir möchten die Linzer und Europäer gesünder machen.
           </p>
 
           {/* Vertical timeline roadmap */}
-          <div className="mb-6">
-            <p className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground/50 mb-3">
+          <div className="mb-10">
+            <p className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground/50 mb-5">
               Roadmap
             </p>
             <div className="relative pl-5">
@@ -92,7 +92,7 @@ export default function Slide10() {
                 className="absolute left-[7px] top-2 bottom-2 w-px"
                 style={{ backgroundColor: "var(--border)" }}
               />
-              <div className="flex flex-col gap-3">
+              <div className="flex flex-col gap-5">
                 {roadmapItems.map((item, i) => (
                   <div key={i} className="flex items-start gap-3 relative">
                     <div

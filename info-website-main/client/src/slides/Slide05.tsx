@@ -4,13 +4,13 @@ export const notes =
 export default function Slide05() {
   return (
     <div
-      className="fixed inset-0 flex items-center justify-center px-24 py-8"
+      className="fixed inset-0 flex items-center justify-center px-12 py-8"
       style={{ width: "100%", height: "100%" }}
     >
       <div className="flex items-center justify-center gap-16 w-full h-full">
 
         {/* Left: text + QR */}
-        <div className="flex flex-col justify-center" style={{ width: "420px", flexShrink: 0 }}>
+        <div className="flex flex-col justify-center" style={{ width: "360px", flexShrink: 0 }}>
           <p className="text-sm font-mono uppercase tracking-widest text-muted-foreground/40 mb-6">
             05 — Demo · Live
           </p>

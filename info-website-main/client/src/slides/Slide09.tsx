@@ -4,14 +4,12 @@ import { BadgeCheck, Clock } from "lucide-react";
 function JKULogo() {
   const [failed, setFailed] = useState(false);
   return failed ? (
-    <span className="text-[9px] font-mono border border-border px-2 py-1 text-muted-foreground bg-card">
-      JKU Linz
-    </span>
+    <span className="text-sm font-semibold tracking-tight" style={{ color: "var(--accent-blue)" }}>JKU Linz</span>
   ) : (
     <img
       src="/logos/jku.png"
       alt="JKU Linz"
-      className="h-8 object-contain grayscale opacity-60"
+      className="h-12 object-contain"
       onError={() => setFailed(true)}
     />
   );
@@ -38,14 +36,12 @@ const timeline = [
 function FHLogo() {
   const [failed, setFailed] = useState(false);
   return failed ? (
-    <span className="text-[9px] font-mono border border-border px-2 py-1 text-muted-foreground bg-card">
-      FH Gesundheitsberufe OÖ
-    </span>
+    <span className="text-sm font-semibold tracking-tight" style={{ color: "var(--accent-green)" }}>FH Gesundheitsberufe OÖ</span>
   ) : (
     <img
       src="/logos/fh-gesundheitsberufe.png"
       alt="FH Gesundheitsberufe OÖ"
-      className="h-8 object-contain grayscale opacity-60"
+      className="h-12 object-contain"
       onError={() => setFailed(true)}
     />
   );
@@ -120,24 +116,21 @@ export default function Slide09() {
           </div>
 
           <div>
-            <p className="text-xs font-mono uppercase tracking-widest text-muted-foreground/50 mb-3">Kooperations-Logos</p>
-            <div className="flex flex-wrap gap-2 items-center">
-              <div className="px-3 py-2 border border-border/60 bg-card flex items-center">
+            <p className="text-xs font-mono uppercase tracking-widest text-muted-foreground/50 mb-3">Kooperationen</p>
+            <div className="grid grid-cols-2 gap-3">
+              <div className="px-4 py-4 border border-border/60 bg-card flex items-center justify-center min-h-[64px]">
                 <FHLogo />
               </div>
-              <div className="px-3 py-2 border border-border/60 bg-card flex items-center">
+              <div className="px-4 py-4 border border-border/60 bg-card flex items-center justify-center min-h-[64px]">
                 <JKULogo />
               </div>
-              {["Kepler Uniklinikum", "tech2b"].map((p) => (
-                <div key={p} className="px-4 py-2 border border-border/60 bg-card">
-                  <span className="text-xs font-mono text-muted-foreground/50 line-through">{p}</span>
-                </div>
-              ))}
+              <div className="px-4 py-4 border border-border/60 bg-card flex items-center justify-center min-h-[64px]">
+                <span className="text-base font-bold tracking-tight" style={{ color: "var(--accent-amber)" }}>tech2b</span>
+              </div>
+              <div className="px-4 py-4 border border-border/60 bg-card flex items-center justify-center min-h-[64px]">
+                <span className="text-sm font-semibold tracking-tight text-center leading-snug" style={{ color: "var(--accent-blue)" }}>Kepler Uniklinikum</span>
+              </div>
             </div>
-            <p className="text-[10px] text-muted-foreground/60 mt-3 leading-relaxed">
-              Für FFG: "wirksame Kooperation" — mind. 10 % der förderbaren Kosten bei Forschungseinrichtungen,
-              Kooperationsbonus bis 70 %.
-            </p>
           </div>
         </div>
       </div>

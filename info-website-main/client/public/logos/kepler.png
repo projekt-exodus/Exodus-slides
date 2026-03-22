@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+
+<html lang="de">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	
+		<meta name="robots" content="noindex">
+	<title>Kepler Universitätsklinikum</title>
+
+
+	
+	<link href="/Css/kuk-extern.min.css?v=2" rel="stylesheet">
+
+	
+	<link href="/Css/kuk.min.css?v=2" rel="stylesheet">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<link href="/Css/kuk-print.min.css?v=2" rel="stylesheet" type="text/css" media="print" />
+</head>
+<body>
+	
+<section class="top-nav">
+	<div class="kuk-container text-center">
+		<p>
+			<img alt="Kepler Universitätsklinikum" src="/Img/logo-large-new.png" id="kuk-logo-large" style="width: 35%; margin-top: 40px;">
+		</p>
+		<br /><br /><br />
+		
+		<h1>Error 404</h1>
+		<h2>Die Seite wurde nicht gefunden</h2><br/>
+		<p><a href="https://www.kepleruniklinikum.at" title="Startseite">Hier geht es zur Startseite</a></p>
+	</div>
+</section>
+
+</body>
+
+</html>

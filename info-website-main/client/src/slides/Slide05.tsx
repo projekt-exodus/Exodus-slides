@@ -2,12 +2,12 @@ export const notes =
   "Live durch die App führen — exodus-demo-app.vercel.app ist auf dem Bildschirm. WHOOP-Daten, Blutbild als PDF, KI-Auswertung zeigen. Stell die Supplementröhrchen auf den Tisch.";
 
 export default function Slide05() {
-  const border = 3;
-  const padding = 0;
-  const phoneWidth = 260;
-  const innerWidth = phoneWidth - 2 * border;
-  const scale = innerWidth / 390;
-  const phoneHeight = Math.ceil(844 * scale + 2 * border);
+  const border = 12;
+  const phoneHeight = 590;
+  const innerHeight = phoneHeight - 2 * border;
+  const scale = innerHeight / 844;
+  const innerWidth = Math.floor(scale * 390);
+  const phoneWidth = innerWidth + 2 * border;
 
   return (
     <div
@@ -16,18 +16,18 @@ export default function Slide05() {
     >
       <div className="flex items-center gap-10 w-full max-w-5xl">
         <div className="flex-1 min-w-0">
-          <p className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground/40 mb-8">
+          <p className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground/40 mb-6">
             05 — Demo · Live
           </p>
-          <h2 className="text-5xl font-bold tracking-tight mb-4 leading-tight">
+          <h2 className="text-4xl font-bold tracking-tight mb-3 leading-tight">
             Exodus.<br />
             <span className="text-muted-foreground font-medium">Live.</span>
           </h2>
-          <p className="text-base text-muted-foreground leading-relaxed mb-6 max-w-sm">
+          <p className="text-sm text-muted-foreground leading-relaxed mb-5 max-w-sm">
             Alle Gesundheitsdaten auf einen Blick — Laborwerte, Arztbriefe,
             Wearable-Daten. Strukturiert. Verständlich. Unter deiner Kontrolle.
           </p>
-          <div className="flex flex-wrap gap-2 mb-6">
+          <div className="flex flex-wrap gap-2 mb-5">
             {["Labor", "Fitness", "Arztbriefe", "Wearables"].map((tag) => (
               <span
                 key={tag}
@@ -60,10 +60,17 @@ export default function Slide05() {
         <div className="flex-shrink-0">
           <div
             className="relative mx-auto border-foreground rounded-[40px] bg-foreground shadow-2xl"
-            style={{ width: `${phoneWidth}px`, height: `${phoneHeight}px`, borderWidth: `${border}px`, borderStyle: 'solid', padding: `${padding}px` }}
+            style={{
+              width: `${phoneWidth}px`,
+              height: `${phoneHeight}px`,
+              borderWidth: `${border}px`,
+              borderStyle: "solid",
+            }}
           >
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-20 h-[20px] bg-foreground rounded-b-2xl z-10" />
-            <div className="w-full h-full rounded-[33px] overflow-hidden bg-white relative">
+            <div
+              className="w-full h-full rounded-[30px] overflow-hidden bg-white relative"
+            >
               <iframe
                 src="https://exodus-demo-app.vercel.app"
                 title="Exodus App Demo"
@@ -74,11 +81,12 @@ export default function Slide05() {
                   transform: `scale(${scale})`,
                   transformOrigin: "top left",
                   pointerEvents: "auto",
+                  display: "block",
                 }}
                 allow="accelerometer; gyroscope"
               />
             </div>
-            <div className="absolute bottom-[6px] left-1/2 -translate-x-1/2 w-12 h-1 bg-white/30 rounded-full" />
+            <div className="absolute bottom-[8px] left-1/2 -translate-x-1/2 w-12 h-1 bg-white/30 rounded-full" />
           </div>
         </div>
       </div>

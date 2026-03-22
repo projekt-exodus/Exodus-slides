@@ -83,7 +83,7 @@ export default function Slide10() {
           </p>
 
           <p className="text-sm text-muted-foreground max-w-md leading-relaxed mb-6">
-            Wir möchten die Gesundheit revolutionieren und die Linzer gesünder machen.
+            Wir möchten die Linzer und Europäer gesünder machen.
           </p>
 
           {/* Vertical timeline roadmap */}

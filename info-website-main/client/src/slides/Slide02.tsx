@@ -75,7 +75,7 @@ export default function Slide02() {
           </div>
           <div className="p-6 border-2 bg-card" style={{ borderColor: "var(--accent-blue)" }}>
             <p className="text-xs font-mono uppercase tracking-widest mb-4" style={{ color: "var(--accent-blue)" }}>
-              Morgen — Health Data Wall
+              Morgen — Health Vault
             </p>
             <div className="space-y-2.5">
               {[

@@ -1,12 +1,19 @@
-import { useCallback, useEffect, useRef, useState } from "react";
-import ShaderBackground from "./ShaderBackground";
+import { forwardRef, useCallback, useEffect, useImperativeHandle, useRef, useState } from "react";
+import ShaderBackground, { ShaderBackgroundHandle } from "./ShaderBackground";
 
 export const notes =
   "Willkommen zu EXODUS — Länger leben. Gesünder altern. Präventive Gesundheit für alle.";
 
-export default function Slide00() {
+export interface Slide00Handle {
+  onEnter: () => void;
+}
+
+const Slide00 = forwardRef<Slide00Handle>(function Slide00(_props, ref) {
   const rootRef = useRef<HTMLDivElement>(null);
   const logoRef = useRef<HTMLImageElement>(null);
+  const shaderRef = useRef<ShaderBackgroundHandle>(null);
+  const burstActiveRef = useRef(false);
+  const burstTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
@@ -23,9 +30,41 @@ export default function Slide00() {
     };
   }, []);
 
-  // Sync heart scale directly from ShaderBackground's RAF — same timer, zero drift
+  function triggerBurstAnimation() {
+    shaderRef.current?.triggerBurst();
+    const logo = logoRef.current;
+    if (logo) {
+      if (burstTimeoutRef.current !== null) {
+        clearTimeout(burstTimeoutRef.current);
+        burstTimeoutRef.current = null;
+      }
+      burstActiveRef.current = true;
+      logo.style.transform = "";
+      logo.classList.remove("logo-burst");
+      void logo.offsetWidth;
+      logo.classList.add("logo-burst");
+      burstTimeoutRef.current = setTimeout(() => {
+        burstActiveRef.current = false;
+        burstTimeoutRef.current = null;
+        if (logo) logo.classList.remove("logo-burst");
+      }, 1500);
+    }
+  }
+
+  useImperativeHandle(ref, () => ({
+    onEnter: triggerBurstAnimation,
+  }));
+
+  useEffect(() => {
+    return () => {
+      if (burstTimeoutRef.current !== null) {
+        clearTimeout(burstTimeoutRef.current);
+      }
+    };
+  }, []);
+
   const onScale = useCallback((scale: number) => {
-    if (logoRef.current) {
+    if (logoRef.current && !burstActiveRef.current) {
       logoRef.current.style.transform = `scale(${scale})`;
     }
   }, []);
@@ -46,7 +85,7 @@ export default function Slide00() {
         background: "#ffffff",
       }}
     >
-      <ShaderBackground onScale={onScale} />
+      <ShaderBackground ref={shaderRef} onScale={onScale} />
       <img
         ref={logoRef}
         src="/exodus-logo-transparent.png"
@@ -101,4 +140,6 @@ export default function Slide00() {
       </div>
     </div>
   );
-}
+});
+
+export default Slide00;

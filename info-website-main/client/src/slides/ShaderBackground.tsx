@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { forwardRef, useEffect, useImperativeHandle, useRef } from "react";
 
 const DOT_SPACING = 28;
 const DOT_RADIUS = 1.5;
@@ -8,8 +8,22 @@ const WAVE_SCALE = 0.006;
 
 const BEAT_PERIOD = 1600; // ms — synced with CSS pulse-beat
 
-export default function ShaderBackground({ onScale }: { onScale?: (s: number) => void }) {
+export interface ShaderBackgroundHandle {
+  triggerBurst: () => void;
+}
+
+const ShaderBackground = forwardRef<
+  ShaderBackgroundHandle,
+  { onScale?: (s: number) => void }
+>(function ShaderBackground({ onScale }, ref) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const burstRef = useRef<{ startTime: number; duration: number } | null>(null);
+
+  useImperativeHandle(ref, () => ({
+    triggerBurst() {
+      burstRef.current = { startTime: performance.now(), duration: 1800 };
+    },
+  }));
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -40,10 +54,26 @@ export default function ShaderBackground({ onScale }: { onScale?: (s: number) =>
 
       // Beat phase: 0→1→0 every BEAT_PERIOD ms (sine wave, same as CSS scale animation)
       const beatPhase = (Math.sin((time / BEAT_PERIOD) * Math.PI * 2 - Math.PI / 2) + 1) / 2;
-      // beatPhase goes 0→1→0 per period
+
+      // Burst overlay: a sharp outward wave triggered on slide entry
+      let burstExtra = 0;
+      let burstScaleExtra = 0;
+      const burst = burstRef.current;
+      if (burst) {
+        const elapsed = time - burst.startTime;
+        if (elapsed < burst.duration) {
+          const t = elapsed / burst.duration; // 0→1
+          // Sine envelope: rises fast (0→0.5) then fades
+          const env = Math.sin(t * Math.PI);
+          burstExtra = env * 3.5; // strong amplitude boost
+          burstScaleExtra = env * 0.18; // extra scale for heart
+        } else {
+          burstRef.current = null;
+        }
+      }
 
       // Emit scale for parent to sync heart image
-      const scale = 1 + beatPhase * 0.12;
+      const scale = 1 + beatPhase * 0.12 + burstScaleExtra;
       onScale?.(scale);
 
       // Wave speed locked to beat period
@@ -61,8 +91,8 @@ export default function ShaderBackground({ onScale }: { onScale?: (s: number) =>
       const offsetY = ((h % DOT_SPACING) / 2) - DOT_SPACING;
       const TAU = Math.PI * 2;
 
-      // Pulse amplitude in sync with beat
-      const amplitude = WAVE_AMPLITUDE * (0.4 + beatPhase * 1.2);
+      // Pulse amplitude in sync with beat + burst
+      const amplitude = (WAVE_AMPLITUDE + burstExtra) * (0.4 + beatPhase * 1.2);
       const baseRadius = DOT_RADIUS * (0.8 + beatPhase * 0.5);
 
       for (let row = 0; row < rows; row++) {
@@ -111,4 +141,6 @@ export default function ShaderBackground({ onScale }: { onScale?: (s: number) =>
       }}
     />
   );
-}
+});
+
+export default ShaderBackground;

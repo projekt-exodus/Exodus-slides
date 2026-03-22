@@ -48,6 +48,7 @@ const team: TeamMember[] = [
     linkedin: null,
     color: "amber",
     photo: "/team/hannah.png",
+    photoPosition: "top",
   },
   {
     name: "Paula Mittermayr",
@@ -150,12 +151,19 @@ export default function Slide07() {
 
       <div className="grid grid-cols-2 gap-3 flex-shrink-0">
         <MemberCard member={advisor} i={team.length} inView={true} />
-        <div className="p-3 border border-border/50 bg-[var(--diagram-bg)] flex flex-col justify-center gap-2">
+        <div className="p-3 border border-border/50 bg-[var(--diagram-bg)] flex flex-col justify-center gap-3">
           <p className="text-xs font-mono uppercase tracking-widest text-muted-foreground/50">Kooperationen (LOIs)</p>
-          <span className="text-[10px] font-mono px-2 py-0.5 border border-border text-muted-foreground bg-card self-start">JKU Medizin</span>
-          <div className="flex flex-col gap-1">
-            <FHLogo />
-            <span className="text-[9px] font-mono text-muted-foreground/50">FH Gesundheitsberufe OÖ</span>
+          <div className="flex flex-col gap-3">
+            <img
+              src="/logos/fh-gesundheitsberufe.png"
+              alt="FH Gesundheitsberufe OÖ"
+              className="h-8 object-contain object-left grayscale opacity-60"
+            />
+            <img
+              src="/logos/jku.png"
+              alt="JKU Linz"
+              className="h-8 object-contain object-left grayscale opacity-60"
+            />
           </div>
         </div>
       </div>

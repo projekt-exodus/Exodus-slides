@@ -20,6 +20,7 @@ export interface TeamMember {
   color: string;
   advisor?: boolean;
   photo?: string;
+  photoPosition?: string;
 }
 
 export default function SectionTeam() {
@@ -145,8 +146,8 @@ function MemberAvatar({ member }: { member: TeamMember }) {
   if (!member.photo || failed) {
     return (
       <div
-        className="w-10 h-10 rounded-full flex items-center justify-center text-xs font-mono font-semibold shrink-0"
-        style={{ backgroundColor: `var(--accent-${member.color})20`, color: `var(--accent-${member.color})`, border: `1.5px solid var(--accent-${member.color})40` }}
+        className="w-20 h-20 rounded-full flex items-center justify-center text-base font-mono font-semibold shrink-0"
+        style={{ backgroundColor: `var(--accent-${member.color})20`, color: `var(--accent-${member.color})`, border: `2px solid var(--accent-${member.color})40` }}
       >
         {initials}
       </div>
@@ -156,8 +157,8 @@ function MemberAvatar({ member }: { member: TeamMember }) {
     <img
       src={member.photo}
       alt={member.name}
-      className="w-10 h-10 rounded-full object-cover shrink-0"
-      style={{ border: `1.5px solid var(--accent-${member.color})40` }}
+      className="w-20 h-20 rounded-full object-cover shrink-0"
+      style={{ border: `2px solid var(--accent-${member.color})40`, objectPosition: member.photoPosition ?? "center" }}
       onError={() => setFailed(true)}
     />
   );

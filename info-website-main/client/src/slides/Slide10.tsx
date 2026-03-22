@@ -83,8 +83,7 @@ export default function Slide10() {
           </p>
 
           <p className="text-sm text-muted-foreground max-w-md leading-relaxed mb-6">
-            Aus Linz. Für alle. — Wir bauen die Infrastruktur für präventive Gesundheit,
-            auf der KI-Agenten mit deinen Daten, unter deiner Kontrolle, arbeiten können.
+            Wir möchten die Gesundheit revolutionieren und die Linzer gesünder machen.
           </p>
 
           {/* Vertical timeline roadmap */}

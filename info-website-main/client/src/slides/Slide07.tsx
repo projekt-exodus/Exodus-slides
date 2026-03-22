@@ -12,6 +12,7 @@ const team: TeamMember[] = [
     desc: "LASK-Akademie. Rettungssanitäter. Physiotherapie-Studium. Jahrelanger Hochleistungssport — er kennt den Körper von innen.",
     timeline: [
       { label: "LASK-Akademie", sub: "U14 bis Kampfmannschaft" },
+      { label: "BORG Linz Leistungssport", sub: "Matura" },
       { label: "Rettungssanitäter", sub: "Ausbildung Hörsching · Bundesheer" },
       { label: "FH Gesundheitsberufe OÖ", sub: "Physiotherapie (BSc) · laufend", current: true },
     ],

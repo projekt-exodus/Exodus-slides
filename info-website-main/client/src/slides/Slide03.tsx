@@ -77,16 +77,21 @@ export default function Slide03() {
           <h3 className="text-xl font-semibold mb-3">Bring Your Own AI</h3>
           <div className="space-y-3 mb-4">
             {[
-              { icon: <Monitor className="w-5 h-5" />, label: "Lokal", sub: "z.B. Ollama", color: "var(--accent-violet)" },
+              { icon: <Monitor className="w-5 h-5" />, label: "Lokal", sub: "z.B. Ollama", color: "var(--accent-violet)", badge: "Open Source KI" },
               { icon: <Smartphone className="w-5 h-5" />, label: "Smartphone", sub: "Apple Intelligence, Gemma", color: "var(--accent-green)" },
               { icon: <Cloud className="w-5 h-5" />, label: "Cloud optional", sub: "ChatGPT, Claude oder Gemini", color: "var(--accent-amber)" },
             ].map((item, i) => (
               <div key={i} className="flex items-center gap-3 p-2.5 border border-border/50 bg-[var(--diagram-bg)]">
                 <span style={{ color: item.color }}>{item.icon}</span>
-                <div className="min-w-0">
+                <div className="min-w-0 flex-1">
                   <p className="text-base font-medium">{item.label}</p>
                   <p className="text-sm text-muted-foreground">{item.sub}</p>
                 </div>
+                {item.badge && (
+                  <span className="flex items-center gap-1 text-xs font-mono px-2 py-0.5 rounded shrink-0" style={{ color: "var(--accent-amber)", backgroundColor: "color-mix(in srgb, var(--accent-amber) 12%, transparent)" }}>
+                    <Code2 className="w-3 h-3" />{item.badge}
+                  </span>
+                )}
               </div>
             ))}
           </div>

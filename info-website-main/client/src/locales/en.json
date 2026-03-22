@@ -171,7 +171,8 @@
     "tomorrowItems": [
       { "label": "Vitamin D Trend", "sub": "↗ 28 → 45 ng/ml (6 mo.)" },
       { "label": "Blood Pressure Trend", "sub": "140/90 → 128/82 mmHg" },
-      { "label": "Med Letter: Endocrinology", "sub": "TSH 2.4 mU/L — explained" }
+      { "label": "Med Letter: Endocrinology", "sub": "TSH 2.4 mU/L — explained" },
+      { "label": "Mental Health Diary", "sub": "Mood · Sleep · Stress — daily" }
     ]
   },
   "how": {

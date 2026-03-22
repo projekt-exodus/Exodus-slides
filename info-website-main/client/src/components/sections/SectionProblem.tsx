@@ -76,6 +76,7 @@ export default function SectionProblem() {
               { label: "Vitamin D Trend", sub: "↗ 28 → 45 ng/ml (6 Mo.)", color: "var(--accent-green)" },
               { label: "Blutdruck-Verlauf", sub: "140/90 → 128/82 mmHg", color: "var(--accent-blue)" },
               { label: "Arztbrief: Endokrinologie", sub: "TSH 2.4 mU/L — erklärt", color: "var(--accent-violet)" },
+              { label: "Mental Health Tagebuch", sub: "Stimmung · Schlaf · Stress — täglich", color: "var(--accent-amber)" },
             ].map((item, i) => (
               <motion.div
                 key={i}

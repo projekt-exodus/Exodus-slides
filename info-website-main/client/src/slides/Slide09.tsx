@@ -5,7 +5,7 @@ export const notes =
   "Während Felix den Prototyp gebaut und getestet hat, haben wir parallel die Förderstruktur aufgesetzt. aws First Incubator: eingereicht. FFG Projekt.Start: eingereicht. FFG Kleinprojekt: Deadline 10. Mai — das ist in wenigen Wochen. Kumuliertes Potenzial: über 400.000 Euro. tech2b in der Tabakfabrik Linz ist unser geplanter nächster Schritt. Felix, bring das jetzt nach Hause.";
 
 const funding = [
-  { program: "aws First Incubator", amount: "5.000 €", rate: "100 %", status: "✅ Eingereicht", statusColor: "var(--accent-green)" },
+  { program: "aws First Incubator", amount: "55.000 €", rate: "100 %", status: "✅ Eingereicht", statusColor: "var(--accent-green)" },
   { program: "FFG Projekt.Start", amount: "6.000 €", rate: "—", status: "✅ Eingereicht", statusColor: "var(--accent-green)" },
   { program: "FFG Kleinprojekt", amount: "bis 88.500 €", rate: "bis 70 %", status: "🔜 10. Mai", statusColor: "var(--accent-amber)" },
   { program: "tech2b ACTIVATE", amount: "5.000 €", rate: "100 %", status: "🔜 Geplant", statusColor: "var(--accent-amber)" },

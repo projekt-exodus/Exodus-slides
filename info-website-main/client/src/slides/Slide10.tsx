@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Mail } from "lucide-react";
 
 export const notes =
@@ -28,36 +29,33 @@ const qrCodes = [
 const partners = [
   {
     name: "FH Gesundheitsberufe OÖ",
-    logo: "https://logo.clearbit.com/fhgooe.ac.at",
+    logo: "https://www.fhgooe.ac.at/fileadmin/fh_gooe/Logo/FHG_Logo_RGB_farbe.png",
   },
   {
     name: "Business Upper Austria",
-    logo: "https://logo.clearbit.com/biz-up.at",
+    logo: "https://www.biz-up.at/fileadmin/user_upload/biz-up_logo.png",
   },
 ];
 
 function PartnerLogo({ name, logo }: { name: string; logo: string }) {
+  const [failed, setFailed] = useState(false);
+
   return (
     <div className="flex flex-col items-center gap-1.5">
-      <img
-        src={logo}
-        alt={name}
-        height={28}
-        className="h-7 object-contain grayscale opacity-60"
-        onError={(e) => {
-          const el = e.currentTarget as HTMLImageElement;
-          el.style.display = "none";
-          const fallback = el.nextSibling as HTMLElement | null;
-          if (fallback) fallback.style.display = "block";
-        }}
-      />
-      <span
-        className="text-[9px] font-mono border border-border px-1.5 py-0.5 text-muted-foreground bg-card"
-        style={{ display: "none" }}
-      >
-        {name}
-      </span>
-      <p className="text-[9px] font-mono text-muted-foreground/50 text-center max-w-[80px] leading-tight">
+      {failed ? (
+        <span className="text-[9px] font-mono border border-border px-2 py-1 text-muted-foreground bg-card">
+          {name}
+        </span>
+      ) : (
+        <img
+          src={logo}
+          alt={name}
+          height={28}
+          className="h-7 object-contain grayscale opacity-60"
+          onError={() => setFailed(true)}
+        />
+      )}
+      <p className="text-[9px] font-mono text-muted-foreground/50 text-center max-w-[90px] leading-tight">
         {name}
       </p>
     </div>
@@ -162,7 +160,7 @@ export default function Slide10() {
             ))}
           </div>
 
-          {/* Partner logos */}
+          {/* Partner logos — centered */}
           <div className="flex flex-col items-center gap-2 w-full">
             <p className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground/40">
               Kooperationen

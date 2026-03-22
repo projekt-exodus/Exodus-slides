@@ -93,7 +93,6 @@ export default function SlidesApp() {
             <aside className="notes">{notes00}</aside>
           </section>
           {[
-            { Component: Slide01Content, notes: notes01 },
             { Component: Slide02Content, notes: notes02 },
             { Component: Slide03Content, notes: notes03 },
             { Component: Slide04Content, notes: notes04 },
@@ -103,6 +102,7 @@ export default function SlidesApp() {
             { Component: Slide08Content, notes: notes08 },
             { Component: Slide09Content, notes: notes09 },
             { Component: Slide10Content, notes: notes10 },
+            { Component: Slide01Content, notes: notes01 },
           ].map(({ Component, notes }, index) => (
             <section key={index + 1} style={{ height: "100%", width: "100%" }}>
               <Component />

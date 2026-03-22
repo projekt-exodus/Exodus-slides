@@ -67,7 +67,7 @@ export default function Slide04() {
       <h2 className="text-6xl font-bold tracking-tight mb-3 leading-tight">
         Was Exodus verbindet — konkret.
       </h2>
-      <p className="text-2xl text-muted-foreground mb-7">
+      <p className="text-2xl text-muted-foreground mb-16">
         Alles auf offenen Standards. Kein proprietärer Lock-in.
       </p>
       <div className="grid grid-cols-3 gap-6 mb-8">

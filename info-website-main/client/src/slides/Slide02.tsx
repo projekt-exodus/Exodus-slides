@@ -57,7 +57,7 @@ export default function Slide02() {
       <h2 className="text-6xl font-bold tracking-tight mb-4 leading-tight">
         Das Problem ist nicht zu wenig Apps.
       </h2>
-      <p className="text-3xl font-medium text-muted-foreground mb-10">
+      <p className="text-3xl font-medium text-muted-foreground mb-16">
         Das Problem ist, dass sie nicht reden.
       </p>
 

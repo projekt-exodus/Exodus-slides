@@ -124,7 +124,7 @@ export default function Slide07() {
       <h2 className="text-5xl font-bold tracking-tight mb-2 leading-tight">
         Vier aus Linz. Alle aus Überzeugung.
       </h2>
-      <p className="text-xl text-muted-foreground mb-7">
+      <p className="text-xl text-muted-foreground mb-16">
         Wir kommen alle aus OÖ. Wir studieren alle an Institutionen aus Linz.
         Und wir nutzen alle das Produkt selbst — weil es unser Problem ist.
       </p>

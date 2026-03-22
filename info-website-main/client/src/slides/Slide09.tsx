@@ -1,6 +1,22 @@
 import { useState } from "react";
 import { BadgeCheck, Clock } from "lucide-react";
 
+function JKULogo() {
+  const [failed, setFailed] = useState(false);
+  return failed ? (
+    <span className="text-[9px] font-mono border border-border px-2 py-1 text-muted-foreground bg-card">
+      JKU Linz
+    </span>
+  ) : (
+    <img
+      src="/logos/jku.png"
+      alt="JKU Linz"
+      className="h-8 object-contain grayscale opacity-60"
+      onError={() => setFailed(true)}
+    />
+  );
+}
+
 export const notes =
   "Während Felix den Prototyp gebaut und getestet hat, haben wir parallel die Förderstruktur aufgesetzt. aws First Incubator: eingereicht. FFG Projekt.Start: eingereicht. FFG Kleinprojekt: Deadline 10. Mai — das ist in wenigen Wochen. Kumuliertes Potenzial: über 400.000 Euro. tech2b in der Tabakfabrik Linz ist unser geplanter nächster Schritt. Felix, bring das jetzt nach Hause.";
 
@@ -19,26 +35,19 @@ const timeline = [
   { label: "Firmengründung", done: false },
 ];
 
-const partnersText = ["JKU Linz", "Kepler Uniklinikum", "tech2b"];
-
 function FHLogo() {
   const [failed, setFailed] = useState(false);
-  return (
-    <div className="flex flex-col items-start gap-1">
-      {failed ? (
-        <span className="text-[9px] font-mono border border-border px-2 py-1 text-muted-foreground bg-card">
-          FH Gesundheitsberufe OÖ
-        </span>
-      ) : (
-        <img
-          src="https://www.fhgooe.ac.at/fileadmin/fh_gooe/Logo/FHG_Logo_RGB_farbe.png"
-          alt="FH Gesundheitsberufe OÖ"
-          height={28}
-          className="h-7 object-contain grayscale opacity-60"
-          onError={() => setFailed(true)}
-        />
-      )}
-    </div>
+  return failed ? (
+    <span className="text-[9px] font-mono border border-border px-2 py-1 text-muted-foreground bg-card">
+      FH Gesundheitsberufe OÖ
+    </span>
+  ) : (
+    <img
+      src="/logos/fh-gesundheitsberufe.png"
+      alt="FH Gesundheitsberufe OÖ"
+      className="h-8 object-contain grayscale opacity-60"
+      onError={() => setFailed(true)}
+    />
   );
 }
 
@@ -113,14 +122,17 @@ export default function Slide09() {
           <div>
             <p className="text-xs font-mono uppercase tracking-widest text-muted-foreground/50 mb-3">Kooperations-Logos</p>
             <div className="flex flex-wrap gap-2 items-center">
-              {partnersText.map((p) => (
-                <div key={p} className="px-4 py-2 border border-border/60 bg-card">
-                  <span className="text-xs font-mono text-muted-foreground">{p}</span>
-                </div>
-              ))}
-              <div className="px-3 py-2 border border-border/60 bg-card flex flex-col items-start gap-1">
+              <div className="px-3 py-2 border border-border/60 bg-card flex items-center">
                 <FHLogo />
               </div>
+              <div className="px-3 py-2 border border-border/60 bg-card flex items-center">
+                <JKULogo />
+              </div>
+              {["Kepler Uniklinikum", "tech2b"].map((p) => (
+                <div key={p} className="px-4 py-2 border border-border/60 bg-card">
+                  <span className="text-xs font-mono text-muted-foreground/50 line-through">{p}</span>
+                </div>
+              ))}
             </div>
             <p className="text-[10px] text-muted-foreground/60 mt-3 leading-relaxed">
               Für FFG: "wirksame Kooperation" — mind. 10 % der förderbaren Kosten bei Forschungseinrichtungen,

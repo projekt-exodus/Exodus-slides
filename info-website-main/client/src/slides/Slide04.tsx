@@ -57,13 +57,6 @@ export default function Slide04() {
       <p className="text-base text-muted-foreground mb-4 max-w-2xl">
         Alles auf offenen Standards. Kein proprietärer Lock-in.
       </p>
-      <div className="flex items-start gap-3 mb-6 p-3 border border-border/70 bg-[var(--diagram-bg)]">
-        <span className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground/50 shrink-0 mt-0.5">Beispiel:</span>
-        <p className="text-sm text-muted-foreground leading-relaxed">
-          Felix verbindet seinen <strong className="text-foreground font-medium">WHOOP</strong> — Schlafdaten fließen automatisch ein. Dazu fotografiert er seinen <strong className="text-foreground font-medium">Laborbefund</strong> (Blutbild als PDF) und lädt ihn direkt hoch. Beides landet strukturiert in seiner Timeline.
-        </p>
-      </div>
-
       <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
         {connections.map((cat, i) => (
           <div

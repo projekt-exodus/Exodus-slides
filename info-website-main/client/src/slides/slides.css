@@ -104,8 +104,8 @@
 
 .reveal .slide-number {
   right: auto !important;
-  left: 12px !important;
-  bottom: 12px !important;
+  left: 20px !important;
+  bottom: 24px !important;
 }
 
 @keyframes pulse-beat {

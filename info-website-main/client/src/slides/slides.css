@@ -102,6 +102,12 @@
   box-shadow: none;
 }
 
+.reveal .slide-number {
+  right: auto !important;
+  left: 12px !important;
+  bottom: 12px !important;
+}
+
 @keyframes pulse-beat {
   0%, 100% { transform: scale(1); opacity: 1; }
   50% { transform: scale(1.12); opacity: 0.85; }

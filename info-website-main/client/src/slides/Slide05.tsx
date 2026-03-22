@@ -18,7 +18,7 @@ export default function Slide05() {
             Exodus.<br />
             <span className="text-muted-foreground font-medium">Live.</span>
           </h2>
-          <p className="text-xl text-muted-foreground leading-relaxed mb-16">
+          <p className="text-xl text-muted-foreground leading-relaxed mb-20">
             Alle Gesundheitsdaten auf einen Blick — Laborwerte, Arztbriefe,
             Wearable-Daten. Strukturiert. Verständlich. Unter deiner Kontrolle.
           </p>

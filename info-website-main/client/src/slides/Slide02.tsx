@@ -34,7 +34,7 @@ export default function Slide02() {
         inset: 0,
         display: "flex",
         flexDirection: "column",
-        padding: "48px 88px",
+        padding: "56px 104px",
         width: "100%",
         height: "100%",
         boxSizing: "border-box",
@@ -78,8 +78,8 @@ export default function Slide02() {
         </div>
 
         {/* RIGHT — Mobile App UI */}
-        <div className="flex flex-col min-h-0" style={{ borderTop: "2px solid var(--accent-blue)" }}>
-          <div className="flex items-center gap-2 pt-3 pb-3 shrink-0">
+        <div className="flex flex-col min-h-0 rounded-lg overflow-hidden" style={{ border: "2px solid var(--accent-blue)" }}>
+          <div className="flex items-center gap-2 px-4 py-3 shrink-0" style={{ background: "color-mix(in srgb, var(--accent-blue) 5%, var(--card))", borderBottom: "1px solid color-mix(in srgb, var(--accent-blue) 30%, transparent)" }}>
             <ShieldCheck className="w-3.5 h-3.5" style={{ color: "var(--accent-blue)" }} />
             <p className="text-xs font-mono uppercase tracking-widest" style={{ color: "var(--accent-blue)" }}>
               Morgen — Exodus Health Vault
@@ -90,19 +90,7 @@ export default function Slide02() {
           </div>
 
           {/* App frame */}
-          <div className="flex flex-col rounded-xl overflow-hidden border border-border/60 shadow-sm" style={{ background: "var(--card)" }}>
-
-            {/* App status bar */}
-            <div className="flex items-center justify-between px-4 py-2 shrink-0" style={{ background: "color-mix(in srgb, var(--accent-blue) 6%, var(--card))", borderBottom: "1px solid var(--border)" }}>
-              <div className="flex items-center gap-1.5">
-                <div className="w-2 h-2 rounded-full" style={{ background: "var(--accent-green)" }} />
-                <span className="text-xs font-mono text-muted-foreground/60">Health Vault</span>
-              </div>
-              <div className="flex items-center gap-1 text-xs font-mono text-muted-foreground/40">
-                <ShieldCheck className="w-3 h-3" style={{ color: "var(--accent-green)" }} />
-                Ende-zu-Ende verschlüsselt
-              </div>
-            </div>
+          <div className="flex flex-col" style={{ background: "var(--card)" }}>
 
             {/* Section label */}
             <div className="px-4 py-2 shrink-0" style={{ borderBottom: "1px solid var(--border)" }}>
